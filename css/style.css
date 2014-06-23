@@ -1,0 +1,141 @@
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+
+
+/**
+ * NORMALIZE...........Normalize.css
+ * FONTS...............
+ * CLEARFIX............
+ * MAIN................
+ *
+ * FLEXBOX.............
+ * NAV.................
+ * LOGO................
+ * BREADCRUMBS.........
+ *
+ * HEADINGS............
+ * PARAGRAPHS..........
+ * SMALLPRINT..........
+ * LISTS...............
+ * IMAGES..............
+ * TABS..............
+ * FORMS...............
+ * BUTTONS.............
+ * SLIDER/CAROUSEL.....Styles for owl.carousel.js
+ * FANCYBOX............Styles for jquery.facybox.pack.js
+ * MM-MENU.............Styles for jquery.mmenu.min.js
+ *
+ */
+
+
+ /*------------------------------------*\
+    NORMALIZE
+\*------------------------------------*/
+
+@import url('normalize.css');
+
+
+
+/*------------------------------------*\
+    FONTS
+\*------------------------------------*/
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #373737;
+}
+
+
+
+ /*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+
+a {
+	text-decoration: none;
+	color: #e42e22;
+}
+
+.wrapper {
+	width: 95%;
+	max-width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.update-bar, .top-section {
+	color: #fff;
+	
+}
+
+.update-bar {
+	background-color: #5dc9e6;
+	height: 20px;
+
+}
+
+.top-section {
+	background-color: #373737;
+	border-bottom: 4px solid #e42e22;
+}
+
+
+
+
+/*------------------------------------*\
+    FLEXBOX
+\*------------------------------------*/
+
+.fb {
+	display: flex;
+	justify-content: center;
+}
+
+
+/*------------------------------------*\
+  NAV
+\*------------------------------------*/
+
+#main-nav ul li a {
+	color: #fff;
+}
+
+
+/*------------------------------------*\
+  LISTS
+\*------------------------------------*/
+
+
+ ul li{
+	list-style: none;
+}
+
+
+
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+.profile-img {
+	border: 5px solid #e42e22;
+	border-radius: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
