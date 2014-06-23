@@ -67,24 +67,27 @@ a {
 	margin-right: auto;
 }
 
-.update-bar, .top-section {
-	color: #fff;
-	
-}
-
-.update-bar {
-	background-color: #5dc9e6;
-	height: 20px;
-
-}
 
 .top-section {
 	background-color: #373737;
 	border-bottom: 4px solid #e42e22;
 }
 
+.top-bar {
+	background-color: #fff;
+	height: 60px;
+}
+
+/*------------------------------------*\
+    ALERTS
+\*------------------------------------*/
 
 
+.alert-bar {
+	background-color: #5dc9e6;
+	color: #fff;
+	height: 20px;
+}
 
 /*------------------------------------*\
     FLEXBOX
@@ -100,9 +103,10 @@ a {
   NAV
 \*------------------------------------*/
 
-#main-nav ul li a {
+.main-nav ul li a {
 	color: #fff;
 }
+
 
 
 /*------------------------------------*\
