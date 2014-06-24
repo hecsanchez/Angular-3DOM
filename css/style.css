@@ -78,6 +78,25 @@ a {
 	height: 60px;
 }
 
+.card {
+	background-color: #fff;
+	-moz-box-shadow:    1px 1px 0px 0px #d3d3d3;
+  	-webkit-box-shadow: 1px 1px 0px 0px #d3d3d3;
+  	box-shadow:         1px 1px 0px 0px #d3d3d3;
+}
+
+.card__title--boxed {
+	display: block;
+	position: absolute;
+	height: 45px;
+	width: 250px;
+	background-color: #373737;
+	color: #fff;
+	line-height: 2.2;
+	text-align: center;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+}
 /*------------------------------------*\
     ALERTS
 \*------------------------------------*/
@@ -130,13 +149,38 @@ a {
 .profile-img {
 	border: 5px solid #e42e22;
 	border-radius: 100%;
+	z-index: 2;
 }
 
 
 
+/*------------------------------------*\
+    HEADINGS
+\*------------------------------------*/
+
+
+.card__title {
+	font-size: 24px;
+}
 
 
 
+/*------------------------------------*\
+    BUTTONS
+\*------------------------------------*/
+
+.button {
+	display: block;
+	height: 35px;
+	width: 205px;
+	background-color: #e42e22;
+	border-radius: 5%;
+	color: #fff;
+	line-height: 2.2;
+	text-align: center;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+}
 
 
 
