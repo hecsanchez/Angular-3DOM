@@ -96,7 +96,36 @@ a {
 	text-align: center;
 	font-weight: 300;
 	letter-spacing: 1.5px;
+	margin-top: 60px;
 }
+
+.card__section-1third {
+	width: 32%;
+}
+
+.m-area {
+	margin-top:20px;
+}
+
+.p-info {
+	height: 250px;
+	z-index: 1;
+	position: relative;
+	margin-top: -4em;
+}
+
+.m-info {
+	height: 188px;
+}
+
+.card__title__l {
+	height: 50px;
+	margin-bottom: 5px;
+}
+
+
+
+
 /*------------------------------------*\
     ALERTS
 \*------------------------------------*/
@@ -114,7 +143,7 @@ a {
 
 .fb {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 
@@ -149,6 +178,7 @@ a {
 .profile-img {
 	border: 5px solid #e42e22;
 	border-radius: 100%;
+	position: relative;
 	z-index: 2;
 }
 
@@ -161,9 +191,19 @@ a {
 
 .card__title {
 	font-size: 24px;
+	font-weight: 400;
+	margin: 0;
 }
 
+.card__inner__heading {
+	font-size: 12px;
+	font-weight: 700;
+	margin: 0;
+}
 
+p {
+	margin: 0;
+}
 
 /*------------------------------------*\
     BUTTONS
