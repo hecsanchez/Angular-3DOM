@@ -4,7 +4,10 @@ header
 	display: block;
 	height: 91px;
 	border-bottom: 4px solid #e42e22;
-	position: relative;
+	position: fixed;
+	top: 22px;
+	width: 100%;
+	z-index: 99;
 }
 
 #subheader
@@ -13,7 +16,7 @@ header
 	display: block;
 	height: 60px;
 	margin: 8px 0px 0px 0px;
-	margin-top:-20px;
+	margin-top:114px;
 	margin-bottom:20px;
 }
 

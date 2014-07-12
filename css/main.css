@@ -185,7 +185,6 @@ a, a:hover, a:active, a:focus {
 }
 a.presentation_item {
 	display: block;
-	background-image: url('../img/arrow.png');
 	background-repeat: no-repeat;
 }
 
@@ -509,7 +508,7 @@ span.presentation_content
 	background-color:  #5dc9e6;
 	height: 22px;
 	width: 100%;
-	position: relative;
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 100;
@@ -557,6 +556,10 @@ div.icon-bg {
 	height: 45px;
 	clip-path: polygon(0% 0%, 0% 100%, 85% 100%, 100% 50%, 85% 0%);
 	-webkit-clip-path: polygon(0% 0%, 0% 100%, 85% 100%, 100% 50%, 85% 0%);
+}
+
+.icon-bg.highlight{
+	background: #55b369;
 }
 
 .fb{
