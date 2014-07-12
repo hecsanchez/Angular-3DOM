@@ -1,0 +1,100 @@
+h3.welcome
+{
+	display: block;
+	margin: 0px;
+	padding: 15px;
+	background-color: rgb(32,32,37);
+	text-align: center;
+	color: white;
+	font-size: 41px;
+}
+
+h3.welcome span.subtitle
+{
+	font-size: 24px;
+}
+
+.red_ink
+{
+	color: rgb(217,37,28);
+}
+
+div.welcome_content
+{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+}
+
+div.welcome_content div.left, div.welcome_content div.right
+{
+	display: block;
+	width: 430px;
+	padding: 40px;
+}
+
+div.welcome_content div.right
+{
+	float: right;
+}
+
+h4.wb
+{
+	margin: 15px 0px 10px 0px;
+	font-size: 25px;
+	color: rgb(217,37,28);
+}
+h5.wb
+{
+	margin: 13px 0px 15px 0px;
+	font-size: 19px;
+}
+
+a.wb
+{
+	line-height: 45px;
+	font-size: 19px;
+	color: rgb(217,37,28);
+}
+
+a.wb:hover
+{
+	
+}
+
+div.preview
+{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	height: 392px;
+	background-image: url('../img/layer_28.png');
+	background-repeat: no-repeat;
+}
+
+a.previewlinks
+{
+	display: block;
+	float: left;
+	width: 295px;
+	height: 140px;
+	margin: 0px 1px 0px 0px;
+	padding: 20px 0px 20px 0px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	font-size: 23px;
+	line-height: 50px;
+}
+a.previewlinks:hover
+{
+	
+}
+
+form.welcomeback
+{
+	margin: 10px;
+}
+
+

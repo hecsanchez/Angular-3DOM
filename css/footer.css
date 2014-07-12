@@ -1,0 +1,42 @@
+footer
+{
+	display: block;
+	margin: 50px 0px 0px 0px;
+	padding: 20px;
+	text-align: center;
+	background-color: rgb(240,241,245);
+	border-top: 1px solid rgb(213,213,215);
+	font-size: 15px;
+	max-width: 100%
+}
+
+#footer_label
+{
+	color: rgb(32,41,48);
+	padding-right: 10px;
+}
+
+#footer_input
+{
+	border: 1px solid rgb(215,216,218);
+	border-radius: 5px;
+	font-size: 17px;
+	margin: 0px;
+	padding: 5px;
+}
+
+#footer_submit
+{
+	background-color: rgb(22,54,67);
+	border: 1px solid rgb(22,54,67);
+	border-top: 3px solid rgb(22,54,67);
+	border-radius: 5px;
+	color: white;
+	margin: 0px;
+	padding: 5px 20px 5px 20px;
+}
+
+#footer_submit:hover {
+	background-color: #e32e22;
+	border: 1px solid #e32e22;
+}

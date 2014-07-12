@@ -1,0 +1,209 @@
+.fullsized {
+	width: 100%;
+}
+
+.floatRightProject {
+	float: right;
+	margin: 6px 55px 0 0;
+}
+
+.projectHeadLine {
+	color: #373737;
+}
+
+.projectHeadLine div{
+	margin-bottom: 10px;
+}
+
+.floatRightProject img {
+	margin-left: 10px;
+}
+
+.projectHeadLine img {
+	margin-left: 10px;
+}
+.projectChoiceLine {
+	background-color: #c8c8c8;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.projectChoiceLine .app-button{
+	color: #373737;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 21px;
+	width: 46px;
+	height: 16px;
+	margin-top: 3px;
+
+}
+
+.projectChoiceLine a{
+	color: #ffffff;
+}
+
+.choice_icon {
+	background-color: #d2d0d0;
+	display: inline-block;
+}
+
+.choose_icon {
+	background: -webkit-linear-gradient(-180deg, #e4e4e4 100%, #f6f2f2 49%, #efeeee 0%);
+	background: -moz-linear-gradient(-180deg, #e4e4e4 100%, #f6f2f2 49%, #efeeee 0%);
+	background: -o-linear-gradient(-180deg, #e4e4e4 100%, #f6f2f2 49%, #efeeee 0%);
+	background: -ms-linear-gradient(-180deg, #e4e4e4 100%, #f6f2f2 49%, #efeeee 0%);
+	background: linear-gradient(270deg, #e4e4e4 100%, #f6f2f2 49%, #efeeee 0%);
+	display: inline-block;
+}
+
+.screen-choice div{
+	height: 25px;
+	width: 25px;
+	padding: 2px 0 0 3px ;
+}
+
+.screen-title {
+}
+
+.screen-choose{
+	background-color: #404040;
+	color: #ffffff;
+}
+.screen-choice .visible-xs{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 3px;
+}
+.screen-choice .visible-xs div{
+	display: inline-block;
+	margin-left: -4px;
+}
+
+.projectPanel {
+	background: -webkit-linear-gradient(-180deg, #e4e4e4 0%, #f6f2f2 49%, #efeeee 100%);
+	background: -moz-linear-gradient(-180deg, #e4e4e4 0%, #f6f2f2 49%, #efeeee 100%);
+	background: -o-linear-gradient(-180deg, #e4e4e4 0%, #f6f2f2 49%, #efeeee 100%);
+	background: -ms-linear-gradient(-180deg, #e4e4e4 0%, #f6f2f2 49%, #efeeee 100%);
+	background: linear-gradient(270deg, #e4e4e4 0%, #f6f2f2 49%, #efeeee 100%);
+	box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.27);
+	color: #373737;
+	font-size: 11px; /* Approximation due to font substitution */
+	font-weight: 700;
+	line-height: 14px;
+	text-align: center;
+}
+
+.projectPanel div div div {
+	text-align: center;
+	vertical-align: center;
+}
+
+.projectPanel .left {
+	padding: 10px 0 0 0;
+	min-height: 60px;
+	border-right: 1px rgba(64, 64, 64, 0.2) solid;
+}
+.projectPanel .right {
+	padding: 10px 0 0 0;
+	min-height: 60px;
+}
+
+.projectPanel .left-text {
+	min-height: 15px;
+	border-bottom: 1px rgba(64, 64, 64, 0.2) solid;
+	border-right: 1px rgba(64, 64, 64, 0.2) solid;
+}
+.projectPanel .right-text {
+	min-height: 15px;
+	border-bottom: 1px rgba(64, 64, 64, 0.2) solid;
+}
+.projectPanel .medium {
+	min-height: 50px;
+}
+.projectPanel .selected {
+	background-color: rgba(64, 64, 64, 0.1);
+}
+
+.projectTitle {
+	color: #000000;
+	font-size: 15px; /* Approximation due to font substitution */
+	font-weight: 600;
+	line-height: 24px;
+}
+.projectPanel p{
+	text-align: left;
+}
+.projectPanel strong{
+	color: #404040;
+	font-size: 18px; /* Approximation due to font substitution */
+	font-weight: 700;
+	line-height: 13px;
+}
+
+.panelScreen {
+	max-height: 349px;
+	overflow: auto;
+}
+
+.appdata .table-header {
+	background-color: #f3efef;
+	color: #777777; font-size: 18px;
+	font-weight: 400;
+	line-height: 21px;
+
+}
+
+.appdata .categories {
+	padding-top: 15px;
+}
+.appdata .categories .selected {
+	color: #5dc9e6;
+	background-color: #ffffff;
+}
+
+
+.appdata .table-title {
+	color: #163645;
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 21px;
+	margin: 10px 10px 5px 5px;
+}
+
+.appdata .content .table-header {
+	background-color: rgba(22, 54, 69, 0.4);
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 21px;
+}
+
+.appdata .content {
+	background-color: #ffffff;
+	text-align: center;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.appdata .appdata-table {
+	margin-top:20px; 
+	margin-bottom:10px; 
+	text-align: left;
+}
+
+.appdata .appdata-table .even {
+	background-color: rgba(243, 239, 239, 0.4);
+	border-top: 1px rgba(0, 0, 0, 0.1) solid;
+	border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+}
+
+.appdata .appdata-table .appdata-row:hover {
+	background-color: rgba(243, 239, 239, 1);
+}
+.arrow-left {
+	float:left;
+}
+.arrow-right {
+	float:right;
+}

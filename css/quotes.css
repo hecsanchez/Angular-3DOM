@@ -1,0 +1,139 @@
+div.simple
+{
+	display: block;
+	margin: 20px 0px 20px 0px;
+	padding: 15px;
+	background-color: white;
+	box-shadow: 1px 1px 1px rgb(180,180,180);
+}
+
+h2.simple
+{
+	margin: 5px 0px 20px 0px;
+	font-weight: 400;
+}
+
+p.simple
+{
+	margin: 0px;
+	text-align: justify;
+}
+
+div.block4
+{
+	display: block;
+	min-width: 380px;
+	width: 49%;
+	margin: 20px 0px 20px 0px;
+	padding: 0px 0px 10px 0px;
+	background-color: white;
+	box-shadow: 1px 1px 1px rgb(180,180,180);
+}
+
+#right_quote
+{
+	float: right;
+	min-height: 761px;
+}
+
+#left_quote
+{
+	float: left;
+	min-height: 761px;
+}
+
+h2.block4
+{
+	display: block;
+	margin: 0px 0px 10px 0px;
+	padding: 15px 15px 15px 20px;
+	color: white;
+	font-size: 30px;
+	background-color: rgb(55,55,55);
+	font-family: "Open Sans";
+	font-weight: 400;
+}
+
+
+p.block4
+{
+	margin: 20px;
+	text-align: justify;
+}
+
+div.block4_content
+{
+	display: block;
+	margin: 0px;
+	padding: 15px;
+}
+
+div.formline
+{
+	height: 40px;
+}
+
+div.formlinesmall
+{
+	height: 30px;
+}
+
+label.form4
+{
+	display: block;
+	float: left;
+	min-width: 130px;
+	width: 50%;
+	font-weight: bold;
+	color: black;
+	padding-top: 5px;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+#seconddate
+{
+	display: block;
+	float: right;
+}
+
+input.form4, select.form4, textarea.form4
+{
+	display: block;
+	min-width: 70px;
+	width: 50%;
+	padding: 3px;
+	border: 1px solid rgb(180,180,180);
+}
+
+input.date
+{
+	width: 150px;
+}
+
+select.form4
+{
+}
+
+textarea.form4
+{
+	width: 100%;
+	height: 100px;
+	float: clear;
+	margin: 10px 0px 20px 0px;
+}
+
+#submit_quote
+{
+	display: block;
+	color: white;
+	background-color: rgb(217,21,21);
+	border: none;
+	font-family: "Open Sans";
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 21px;
+	padding: 5px 20px 5px 15px;
+	margin: auto;
+}
+

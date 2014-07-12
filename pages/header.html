@@ -1,0 +1,125 @@
+<header>
+	<div id="fatty" class="hidden-xs hidden-sm">
+		<img class="headerLogo" alt="Logo" src="img/logo_header.png" />
+		<a class="header" href="#/" ng-class="{headerFocus:isActive('/')}">
+			<img class="header" alt="Dashboard" src="img/dashboard_icon.png" /><br />
+			Dashboard
+		</a>
+		<a class="header" href="#projects" ng-class="{headerFocus:isActive('/projects')}">
+			<img class="header small" alt="Projects" src="img/projects_icon.png" /><br />
+			Projects
+		</a>
+		<a class="header" href="#logos" ng-class="{headerFocus:isActive('/logos')}">
+			<img class="header small" alt="Logos" src="img/logos_icon.png" /><br />
+			Logos
+		</a>
+		<a class="header" href="#presentations" ng-class="{headerFocus:isActive('/presentations')}">
+			<img class="header small" alt="Presentations" src="img/presentations_icon.png" /><br />
+			Presentations
+		</a>
+		<a class="header" href="#quotes" ng-class="{headerFocus:isActive('/quotes')}">
+			<img class="header small" alt="Quotes" src="img/quotes_icon.png" /><br />
+			Quotes &#5167;
+		</a>
+		<a class="header" href="#support" ng-class="{headerFocus:isActive('/support')}">
+			<img class="header small" alt="Support" src="img/support_icon.png" /><br />
+			Support &#5167;
+		</a>
+		<span class="header_center">
+			<span class="header_icon">
+				<span class="notif_container">
+					<img id="notification_icon" alt="Message" src="img/bell.png" />
+					<div class="notif">
+						3
+					</div>
+				</span>
+			</span>
+			<span class="header_icon">
+				<span class="notif_container">
+					<img id="message_icon" alt="Message" src="img/mail.png" />
+					<div class="notif">
+						3
+					</div>
+				</span>
+			</span>
+		</span>
+		<span class="profile_header">
+			<a ng-click="sign_in=true;">
+				<img id="profile_picture_header" alt="Profile" src="img/dude.png" />
+				<img id="arrow_profile" alt="Arrow" src="img/arrow_bottom_2.png" />
+			</a>
+		</span>
+	</div>
+	
+	<div id="skinny" class="visible-xs visible-sm">
+		
+		<span class="profile_header">
+			<img id="profile_picture_header" alt="Profile" src="img/dude.png" />
+			<img id="arrow_profile" alt="Arrow" src="img/arrow_bottom_2.png" />
+		</span>
+		<span class="header_center">
+			<span class="header_icon">
+				<span class="notif_container">
+					<img id="notification_icon" alt="Message" src="img/bell.png" />
+					<div class="notif">
+						3
+					</div>
+				</span>
+			</span>
+			<span class="header_icon">
+				<span class="notif_container">
+					<img id="message_icon" alt="Message" src="img/mail.png" />
+					<div class="notif">
+						3
+					</div>
+				</span>
+			</span>
+		</span>
+		
+		<img class="headerLogo" alt="Logo" src="img/logo_header.png" />
+		
+		<div id="header-dropdown">
+			<ul>
+				<li class="top">
+					<img class="header" id="menu-icon" alt="Menu" src="img/menu.png" width="50"/>
+				</li>
+				<li class="item nav-first">
+					<a class="header" href="#dashboard">
+						<img class="header" alt="Dashboard" src="img/dashboard_icon.png" />
+						Dashboard
+					</a>
+				</li>
+				<li class="item">
+					<a class="header" href="#projects">
+						<img class="header small" alt="Projects" src="img/projects_icon.png" />
+						Projects
+					</a>
+				</li>
+				<li class="item">
+					<a class="header" href="#logos">
+						<img class="header small" alt="Logos" src="img/logos_icon.png" />
+						Logos
+					</a>
+				</li>
+				<li class="item">
+					<a class="header" href="#presentations">
+						<img class="header small" alt="Presentations" src="img/presentations_icon.png" />
+						Presentations
+					</a>
+				</li>
+				<li class="item">
+					<a class="header" href="#quotes">
+						<img class="header small" alt="Quotes" src="img/quotes_icon.png" />
+						Quotes
+					</a>
+				</li>
+				<li class="item nav-last">
+					<a class="header" href="#support">
+						<img class="header small" alt="Support" src="img/support_icon.png" />
+						Support
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>

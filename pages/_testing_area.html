@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ThreeDOMApp" ng-controller="mainController">
+	<head>
+		<title>Testing area</title>
+		<meta charset="utf-8" />
+		
+		<!-- JS Librairies -->
+		<script charset="utf-8" src="../js/jquery.min.js"></script>
+		<script charset="utf-8" src="../js/bootstrap.min.js"></script>
+		<script charset="utf-8" src="../js/angular.min.js"></script>
+		<script charset="utf-8" src="../js/angular-route.min.js"></script>
+		<script charset="utf-8" src="../js/ekko-lightbox.min.js"></script>
+		
+		<!-- Custom JS -->
+		<script charset="utf-8" src="../js/main.js"></script>
+		
+		<!-- CSS Librairies -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css" media="screen" title="Twitter Bootstrap - Grid" charset="utf-8" />
+		<link rel="stylesheet" href="../css/ekko-lightbox.min.css" media="screen" charset="utf-8" />
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/header.css" />
+		<link rel="stylesheet" type="text/css" href="../css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="../css/support.css" />
+		<link rel="stylesheet" type="text/css" href="../css/dashboard.css" />
+		<link rel="stylesheet" type="text/css" href="../css/quotes.css" />
+		<link rel="stylesheet" type="text/css" href="../css/logos.css" />
+		<link rel="stylesheet" type="text/css" href="../css/sign_in.css" />
+		<link rel="stylesheet" type="text/css" href="../css/welcomeback.css" />
+		<link rel="stylesheet" type="text/css" href="../css/welcomebacknew.css" />
+		
+	</head>
+	<body>
+		
+		<br /><br /><br /><br /><br /><br /><br /><br /><br />
+		
+		<a id="_signIn" href="#">Sign In</a><br />
+		<a id="_welcomeBack" href="#">Welcome Back</a><br />
+		<a id="_welcomeBackNew" href="#">Welcome Back New</a>
+		
+		<div id="hombre">
+			<div id="popup">
+				<img id="popup_logo" alt="Logo" src="../img/logo_header.png" />
+				<div id="popup_content"> Error while getting page </div>
+			</div>
+		</div>
+		
+		<script>
+			
+			var _signIn = document.getElementById("_signIn");
+			var _welcomeBack = document.getElementById("_welcomeBack");
+			var _welcomeBackNew = document.getElementById("_welcomeBackNew");
+			var hombre = document.getElementById("hombre");
+			var popup_content = document.getElementById("popup_content");
+			var http = _getXMLHTTPRequest();
+			
+			hombre.style.display = "none";
+			
+			_signIn.onclick = function(){_appear("sign_in")};
+			_welcomeBack.onclick = function(){_appear("welcomeback")};
+			_welcomeBackNew.onclick = function(){_appear("welcomebacknew")};
+			
+			function _appear(page)
+			{
+				hombre.style.display = "block";
+				_ajax(page, _setPopupContent);
+				
+				return false;
+			}
+			
+			function _setPopupContent(content)
+			{
+				popup_content.innerHTML = content;
+			}
+			
+			function _getXMLHTTPRequest()
+			{
+				try {
+					request = new XMLHttpRequest();
+				} catch(err1) {
+					try {
+						request = new ActiveXObject("Msxml2.XMLHTTP");
+					} catch(err2) {
+						try {
+							request = new ActiveXObject("Microsoft.XMLHTTP");
+						} catch(err3) {
+							request = false;
+						}
+					}
+				}
+				return request;
+			}
+			
+			function _ajax(file, func)
+			{
+				http.open("GET", "../pages/" + file + ".html", true);
+				
+				http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				http.setRequestHeader("Content-length", 0);
+				http.setRequestHeader("Connection", "close");
+				
+				http.onreadystatechange = function(){_getDataBack(func);};
+				
+				http.send();
+			}
+			
+			function _getDataBack(func)
+			{
+				if (http.readyState != 4 || (http.status != 200 && http.status != 0)) {
+					return false;
+				}
+				func(http.responseText);
+			}
+			
+		</script>
+		
+	</body>
+</html>

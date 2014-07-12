@@ -1,0 +1,80 @@
+h3.welcome
+{
+	display: block;
+	margin: 0px;
+	padding: 15px;
+	background-color: rgb(32,32,37);
+	text-align: center;
+	color: white;
+	font-size: 41px;
+}
+
+h3.welcome span.subtitle
+{
+	font-size: 24px;
+}
+
+.red_ink
+{
+	color: rgb(217,37,28);
+}
+
+div.welcomeback_content
+{
+	display: block;
+	margin: 0px;
+	padding: 0px 25px 35px 25px;
+	background-color: rgb(26,26,32);
+	color: white;
+}
+
+h4.welcomeback
+{
+	margin: 0px;
+	font-size: 32px;
+	color: white;
+	line-height: 50px;
+}
+h5.welcomeback
+{
+	margin: 0px;
+	font-size: 19px;
+	color: white;
+}
+a.welcomeback
+{
+	color: rgb(217,37,28);
+}
+
+div.preview
+{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	height: 490px;
+	background-image: url('../img/layer_282.png');
+	background-repeat: no-repeat;
+}
+
+a.previewlink
+{
+	display: block;
+	height: 140px;
+	padding: 20px 0px 20px 0px;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	text-align: center;
+	font-size: 39px;
+	line-height: 60px;
+	letter-spacing: 2px;
+}
+a.previewlink:hover
+{
+	
+}
+
+h4.center
+{
+	text-align: center;
+}
+

@@ -1,0 +1,94 @@
+.dd_zone { /* Drag-and-drop zone*/
+	position: relative;
+}
+
+.dd_zone span {
+	color: #a2afb5;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 15px;
+	font-family: "Open Sans";
+}
+
+.dd_zone .cloud_upload {
+	margin: auto;
+	display: block;
+	margin-bottom: 8px;
+}
+
+.dd_zone .close_dd { /* Close drag-and-drop */
+	position: absolute;
+	bottom: -1px;
+	right: -1px;
+	width: 40px;
+	height: 32px;
+	background-color: #da0a17;
+}
+
+.close_dd img {
+	margin-top: 5px;
+}
+
+#your_logos_header {
+	margin-top: 30px;
+	padding: 1px 50px 10px 50px;
+	background-color: #373737;
+}
+
+#your_logos {
+	background-color: white;
+	padding: 30px 25px 60px 25px;
+}
+
+#your_logos img.brand {
+	width: 120px;
+	height: 65px;
+	border: 1px solid rgba(102, 102, 102, 0.3);
+}
+
+.logos_row {
+	margin-bottom: 20px;
+}
+
+.assign_logos {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 208px;
+	height: 48px;
+	background-color: #d91515;
+	padding-top: 12px;
+	text-align: center;
+	font-size: 19px;
+	color: #ffffff;
+	position: relative;
+}
+
+#right_arrow_logos {
+	position: absolute;
+	right: 8px;
+	top:13px;
+	height: 22px;
+	width: 12px;
+}
+
+#ok_logos {
+	position: absolute;
+	left: 10px;
+	top:16px;
+	height: 19px;
+	width: 19px;
+}
+
+#your_logos_header h2 {
+	color: white;
+	text-align: center;
+}
+
+#your_logos_header p {
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 21px;
+}
