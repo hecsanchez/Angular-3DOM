@@ -623,8 +623,12 @@ div.ps_recap2 span.date
 	position: absolute;
 }
 
+#project_model_image{
+	text-align: center;
+}
+
 #project_scene_image img, #project_model img{
-	width: 100%;
+	width: auto;
 }
 
 #project_model_text{
