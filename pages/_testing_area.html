@@ -35,10 +35,13 @@
 		
 		<br /><br /><br /><br /><br /><br /><br /><br /><br />
 		
-		<a id="_signIn" href="#">Sign In</a><br />
-		<a id="_welcomeBack" href="#">Welcome Back</a><br />
-		<a id="_welcomeBackNew" href="#">Welcome Back New</a><br />
-		<a id="_welcomeBackNewFeatures" href="#">Welcome Back - New Features</a>
+		<a id="_signIn" href="#">Sign In</a><br>
+		<a id="_welcomeBack" href="#">Welcome Back</a><br>
+		<a id="_welcomeBackNew" href="#">Welcome Back New</a><br>
+		<a id="_welcomeBackNewFeatures" href="#">Welcome Back - New Features</a><br>
+		<a id="_projectcreation1a" href="#">Project Creation 1a</a><br>
+		<a id="_projectcreation2" href="#">Project Creation 2</a><br>
+		<a id="_projectcreation3" href="#">Project Creation 3</a><br>
 		
 		<div id="hombre">
 			<div id="popup">
@@ -53,6 +56,9 @@
 			var _welcomeBack = document.getElementById("_welcomeBack");
 			var _welcomeBackNew = document.getElementById("_welcomeBackNew");
 			var _welcomeBackNewFeatures = document.getElementById("_welcomeBackNewFeatures");
+			var _projectcreation1a = document.getElementById("_projectcreation1a");
+			var _projectcreation2 = document.getElementById("_projectcreation2");
+			var _projectcreation3 = document.getElementById("_projectcreation3");
 			var hombre = document.getElementById("hombre");
 			var popup_content = document.getElementById("popup_content");
 			var http = _getXMLHTTPRequest();
@@ -63,6 +69,9 @@
 			_welcomeBack.onclick = function(){_appear("welcomeback")};
 			_welcomeBackNew.onclick = function(){_appear("welcomebacknew")};
 			_welcomeBackNewFeatures.onclick = function(){_appear("welcomebacknewfeatures")};
+			_projectcreation1a.onclick = function(){_appear("projectcreation1a")};
+			_projectcreation2.onclick = function(){_appear("projectcreation2")};
+			_projectcreation3.onclick = function(){_appear("projectcreation3")};
 			
 			function _appear(page)
 			{
