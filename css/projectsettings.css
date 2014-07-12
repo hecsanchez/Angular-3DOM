@@ -445,14 +445,28 @@ div.ps_recap2 span.date
 	margin-right: 8px;
 }
 
-#overview_image_left img{
-	width: 100%;
+#details .tile{
+	padding: 0;
+	width: 48.7%;
+}
+
+#details .tile:nth-child(odd){
+	margin-right: 20px;
+}
+
+#overview_tile{
+	border-bottom: 1px solid #d3d3d3;
 }
 
 #overview_tile .presentation_list{
-	padding-top: 5px;
+	border-top: 1px solid rgba(102, 102, 102, 0.3);
+	margin-top: 5px;
+	padding-top: 0;
 }
 
+#overview_tile .presentation_list a:last-child div{
+	border-bottom: 0;
+}
 #overview_tile .presentation_img{
 	height: 100%;
 }
@@ -488,6 +502,7 @@ div.ps_recap2 span.date
 
 #overview_part_footer{
 	padding: 0px 5px;
+	margin: 5px 0 10px;
 }
 
 #overview_footer_line{
@@ -498,11 +513,17 @@ div.ps_recap2 span.date
 
 #overview_footer_line a, #overview_footer_line span{
 	height: 100%;
-	padding-left: 10px;
+}
+
+#overview_footer_line a{
+	padding-right: 35px;
+}
+#overview_footer_line span{
+	padding-right: 20px;
 }
 
 #overview_footer_line img{
-	margin-right: 8px;
+	margin-left: 5px;
 }
 
 #project_screen_shots img, #Livery_designs img, #project_setting_project_logos img{
@@ -633,16 +654,15 @@ div.ps_recap2 span.date
 }
 
 #launch_project_image img{
-	width: 102%;
+	width: 100%;
 	padding: 0px;
-	margin: -4px 0px 0px -4px;
 }
 
 #launch_project_button
 {
 	display: block;
 	position: absolute;
-	left: 15px;
+	left: 4px;
 	top: 120px;
 	padding: 5px 5px 5px 50px;
 	background-color: #e42e22;

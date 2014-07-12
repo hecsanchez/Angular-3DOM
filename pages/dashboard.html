@@ -1,18 +1,24 @@
-
-<div id="subheader">
-	<div class="wrapper">
-		<span class="subheader_block" id="collaborators">
-			Collaborators <sup>+</sup>
-		</span>
-		<span class="subheader_block" id="projects_number">
-			<span class="projects_number"> 6 </span> Projects
-		</span>
-	</div>
-</div> 	
-
+	<div>
+		<div class="subheader" id="subheader">
+            <div class="wrapper">
+                <span class="subheader_block" id="collaborators">
+                   <a href=""> Collaborators <sup>+</sup></a>
+                </span>
+                
+                <span class="subheader_block" id="projects_number">
+                    <span class="projects_number"> 6 </span> Projects
+                </span>
+                
+                <span class="subheader_block" id="new-project">
+                    <a class="btn blue_button">Create new project</a>
+                </span>
+	           
+            </div>
+        </div>  
+    </div>
 <div class="container-fluid dashboard" id="content">
 	<div class="wrapper">
-		<div class="row fb">
+		<div class="row">
 			<div class="col-md-4" id="profil">
 				<div class="" id="profilImage">
 					<img src="img/profile_large.png"  alt="profil Image">
@@ -115,19 +121,19 @@
 					</div>
 
 					<div class="presentation_list col-md-6">
-						<a class="presentation_item" href="#">
+						<a class="presentation_item" href="#projectselected">
 							<div class="presentation_item border_bottom active_project_link">
 								<div class="icon-bg highlight">
-									<img id="computer_download" src="img/icon_presentation_01.png" alt="">
+									<img class="menu-icon" id="computer_download" src="img/icon_presentation_01.png" alt="">
 								</div>
 								<span class="dashboard_presentation_content">Load Project</span>
 								<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
 							</div>
 						</a>
-						<a href="#">
+						<a href="#projectsettings">
 							<div class="presentation_item border_bottom active_project_link">
 								<div class="icon-bg">
-									<img id="computer_download" src="img/icon_presentation_02.png" alt="">
+									<img class="menu-icon" id="cog" src="img/icon_presentation_02.png" alt="">
 								</div>
 								<span class="dashboard_presentation_content">Settings</span>
 								<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
@@ -136,7 +142,7 @@
 						<a href="#">
 							<div class="presentation_item border_bottom active_project_link">
 								<div class="icon-bg">
-									<img id="computer_download" src="img/dashboard/POLAROIDS.png" alt="">
+									<img class="menu-icon" id="polaroid" src="img/dashboard/POLAROIDS.png" alt="">
 								</div>
 								<span class="dashboard_presentation_content">Clone Project</span>
 								<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
@@ -145,7 +151,7 @@
 						<a href="#">
 							<div class="presentation_item border_bottom active_project_link">
 								<div class="icon-bg">
-									<img id="computer_download" src="img/dashboard/SHUFFLE.png" alt="">
+									<img class="menu-icon" id="share" src="img/dashboard/SHUFFLE.png" alt="">
 								</div>
 								<span class="dashboard_presentation_content">Share Project</span>
 								<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
@@ -154,7 +160,7 @@
 						<a href="#">
 							<div class="presentation_item border_bottom active_project_link">
 								<div class="icon-bg">
-									<img id="computer_download" src="img/dashboard/CIRCLE_DELETE.png" alt="">
+									<img class="menu-icon" id="delete" src="img/dashboard/CIRCLE_DELETE.png" alt="">
 								</div>
 								<span class="dashboard_presentation_content">Delete Project</span>
 								<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
@@ -182,19 +188,19 @@
 					</div>
 
 					<div class="presentation_list col-md-6">
-						<a href="#">
+						<a class="presentation_item" href="#projectselected">
 							<div class="presentation_item border_bottom active_project_link">
 								<div class="icon-bg highlight">
-									<img id="computer_download" src="img/icon_presentation_01.png" alt="">
+									<img class="menu-icon" id="computer_download" src="img/icon_presentation_01.png" alt="">
 								</div>
 								<span class="dashboard_presentation_content">Load Project</span>
 								<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
 							</div>
 						</a>
-						<a href="#">
+						<a href="#projectsettings">
 							<div class="presentation_item border_bottom active_project_link">
 								<div class="icon-bg">
-									<img id="computer_download" src="img/icon_presentation_02.png" alt="">
+									<img class="menu-icon" id="cog" src="img/icon_presentation_02.png" alt="">
 								</div>
 								<span class="dashboard_presentation_content">Settings</span>
 								<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
@@ -203,7 +209,7 @@
 						<a href="#">
 							<div class="presentation_item border_bottom active_project_link">
 								<div class="icon-bg">
-									<img id="computer_download" src="img/dashboard/POLAROIDS.png" alt="">
+									<img class="menu-icon" id="polaroid" src="img/dashboard/POLAROIDS.png" alt="">
 								</div>
 								<span class="dashboard_presentation_content">Clone Project</span>
 								<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
@@ -212,7 +218,7 @@
 						<a href="#">
 							<div class="presentation_item border_bottom active_project_link">
 								<div class="icon-bg">
-									<img id="computer_download" src="img/dashboard/SHUFFLE.png" alt="">
+									<img class="menu-icon" id="share" src="img/dashboard/SHUFFLE.png" alt="">
 								</div>
 								<span class="dashboard_presentation_content">Share Project</span>
 								<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
@@ -221,7 +227,7 @@
 						<a href="#">
 							<div class="presentation_item border_bottom active_project_link">
 								<div class="icon-bg">
-									<img id="computer_download" src="img/dashboard/CIRCLE_DELETE.png" alt="">
+									<img class="menu-icon" id="delete" src="img/dashboard/CIRCLE_DELETE.png" alt="">
 								</div>
 								<span class="dashboard_presentation_content">Delete Project</span>
 								<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">

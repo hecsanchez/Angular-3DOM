@@ -1,509 +1,513 @@
-
 <div id="subheader">
-	<span class="subheader_block" id="collaborators">
-		Collaborators <sup>+</sup>
-	</span>
-	<span class="subheader_block" id="projects_number">
-		<span class="projects_number"> 6 </span> Projects
-	</span>
+    <div class="wrapper">
+        <span class="subheader_block" id="collaborators">
+            Collaborators <sup>+</sup>
+        </span>
+        <span class="subheader_block" id="projects_number">
+            <span class="projects_number"> 6 </span> Projects
+        </span>
+    </div>
 </div>
+<div class="wrapper">
+	<div class="pretitle">
+		<h3 class="pretitle">Sam's 1st project</h3>
+		<span class="psa_key">Project created :</span> 12.04.2014<br />
+		<span class="psa_key">Created by :</span> Jean-Gustave PLUTROSKATROSTKY
+		
+		<div class="tabs">
+			<h4 class="tabstitle">Options</h4>
+			<a class="tab" ng-click="tab=1">
+				<img alt="Screen" src="img/project_presentation.png" />
+				Details
+			</a>
+			<a class="tab" ng-click="tab=2">
+				<img alt="Screen" src="img/project_comments.png" />
+				Comments
+			</a>
+			<a class="tab" ng-click="tab=3">
+				<img alt="Screen" src="img/project_sponsor.png" />
+				Activity
+			</a>
+		</div>
+	</div>
 
-<div class="pretitle">
-	<h3 class="pretitle">Sam's 1st project</h3>
-	<span class="psa_key">Project created :</span> 12.04.2014<br />
-	<span class="psa_key">Created by :</span> Jean-Gustave PLUTROSKATROSTKY
-	
-	<div class="tabs">
-		<h4 class="tabstitle">Options</h4>
-		<a class="tab" ng-click="tab=1">
-			<img alt="Screen" src="img/project_presentation.png" />
-			Details
-		</a>
-		<a class="tab" ng-click="tab=2">
-			<img alt="Screen" src="img/project_comments.png" />
-			Comments
-		</a>
-		<a class="tab" ng-click="tab=3">
-			<img alt="Screen" src="img/project_sponsor.png" />
+
+	<div id="activity" ng-show="tab==3">
+		<div class="ps_subtitle">
 			Activity
-		</a>
+		</div>
+		
+		<div class="ps_recap">
+			<h4 class="title">
+				<span class="bignumber"> 88 <span class="smallword">Comments</span> </span>
+				<span class="bignumber"> 8 <span class="smallword">Co-workers</span> </span>
+				<span class="bignumber"> 88 <span class="smallword">Views</span> </span>
+				
+				Sam's first cool <br />project
+			</h4>
+			<span class="psa_key white">Project created :</span> <span class="white">12.04.2014</span><br />
+			<span class="psa_key white">Created by :</span> <span class="white">Jean-Gustave PLUTROSKATROSTKY</span>
+		</div>
+		
+		<div class="activity p0">
+			<div class="activity_links">
+				<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/like.png" /></a>
+				<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/paperplane.png" /></a>
+			</div>
+			<div class="timeandpic">
+				<div class="horizline"></div>
+				<span class="date">9:15 <span class="smaller">am</span></span>
+				<img alt="face" src="img/dude1.png" />
+			</div>
+			<div class="activity_content">
+				<h4>Captained Italy</h4>
+				<span class="date">16.06.2014</span>
+				<p class="simple">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div>
+		</div>
+		<div class="activity p1">
+			<div class="activity_links">
+				<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/like.png" /></a>
+				<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/paperplane.png" /></a>
+			</div>
+			<div class="timeandpic">
+				<div class="horizline"></div>
+				<span class="date">9:15 <span class="smaller">am</span></span>
+				<img alt="face" src="img/dude1.png" />
+			</div>
+			<div class="activity_content">
+				<h4>Dominated the game</h4>
+				<span class="date">16.06.2014</span>
+				<p class="simple">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<form method="post">
+					<textarea class="ativitycomment" name="comment"></textarea>
+					<input class="subativitycomment" type="submit" name="suComment" value="Add comment" />
+				</form>
+			</div>
+		</div>
+		<div class="activity p0">
+			<div class="activity_links">
+				<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/like.png" /></a>
+				<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/paperplane.png" /></a>
+			</div>
+			<div class="timeandpic">
+				<div class="horizline"></div>
+				<span class="date">9:15 <span class="smaller">am</span></span>
+				<img alt="face" src="img/dude1.png" />
+			</div>
+			<div class="activity_content">
+				<h4>Hit the crossbar</h4>
+				<span class="date">16.06.2014</span>
+				<p class="simple">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div>
+		</div>
+		<div class="activity redpinkbg">
+			<div class="activity_links">
+				<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/like.png" /></a>
+				<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/paperplane.png" /></a>
+			</div>
+			<div class="timeandpic">
+				<div class="horizline"></div>
+				<span class="date">9:15 <span class="smaller">am</span></span>
+				<img alt="face" src="img/dude2.png" />
+			</div>
+			<div class="activity_content">
+				<h4>Reply from Sam Marks</h4>
+				<p class="simple">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+					irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+					deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</div>
+		<div class="activity p1">
+			<div class="activity_links">
+				<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/like.png" /></a>
+				<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/paperplane.png" /></a>
+			</div>
+			<div class="timeandpic">
+				<div class="horizline"></div>
+				<span class="date">9:15 <span class="smaller">am</span></span>
+				<img alt="face" src="img/dude2.png" />
+			</div>
+			<div class="activity_content">
+				<h4>New livery design added</h4>
+				<span class="date">16.06.2014</span>
+				<p class="simple">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div>
+		</div>
+		<div class="activity p0">
+			<div class="activity_links">
+				<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/like.png" /></a>
+				<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/paperplane.png" /></a>
+			</div>
+			<div class="timeandpic">
+				<div class="horizline"></div>
+				<span class="date">9:15 <span class="smaller">am</span></span>
+				<img alt="face" src="img/dude1.png" />
+			</div>
+			<div class="activity_content">
+				<h4>New livery design added</h4>
+				<span class="date">16.06.2014</span>
+				<p class="simple">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div>
+		</div>
+		
 	</div>
-</div>
-
-
-<div id="activity" ng-show="tab==3">
-	<div class="ps_subtitle">
-		Activity
-	</div>
-	
-	<div class="ps_recap">
-		<h4 class="title">
-			<span class="bignumber"> 88 <span class="smallword">Comments</span> </span>
-			<span class="bignumber"> 8 <span class="smallword">Co-workers</span> </span>
-			<span class="bignumber"> 88 <span class="smallword">Views</span> </span>
-			
-			Sam's first cool <br />project
-		</h4>
-		<span class="psa_key white">Project created :</span> <span class="white">12.04.2014</span><br />
-		<span class="psa_key white">Created by :</span> <span class="white">Jean-Gustave PLUTROSKATROSTKY</span>
-	</div>
-	
-	<div class="activity p0">
-		<div class="activity_links">
-			<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/like.png" /></a>
-			<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/paperplane.png" /></a>
+	<div id="comments" ng-show="tab==2">
+		<div class="ps_subtitle">
+			Comments
 		</div>
-		<div class="timeandpic">
-			<div class="horizline"></div>
-			<span class="date">9:15 <span class="smaller">am</span></span>
-			<img alt="face" src="img/dude1.png" />
-		</div>
-		<div class="activity_content">
-			<h4>Captained Italy</h4>
-			<span class="date">16.06.2014</span>
-			<p class="simple">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-		</div>
-	</div>
-	<div class="activity p1">
-		<div class="activity_links">
-			<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/like.png" /></a>
-			<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/paperplane.png" /></a>
-		</div>
-		<div class="timeandpic">
-			<div class="horizline"></div>
-			<span class="date">9:15 <span class="smaller">am</span></span>
-			<img alt="face" src="img/dude1.png" />
-		</div>
-		<div class="activity_content">
-			<h4>Dominated the game</h4>
-			<span class="date">16.06.2014</span>
-			<p class="simple">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-			<form method="post">
-				<textarea class="ativitycomment" name="comment"></textarea>
+		<div class="ps_content">
+			<div class="ps_recap2">
+				<span class="date">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16.04.2014</span>
+				<img class="face" alt="face" src="img/dude3.png" />
+				<div class="activity_contentsmall activity_contentsmall2">
+					<h5>Comment by: Adam Grist</h5>
+					<p class="simple">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						<br /><br />
+						<a class="actionlinks actionlinks2" href="#">Reply <img alt="reply" src="img/reply.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<a class="actionlinks actionlinks2" href="#">Delete <img alt="reply" src="img/delete.png" /></a>
+					</p>
+				</div>
+			</div>
+			<div class="activity p0">
+				<div class="timeandpicsmall">
+					<div class="horizlinesmall"></div>
+					<img alt="face" src="img/dude1.png" />
+				</div>
+				<div class="activity_contentsmall">
+					<h4>Michel Michel commented:</h4>
+					<span class="date">16.06.2014</span>
+					<p class="simple">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						<br /><br />
+						<a class="actionlinks" href="#">Reply <img alt="reply" src="img/reply.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<a class="actionlinks" href="#">Delete <img alt="reply" src="img/delete.png" /></a>
+					</p>
+				</div>
+			</div>
+			<div class="activity p1">
+				<div class="timeandpicsmall">
+					<div class="horizlinesmall"></div>
+					<img alt="face" src="img/dude1.png" />
+				</div>
+				<div class="activity_contentsmall">
+					<h4>Michel Michel commented:</h4>
+					<span class="date">16.06.2014</span>
+					<p class="simple">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						<br /><br />
+						<a class="actionlinks" href="#">Reply <img alt="reply" src="img/reply.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<a class="actionlinks" href="#">Delete <img alt="reply" src="img/delete.png" /></a>
+					</p>
+				</div>
+			</div>
+			<div class="activity p0">
+				<div class="timeandpicsmall">
+					<div class="horizlinesmall"></div>
+					<img alt="face" src="img/dude1.png" />
+				</div>
+				<div class="activity_contentsmall">
+					<h4>Michel Michel commented:</h4>
+					<span class="date">16.06.2014</span>
+					<p class="simple">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						<br /><br />
+						<a class="actionlinks" href="#">Reply <img alt="reply" src="img/reply.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<a class="actionlinks" href="#">Delete <img alt="reply" src="img/delete.png" /></a>
+					</p>
+				</div>
+			</div>
+			<div class="activity p1">
+				<div class="timeandpicsmall">
+					<div class="horizlinesmall"></div>
+					<img alt="face" src="img/dude1.png" />
+				</div>
+				<div class="activity_contentsmall">
+					<h4>Michel Michel commented:</h4>
+					<span class="date">16.06.2014</span>
+					<p class="simple">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						<br /><br />
+						<a class="actionlinks" href="#">Reply <img alt="reply" src="img/reply.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<a class="actionlinks" href="#">Delete <img alt="reply" src="img/delete.png" /></a>
+					</p>
+				</div>
+			</div>
+			<div class="commentbar">
+				<span class="img redpinkbg"><img alt="comment" src="img/document_add.png" /></span>
+				Add your own comment
+			</div>
+			<form class="postcomment" method="post">
+				<p class="small">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<textarea class="ativitycommentbig" name="comment"></textarea>
 				<input class="subativitycomment" type="submit" name="suComment" value="Add comment" />
 			</form>
 		</div>
 	</div>
-	<div class="activity p0">
-		<div class="activity_links">
-			<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/like.png" /></a>
-			<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/paperplane.png" /></a>
-		</div>
-		<div class="timeandpic">
-			<div class="horizline"></div>
-			<span class="date">9:15 <span class="smaller">am</span></span>
-			<img alt="face" src="img/dude1.png" />
-		</div>
-		<div class="activity_content">
-			<h4>Hit the crossbar</h4>
-			<span class="date">16.06.2014</span>
-			<p class="simple">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-		</div>
-	</div>
-	<div class="activity redpinkbg">
-		<div class="activity_links">
-			<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/like.png" /></a>
-			<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/paperplane.png" /></a>
-		</div>
-		<div class="timeandpic">
-			<div class="horizline"></div>
-			<span class="date">9:15 <span class="smaller">am</span></span>
-			<img alt="face" src="img/dude2.png" />
-		</div>
-		<div class="activity_content">
-			<h4>Reply from Sam Marks</h4>
-			<p class="simple">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-				irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-				deserunt mollit anim id est laborum.
-			</p>
-		</div>
-	</div>
-	<div class="activity p1">
-		<div class="activity_links">
-			<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/like.png" /></a>
-			<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/paperplane.png" /></a>
-		</div>
-		<div class="timeandpic">
-			<div class="horizline"></div>
-			<span class="date">9:15 <span class="smaller">am</span></span>
-			<img alt="face" src="img/dude2.png" />
-		</div>
-		<div class="activity_content">
-			<h4>New livery design added</h4>
-			<span class="date">16.06.2014</span>
-			<p class="simple">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-		</div>
-	</div>
-	<div class="activity p0">
-		<div class="activity_links">
-			<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/like.png" /></a>
-			<a class="activity_links redpinkbg" href="#"><img alt="Like" src="img/paperplane.png" /></a>
-		</div>
-		<div class="timeandpic">
-			<div class="horizline"></div>
-			<span class="date">9:15 <span class="smaller">am</span></span>
-			<img alt="face" src="img/dude1.png" />
-		</div>
-		<div class="activity_content">
-			<h4>New livery design added</h4>
-			<span class="date">16.06.2014</span>
-			<p class="simple">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-		</div>
-	</div>
-	
-</div>
-<div id="comments" ng-show="tab==2">
-	<div class="ps_subtitle">
-		Comments
-	</div>
-	<div class="ps_content">
-		<div class="ps_recap2">
-			<span class="date">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16.04.2014</span>
-			<img class="face" alt="face" src="img/dude3.png" />
-			<div class="activity_contentsmall activity_contentsmall2">
-				<h5>Comment by: Adam Grist</h5>
-				<p class="simple">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					<br /><br />
-					<a class="actionlinks actionlinks2" href="#">Reply <img alt="reply" src="img/reply.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a class="actionlinks actionlinks2" href="#">Delete <img alt="reply" src="img/delete.png" /></a>
-				</p>
-			</div>
-		</div>
-		<div class="activity p0">
-			<div class="timeandpicsmall">
-				<div class="horizlinesmall"></div>
-				<img alt="face" src="img/dude1.png" />
-			</div>
-			<div class="activity_contentsmall">
-				<h4>Michel Michel commented:</h4>
-				<span class="date">16.06.2014</span>
-				<p class="simple">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					<br /><br />
-					<a class="actionlinks" href="#">Reply <img alt="reply" src="img/reply.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a class="actionlinks" href="#">Delete <img alt="reply" src="img/delete.png" /></a>
-				</p>
-			</div>
-		</div>
-		<div class="activity p1">
-			<div class="timeandpicsmall">
-				<div class="horizlinesmall"></div>
-				<img alt="face" src="img/dude1.png" />
-			</div>
-			<div class="activity_contentsmall">
-				<h4>Michel Michel commented:</h4>
-				<span class="date">16.06.2014</span>
-				<p class="simple">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					<br /><br />
-					<a class="actionlinks" href="#">Reply <img alt="reply" src="img/reply.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a class="actionlinks" href="#">Delete <img alt="reply" src="img/delete.png" /></a>
-				</p>
-			</div>
-		</div>
-		<div class="activity p0">
-			<div class="timeandpicsmall">
-				<div class="horizlinesmall"></div>
-				<img alt="face" src="img/dude1.png" />
-			</div>
-			<div class="activity_contentsmall">
-				<h4>Michel Michel commented:</h4>
-				<span class="date">16.06.2014</span>
-				<p class="simple">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					<br /><br />
-					<a class="actionlinks" href="#">Reply <img alt="reply" src="img/reply.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a class="actionlinks" href="#">Delete <img alt="reply" src="img/delete.png" /></a>
-				</p>
-			</div>
-		</div>
-		<div class="activity p1">
-			<div class="timeandpicsmall">
-				<div class="horizlinesmall"></div>
-				<img alt="face" src="img/dude1.png" />
-			</div>
-			<div class="activity_contentsmall">
-				<h4>Michel Michel commented:</h4>
-				<span class="date">16.06.2014</span>
-				<p class="simple">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					<br /><br />
-					<a class="actionlinks" href="#">Reply <img alt="reply" src="img/reply.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a class="actionlinks" href="#">Delete <img alt="reply" src="img/delete.png" /></a>
-				</p>
-			</div>
-		</div>
-		<div class="commentbar">
-			<span class="img redpinkbg"><img alt="comment" src="img/document_add.png" /></span>
-			Add your own comment
-		</div>
-		<form class="postcomment" method="post">
-			<p class="small">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-			<textarea class="ativitycommentbig" name="comment"></textarea>
-			<input class="subativitycomment" type="submit" name="suComment" value="Add comment" />
-		</form>
-	</div>
-</div>
 
 
 
 
 
 
-<div class="container-fluid project_settings" id="details" ng-show="tab==1">
-	<div class="row" id="overview">	
-		<div class="tile col-md-6">
-			<div class="tile_title">
-				Overview
-			</div>
-			<div class="tile_content" id="overview_tile">
-				<div class="presentation_intro border_bottom" id="activeProjectsInformation">
-					<span class="little_title col-md-6">Project created: </span>
-					<span class="col-md-6">12.04.2014</span>
-					<span class="little_title col-md-6">Created by: </span>
-					<span class="col-md-6">Sam Marks</span>
+	<div class="container-fluid project_settings" id="details" ng-show="tab==1">
+		<div class="row" id="overview">	
+			<div class="tile col-md-6">
+				<div class="tile_title">
+					Overview
 				</div>
+				<div class="" id="overview_tile">
+					
+					<div class="presentation_img col-md-6" id="overview_image_left">
+						<img src="img/overview_image.png" alt="overview_1" />
+					</div>
 
-				<div class="presentation_img col-md-6" id="overview_image_left">
-					<img src="img/overview_image.png" alt="overview_1" />
-				</div>
-
-				<div class="presentation_list col-md-6">
-					<a href="#">
-						<div class="presentation_item border_bottom active_project_link">
-							<img id="computer_download" src="img/dashboard/POLAROIDS.png" alt="">
-							<span class="dashboard_presentation_content">Clone Project</span>
-							<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
+					<div class="presentation_list col-md-6">
+						<a href="#projectsettings">
+							<div class="presentation_item border_bottom active_project_link">
+								<div class="icon-bg">
+									<img class="menu-icon" id="cog" src="img/icon_presentation_02.png" alt="">
+								</div>
+								<span class="dashboard_presentation_content">Settings</span>
+								<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
+							</div>
+						</a>
+						<a href="#">
+							<div class="presentation_item border_bottom active_project_link">
+								<div class="icon-bg">
+									<img class="menu-icon" id="save" src="img/saved_files_white.png" alt="">
+								</div>
+								<span class="dashboard_presentation_content">Saved files</span>
+								<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
+							</div>
+						</a>
+						<a href="#">
+							<div class="presentation_item border_bottom active_project_link">
+								<div class="icon-bg">
+									<img class="menu-icon" id="share" src="img/dashboard/SHUFFLE.png" alt="">
+								</div>
+								<span class="dashboard_presentation_content">Share Project</span>
+								<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
+							</div>
+						</a>
+						<a href="#">
+							<div class="presentation_item border_bottom active_project_link">
+								<div class="icon-bg">
+									<img class="menu-icon" id="delete" src="img/dashboard/CIRCLE_DELETE.png" alt="">
+								</div>
+								<span class="dashboard_presentation_content">Delete Project</span>
+								<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-12" id="overview_part_footer">
+						<div class="" id="overview_footer">
+							<div class="" id="overview_footer_line">
+								<span id="overview_footer_line_title">Groups</span>
+								<span id="overview_footer_title">Lotus F1</span>
+								<a>View<img src="img/arrow_right_red.png" alt=""></a>
+								<a>Delete<img src="img/close_red.png" alt=""></a>
+								<a><img src="img/edit_red.png" alt="">Edit</a>
+								<div class="clearfix"></div>
+							</div>				
 						</div>
-					</a>
-					<a href="#">
-						<div class="presentation_item border_bottom active_project_link">
-							<img id="computer_download" src="img/dashboard/POLAROIDS.png" alt="">
-							<span class="dashboard_presentation_content">Saved files</span>
-							<img id="arrow_right" src="img/saved_files_white.png" alt=">">
-						</div>
-					</a>
-					<a href="#">
-						<div class="presentation_item border_bottom active_project_link">
-							<img id="computer_download" src="img/dashboard/SHUFFLE.png" alt="">
-							<span class="dashboard_presentation_content">Share Project</span>
-							<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
-						</div>
-					</a>
-					<a href="#">
-						<div class="presentation_item border_bottom active_project_link">
-							<img id="computer_download" src="img/dashboard/CIRCLE_DELETE.png" alt="">
-							<span class="dashboard_presentation_content">Delete Project</span>
-							<img id="arrow_right" src="img/dashboard/ARROW_RIGHT.png" alt=">">
-						</div>
-					</a>
-				</div>
-				<div class="col-md-12" id="overview_part_footer">
-					<div class="" id="overview_footer">
-						<div class="" id="overview_footer_line">
-							<span id="overview_footer_line_title">Groups</span>
-							<span id="overview_footer_title">Lotus F1</span>
-							<a>View<img src="img/arrow_right_red.png" alt=""></a>
-							<a>Delete<img src="img/close_red.png" alt=""></a>
-							<a><img src="img/edit_red.png" alt="">Edit</a>
-							<div class="clearfix"></div>
-						</div>				
+						<div class="clearfix"></div>
 					</div>
 					<div class="clearfix"></div>
 				</div>
-				<div class="clearfix"></div>
+			</div>
+			<div class="tile col-md-6" id="launch_project">
+				<a id="launch_project_button" href="#">
+					<img src="img/arrow_right_white.png" alt=">">
+					Launch<br />project
+				</a>
+				<div class="" id="launch_project_image">
+					<img src="img/launch_project.png" alt="img1">
+				</div>
 			</div>
 		</div>
-		<div class="tile col-md-6" id="launch_project">
-			<a id="launch_project_button" href="#">
-				<img src="img/arrow_right_white.png" alt=">">
-				Launch<br />project
-			</a>
-			<div class="tile_content" id="launch_project_image">
-				<img src="img/launch_project.png" alt="img1">
-			</div>
-		</div>
-	</div>
 
-	<div class="row">
-		<div class="tile col-md-6" id="project_model">
-			<div class="tile_title">
-				Project model
-			</div>
-			<div class="tile_content" id="project_model_top">
-				<div id="project_model_top_text">
-					<div class="project_settings_subtitle">
-						Ferrari 458 Italia GT
-					</div>
-					<div id="project_model_text">
-						<div id="project_model_text_title">
-							Stats
-						</div>
-						<div id="project_model_text_stats">
-							<span class="first_span">Surface area: 4.56m</span>
-							<span>Used: 3times</span>
-							<span class="last_span">Type: Super car</span>
-						</div>
-					</div>
+		<div class="row">
+			<div class="tile col-md-6" id="project_model">
+				<div class="tile_title">
+					Project model
 				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="tile_content" id="project_model_image">
-				<img src="img/project_model.png" alt="img1">
-			</div>
-		</div>
-		<div class="tile col-md-6" id="project_scene">
-			<div class="tile_title">
-				Project scene
-			</div>
-			<div class="tile_content" id="project_scene_top">
-				<div id="project_scene_top_text">
-					<div class="project_settings_subtitle">
-						Night street 2
-					</div>
-
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna.
-					</p>
-				</div>
-				<div class="dashboardButton">
-					<a href="">Change scene<img src="img/icon_presentation_02.png" alt=">"></a>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="tile_content" id="project_scene_image">
-				<img src="img/project_scene.png" alt="img1">
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="tile col-md-6" id="project_setting_project_logos">
-			<div class="tile_title">
-				Project logos
-			</div>
-			<div class="tile_content" id="project_setting_project_logos_images">
-				<img src="img/project_screen_shots_1.png" alt="img1">
-				<img src="img/project_screen_shots_2.png" alt="img2">
-				<img src="img/project_screen_shots_3.png" alt="img3">
-				<div class="expand_all">View all logos<a href="">[+]</a></div>
-			</div>
-			<div class="tile_content" id="project_setting_project_logos_footer">
-				<div class="dashboardButton">
-					<a href="">Assign logos<img src="img/circle_plus_white.png" alt=">"></a>
-				</div>
-				<div class="dashboardButton">
-					<a href="">Upload new logos<img src="img/circle_plus_white.png" alt=">"></a>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div class="tile col-md-6" id="project_screen_shots">
-			<div class="tile_title">
-				Project screen shots
-			</div>
-			<div class="tile_content">
-				<img src="img/project_screen_shots_1.png" alt="img1">
-				<img src="img/project_screen_shots_2.png" alt="img2">
-				<img src="img/project_screen_shots_3.png" alt="img3">
-				<img src="img/project_screen_shots_4.png" alt="img4">
-				<img src="img/project_screen_shots_5.png" alt="img5">
-				<img src="img/project_screen_shots_6.png" alt="img6">
-				<div class="expand_all">View all<a href="">[+]</a></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="tile col-md-6" id="project_setting_presentations">
-			<div class="tile_title">
-				Presentation
-				<div class="dashboardButton">
-					<a href="">Create new<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
-				</div>
-			</div>
-			<div class="tile_content" id="project_setting_presentations_content">
-				<div class="presentaion_project">
-					<img src="img/project_screen_shots_1.png" alt="img1">
-					<div class="presentaion_project_description">
+				<div class="tile_content" id="project_model_top">
+					<div id="project_model_top_text">
 						<div class="project_settings_subtitle">
-							Presentation name 1
+							Ferrari 458 Italia GT
 						</div>
+						<div id="project_model_text">
+							<div id="project_model_text_title">
+								Stats
+							</div>
+							<div id="project_model_text_stats">
+								<span class="first_span">Surface area: 4.56m</span>
+								<span>Used: 3times</span>
+								<span class="last_span">Type: Super car</span>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="tile_content" id="project_model_image">
+					<img src="img/project_model.png" alt="img1">
+				</div>
+			</div>
+			<div class="tile col-md-6" id="project_scene">
+				<div class="tile_title">
+					Project scene
+				</div>
+				<div class="tile_content" id="project_scene_top">
+					<div id="project_scene_top_text">
+						<div class="project_settings_subtitle">
+							Night street 2
+						</div>
+
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+							tempor incididunt ut labore et dolore magna.
 						</p>
 					</div>
-				</div>
-				<div class="clearfix"></div>
-				<div class="presentaion_project">
-					<img src="img/project_screen_shots_1.png" alt="img1">
-					<div class="presentaion_project_description">
-						<div class="project_settings_subtitle">
-							Presentation name 2
-						</div>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim 
-						</p>
+					<div class="dashboardButton">
+						<a href="">Change scene<img src="img/icon_presentation_02.png" alt=">"></a>
 					</div>
+					<div class="clearfix"></div>
 				</div>
-				<div class="clearfix"></div>
-				<div class="expand_all">View all<a href="">[+]</a></div>
+				<div class="tile_content" id="project_scene_image">
+					<img src="img/project_scene.png" alt="img1">
+				</div>
 			</div>
 		</div>
-		<div class="tile col-md-6" id="Livery_designs">
-			<div class="tile_title">
-				Livery designs
+
+		<div class="row">
+			<div class="tile col-md-6" id="project_setting_project_logos">
+				<div class="tile_title">
+					Project logos
+				</div>
+				<div class="tile_content" id="project_setting_project_logos_images">
+					<img src="img/project_screen_shots_1.png" alt="img1">
+					<img src="img/project_screen_shots_2.png" alt="img2">
+					<img src="img/project_screen_shots_3.png" alt="img3">
+					<div class="expand_all">View all logos<a href="">[+]</a></div>
+				</div>
+				<div class="tile_content" id="project_setting_project_logos_footer">
+					<div class="dashboardButton">
+						<a href="">Assign logos<img src="img/circle_plus_white.png" alt=">"></a>
+					</div>
+					<div class="dashboardButton">
+						<a href="">Upload new logos<img src="img/circle_plus_white.png" alt=">"></a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
 			</div>
-			<div class="tile_content" id="Livery_designs_content">
-				<img src="img/Livery_designs_1.png" alt="img1">
-				<img src="img/Livery_designs_2.png" alt="img2">
-				<img src="img/Livery_designs_3.png" alt="img3">
-				<img src="img/Livery_designs_4.png" alt="img4">
-				<img src="img/Livery_designs_5.png" alt="img5">
-				<img src="img/Livery_designs_6.png" alt="img6">
-				<div class="expand_all">View all<a href="">[+]</a></div>
+			<div class="tile col-md-6" id="project_screen_shots">
+				<div class="tile_title">
+					Project screen shots
+				</div>
+				<div class="tile_content">
+					<img src="img/project_screen_shots_1.png" alt="img1">
+					<img src="img/project_screen_shots_2.png" alt="img2">
+					<img src="img/project_screen_shots_3.png" alt="img3">
+					<img src="img/project_screen_shots_4.png" alt="img4">
+					<img src="img/project_screen_shots_5.png" alt="img5">
+					<img src="img/project_screen_shots_6.png" alt="img6">
+					<div class="expand_all">View all<a href="">[+]</a></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="tile col-md-6" id="project_setting_presentations">
+				<div class="tile_title">
+					Presentation
+					<div class="dashboardButton">
+						<a href="">Create new<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+					</div>
+				</div>
+				<div class="tile_content" id="project_setting_presentations_content">
+					<div class="presentaion_project">
+						<img src="img/project_screen_shots_1.png" alt="img1">
+						<div class="presentaion_project_description">
+							<div class="project_settings_subtitle">
+								Presentation name 1
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+							</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="presentaion_project">
+						<img src="img/project_screen_shots_1.png" alt="img1">
+						<div class="presentaion_project_description">
+							<div class="project_settings_subtitle">
+								Presentation name 2
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+							</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="expand_all">View all<a href="">[+]</a></div>
+				</div>
+			</div>
+			<div class="tile col-md-6" id="Livery_designs">
+				<div class="tile_title">
+					Livery designs
+				</div>
+				<div class="tile_content" id="Livery_designs_content">
+					<img src="img/Livery_designs_1.png" alt="img1">
+					<img src="img/Livery_designs_2.png" alt="img2">
+					<img src="img/Livery_designs_3.png" alt="img3">
+					<img src="img/Livery_designs_4.png" alt="img4">
+					<img src="img/Livery_designs_5.png" alt="img5">
+					<img src="img/Livery_designs_6.png" alt="img6">
+					<div class="expand_all">View all<a href="">[+]</a></div>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -17,10 +17,10 @@
     <script charset="utf-8" src="js/angular-route.min.js"></script>
     <script charset="utf-8" src="js/angular-animate.min.js"></script>
     <script charset="utf-8" src="js/ekko-lightbox.min.js"></script>
+    <script charset="utf-8" src="js/jquery-scrolltofixed-min.js"></script>
 
     <!-- Custom JS -->
     <script charset="utf-8" src="js/main.js"></script>
-
     <!-- CSS Librairies -->
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="Twitter Bootstrap - Grid" charset="utf-8">
     <link rel="stylesheet" href="css/ekko-lightbox.min.css" media="screen" charset="utf-8">
@@ -40,14 +40,13 @@
     <link rel="stylesheet" type="text/css" href="css/project.css" />
 </head>
 <body>
-    <div ng-show="alert" class="alert-zone">
+      <div ng-show="alert" class="alert-zone">
         <!-- Alerts zone -->
-        <span class="alert_content">
+            <span class="alert_content">
                 Alert
                 <a class="alert_close pull-right" ng-click="alert=false">X</a>
             </span>
         </div>
-        
         <header>
             <div class="wrapper">
                 <div id="fatty" class="hidden-xs hidden-sm fb">
@@ -312,7 +311,7 @@
         </div>
 
         <!-- Content -->
-        <div id="content">
+        <div id="page-content">
             <div ng-view></div>
         </div>
 
