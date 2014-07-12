@@ -37,7 +37,8 @@
 		
 		<a id="_signIn" href="#">Sign In</a><br />
 		<a id="_welcomeBack" href="#">Welcome Back</a><br />
-		<a id="_welcomeBackNew" href="#">Welcome Back New</a>
+		<a id="_welcomeBackNew" href="#">Welcome Back New</a><br />
+		<a id="_welcomeBackNewFeatures" href="#">Welcome Back - New Features</a>
 		
 		<div id="hombre">
 			<div id="popup">
@@ -51,6 +52,7 @@
 			var _signIn = document.getElementById("_signIn");
 			var _welcomeBack = document.getElementById("_welcomeBack");
 			var _welcomeBackNew = document.getElementById("_welcomeBackNew");
+			var _welcomeBackNewFeatures = document.getElementById("_welcomeBackNewFeatures");
 			var hombre = document.getElementById("hombre");
 			var popup_content = document.getElementById("popup_content");
 			var http = _getXMLHTTPRequest();
@@ -60,6 +62,7 @@
 			_signIn.onclick = function(){_appear("sign_in")};
 			_welcomeBack.onclick = function(){_appear("welcomeback")};
 			_welcomeBackNew.onclick = function(){_appear("welcomebacknew")};
+			_welcomeBackNewFeatures.onclick = function(){_appear("welcomebacknewfeatures")};
 			
 			function _appear(page)
 			{
