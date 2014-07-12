@@ -53,7 +53,7 @@ a.tab
 	font-size: 15px;
 }
 
-a.tab:hover, .active-ps
+a.tab:hover, a.tab.active
 {
 	background-color: rgb(190,190,190);
 }
@@ -375,34 +375,9 @@ div.ps_recap2 span.date
 	color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#project_model_top, #project_scene_top {
+	padding: 13px 9px 13px;
+}
 
 #project_settings_title{
 	color:  #373737;
@@ -448,14 +423,11 @@ div.ps_recap2 span.date
 #details .tile{
 	padding: 0;
 	width: 48.7%;
+	margin-bottom: 25px;
 }
 
 #details .tile:nth-child(odd){
 	margin-right: 20px;
-}
-
-#overview_tile{
-	border-bottom: 1px solid #d3d3d3;
 }
 
 #overview_tile .presentation_list{
@@ -526,12 +498,21 @@ div.ps_recap2 span.date
 	margin-left: 5px;
 }
 
+#project_screen_shots_images {
+	padding: 6px 15px;
+}
+
 #project_screen_shots img, #Livery_designs img, #project_setting_project_logos img{
 	margin: 4px;
 }
 
-#project_screen_shots .expand_all{
-	margin-left: 7px;
+#project_screen_shots .expand_all {
+	padding: 1px 22px 11px;
+}
+
+#project_setting_project_logos .expand_all {
+	padding: 8px 15px;
+	border-bottom: 1px solid #d3d3d3;
 }
 
 .presentaion_project{
@@ -571,10 +552,12 @@ div.ps_recap2 span.date
 
 #project_setting_presentations_content, #Livery_designs_content{
 	min-height: 210px;
+	padding: 15px;
 }
 
 #project_setting_project_logos_images{
 	margin-bottom: 1px;
+	padding: 8px;
 }
 
 #project_setting_project_logos_footer .dashboardButton{
@@ -594,8 +577,8 @@ div.ps_recap2 span.date
 	top: 0%;
 }
 
-#project_scene_top{
-		
+#Livery_designs_content div.expand_all {
+margin: 7px;
 }
 
 #project_scene_top_text{
@@ -623,8 +606,9 @@ div.ps_recap2 span.date
 	position: absolute;
 }
 
-#project_model_image{
+#project_model_image, #project_scene_image{
 	text-align: center;
+	margin-bottom: 16px;
 }
 
 #project_scene_image img, #project_model img{
@@ -667,26 +651,31 @@ div.ps_recap2 span.date
 	display: block;
 	position: absolute;
 	left: 4px;
-	top: 120px;
-	padding: 5px 5px 5px 50px;
+	top: 84px;
+	padding: 5px 54px 10px 50px;
 	background-color: #e42e22;
 	color:  #ffffff;
 	font-size: 26px;
-	font-weight: 400;
+	font-weight: 300;
+	line-height: 1;
 }
 
 #launch_project_button img
 {
 	display: block;
 	float: right;
-	margin: 30px 0px 0px 15px;
+	margin: 13px 0px 0px 9px;
 }
 
 #launch_project{
 	position: relative;
 }
 
-
+@media screen and (max-width: 991px){
+	#details .tile{
+		width: 100%;
+	}
+}
 
 
 

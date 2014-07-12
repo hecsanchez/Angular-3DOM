@@ -204,7 +204,7 @@ div.active_project_link:after {
 }
 
 #projects_groups_content{
-	height: 370px;
+
 }
 
 #projects_groups_content p{
@@ -228,14 +228,14 @@ div.active_project_link:after {
 }
 
 .link_project_group_line{
-
+	border-bottom: 1px solid #efefef;	
 	padding-bottom: 2px;
-	margin-bottom: 5px;
-	margin-top: 5px;
+	margin-bottom: 13px;
+	margin-top: 12px;
 }
 
 #projects_prensentation_content{
-	height: 370px;
+	
 }
 
 #projects_prensentation_content p{
@@ -269,14 +269,14 @@ width: 19.666667%;
 
 #your_logos_content{
 	margin: 0px;
-	height: 130px;
 }
 
 #your_logos_content .col-md-2 {
-width: 18.666667%;
-padding: 0px;
-margin-right: 5px;
-margin-left: 5px;
+	width: 18.666667%;
+	padding: 0px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 1em;
 }
 
 #your_logos_content img{
@@ -389,4 +389,8 @@ margin-left: 5px;
 
 #project_gallery, #you_might_like, #activeProjects, #projectGroups, #logoRepository{
 	margin-top: 20px;
+}
+
+#project_gallery img{
+	margin-bottom: 1em;
 }

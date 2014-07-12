@@ -88,6 +88,27 @@ ThreeDOMApp .controller('mainController', function($scope, $route, $rootScope, $
             })
             // Dashboard controller
             .controller('dashboardController', function($scope) {
+                $scope.togglePlusMinus = togglePlusMinus;
+                function togglePlusMinus(){
+                    var self = this;
+                    self.selectedIndex = 1;
+                    
+                    self.toggleSelect = function(ind){
+                        if( ind === self.selectedIndex ){
+                            self.selectedIndex = -1;
+                        } else{
+                            self.selectedIndex = ind;
+                        }
+                    }
+                       
+                    self.getButtonLabel = function(ind){
+                        if( ind === self.selectedIndex ){
+                            return "Collapse (-)";
+                        } else{
+                            return "-";
+                        }
+                    }
+                }
             })
             // Projects controller
             .controller('projectsController', function($scope) {

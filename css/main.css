@@ -67,6 +67,38 @@ h2.presentations
 a {
     cursor: pointer;
 }
+
+/*
+ * Flexbox
+ */
+
+.fb {
+	display: flex;
+	display: -webkit-flex;
+}
+
+.fb--wrap {
+	flex-wra: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.jc-sb {
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+
+.jc-sa{
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+}
+
+/*
+ * 
+ */
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
+	float: none;
+}
 .white
 {
 	color: white;
@@ -103,7 +135,7 @@ a, a:hover, a:active, a:focus {
 
 /* Tile style */
 .tile {
-	margin-top: 8px;
+	margin-top: 12px;
 }
 .simple_tile, .simple_tile h2 {
 	height: 50px;
@@ -127,6 +159,7 @@ a, a:hover, a:active, a:focus {
 	padding-top: 13px;
 	padding-bottom: 17px;
 	padding-left: 10px;
+	font-weight: 300;
 
 }
 .tile_title_black {
@@ -261,6 +294,9 @@ div.presentation_item {
 	display: flex;
 	display: -webkit-flex;
 }
+div.presentation_item:hover{
+	background: #F3F3F3;
+}
 div.presentation_item:after {
 	color: #ed5565;
 	content: '>';
@@ -287,7 +323,7 @@ span.presentation_content
 }
 #arrow_right{
 	position: absolute;
-	right: 0px;
+	right: 10px;
 	top: 40%;
 }
 .blue_button {
@@ -505,15 +541,17 @@ span.presentation_content
 }
 
 .animate-hide {
-  -webkit-transition:all linear 0.5s;
-  transition:all linear 0.5s;
-  opacity:1;
+	opacity:1;
+	margin-top: 0;
+	-webkit-transition:all .3s;
+	transition:all .3s;
 }
 
 .animate-hide.ng-hide {
-  line-height:0;
-  opacity:0;
-  padding:0 10px;
+  	opacity:0;
+  	margin-top: -1em;
+  	-webkit-transition:all .3s;
+	transition:all .3s;
 }
 
 .loading_spinner {
@@ -521,6 +559,7 @@ span.presentation_content
   top: 50%;
   left: 45%;
   text-align: center;
+  z-index: 99;
 }
 .alert-zone {
 	background-color:  #5dc9e6;
@@ -583,7 +622,12 @@ div.icon-bg {
 	background: #55b369;
 }
 
-.fb{
-	display: flex;
-	display: -webkit-flex;
+
+i.expand:before {
+content: '+';
 }
+
+i.expand.expanded:before {
+content: '-';
+}
+
