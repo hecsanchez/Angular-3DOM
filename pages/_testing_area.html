@@ -44,6 +44,7 @@
 		<a id="_projectcreation3" href="#">Project Creation 3</a><br>
 		<a id="_projectcreation4" href="#">Project Creation 4</a><br>
 		<a id="_projectcreation5" href="#">Project Creation 5</a><br>
+		<a id="_assignlogostoprojects" href="#">Assign logos to projects</a><br>
 		
 		<div id="hombre">
 			<div id="popup">
@@ -63,6 +64,7 @@
 			var _projectcreation3 = document.getElementById("_projectcreation3");
 			var _projectcreation4 = document.getElementById("_projectcreation4");
 			var _projectcreation5 = document.getElementById("_projectcreation5");
+			var _assignlogostoprojects = document.getElementById("_assignlogostoprojects");
 			var hombre = document.getElementById("hombre");
 			var popup_content = document.getElementById("popup_content");
 			var http = _getXMLHTTPRequest();
@@ -78,6 +80,7 @@
 			_projectcreation3.onclick = function(){_appear("projectcreation3")};
 			_projectcreation4.onclick = function(){_appear("projectcreation4")};
 			_projectcreation5.onclick = function(){_appear("projectcreation5")};
+			_assignlogostoprojects.onclick = function(){_appear("assignlogostoprojects")};
 			
 			function _appear(page)
 			{
