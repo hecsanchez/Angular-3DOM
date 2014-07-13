@@ -46,6 +46,9 @@
 		<a id="_projectcreation5" href="#">Project Creation 5</a><br>
 		<a id="_assignlogostoprojects" href="#">Assign logos to projects</a><br>
 		<a id="_requestdesigner" href="#">Request a designer</a><br>
+		<a id="_requestamodel" href="#">Request a model</a><br>
+		<a id="_addcollabs" href="#">Add Collaborators</a><br>
+		<a id="_shareemail" href="#">Share email</a><br>
 		
 		<div id="hombre">
 			<div id="popup">
@@ -67,6 +70,9 @@
 			var _projectcreation5 = document.getElementById("_projectcreation5");
 			var _assignlogostoprojects = document.getElementById("_assignlogostoprojects");
 			var _requestdesigner = document.getElementById("_requestdesigner");
+			var _requestamodel = document.getElementById("_requestamodel");
+			var _addcollabs = document.getElementById("_addcollabs");
+			var _shareemail = document.getElementById("_shareemail");
 			var hombre = document.getElementById("hombre");
 			var popup_content = document.getElementById("popup_content");
 			var http = _getXMLHTTPRequest();
@@ -84,6 +90,9 @@
 			_projectcreation5.onclick = function(){_appear("projectcreation5")};
 			_assignlogostoprojects.onclick = function(){_appear("assignlogostoprojects")};
 			_requestdesigner.onclick = function(){_appear("requestdesigner")};
+			_requestamodel.onclick = function(){_appear("requestamodel")};
+			_addcollabs.onclick = function(){_appear("_addcollabs")};
+			_shareemail.onclick = function(){_appear("_shareemail")};
 			
 			function _appear(page)
 			{
