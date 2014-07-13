@@ -1,4 +1,4 @@
-// Create the app
+2// Create the app
 var ThreeDOMApp = angular.module('ThreeDOMApp', ['ngRoute', 'ngAnimate']);
 
 // Configure the routes
@@ -84,10 +84,8 @@ ThreeDOMApp .controller('mainController', function($scope, $route, $rootScope, $
                     return route === $location.path();
                 };
                 $scope.sign_in = false;
+                $scope.newProject = false;
                 $scope.alert = true;
-            })
-            // Dashboard controller
-            .controller('dashboardController', function($scope) {
                 $scope.togglePlusMinus = togglePlusMinus;
                 function togglePlusMinus(){
                     var self = this;
@@ -109,6 +107,10 @@ ThreeDOMApp .controller('mainController', function($scope, $route, $rootScope, $
                         }
                     }
                 }
+            })
+            // Dashboard controller
+            .controller('dashboardController', function($scope) {
+                
             })
             // Projects controller
             .controller('projectsController', function($scope) {

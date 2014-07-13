@@ -519,6 +519,8 @@ span.presentation_content
 	left: 0px;
 	right: 0px;
 	background-color: rgba(0,0,0,0.9);
+	z-index: 9999;
+	overflow: auto;
 }
 
 #popup
@@ -630,4 +632,210 @@ content: '+';
 i.expand.expanded:before {
 content: '-';
 }
+
+
+/* ========================= *\
+	MODALS
+\* ========================= */
+
+
+/* SIGN IN  
+---------------------------- */
+
+.tile_content_popup {
+	display: block;
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	padding: 10px;
+	background-color: white;
+}
+
+.tile_content_popup.sign_in {
+	padding: 100px;
+}	
+
+#login_popup>img {
+	margin: auto;
+}
+
+#apps_login {
+	font-size: 41px;
+	font-weight: 400;
+	line-height: 20px;
+	color:  #202025;
+}
+
+#threedom_login {
+	display: block;
+	color:  #202025;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 17px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#login_popup p {
+	color:  #202025;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 60px;
+	padding-bottom: 20px;
+	text-align: left;
+}
+
+#login_name, #login_password {
+	background-color:  #ffffff;
+	width: 358px;
+	height: 35px;
+	margin-top: 20px;
+	padding-left: 30px;
+}
+
+#login_submit {
+	width: 358px;
+	height: 35px;
+	margin-top: 12px;
+	padding-left: 200px;
+	background-color:  #d9251c;
+	background-image: url('../img/arrow_right_white.png');
+	background-repeat: no-repeat;
+	background-position: 330px 10px;
+	color:  #ffffff;
+	font-size: 23px;
+	font-weight: 700;
+	border: solid 1px black;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:  #000;
+    font-family: OpenSans;
+	font-size: 16px;
+
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:  #000000;
+	font-size: 21px; /* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 60px;
+	opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:  #000000;
+	font-size: 21px; /* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 60px;
+	opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:  #000000;
+	font-size: 21px; /* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 60px;
+	opacity: 1;
+}
+
+/* PROJECT CREATION / WELCOME
+---------------------------- */
+h3.welcome
+{
+	display: block;
+	margin: 0px;
+	padding: 15px;
+	background-color: rgb(32,32,37);
+	text-align: center;
+	color: white;
+	font-size: 41px;
+}
+
+h3.welcome span.subtitle
+{
+	font-size: 24px;
+}
+
+.red_ink
+{
+	color: rgb(217,37,28);
+}
+
+div.welcome_content
+{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+}
+
+div.welcome_content div.left, div.welcome_content div.right
+{
+	display: block;
+	width: 430px;
+	padding: 40px;
+}
+
+div.welcome_content div.right
+{
+	float: right;
+}
+
+h4.wb
+{
+	margin: 15px 0px 10px 0px;
+	font-size: 25px;
+	color: rgb(217,37,28);
+}
+h5.wb
+{
+	margin: 13px 0px 15px 0px;
+	font-size: 19px;
+}
+
+a.wb
+{
+	line-height: 45px;
+	font-size: 19px;
+	color: rgb(217,37,28);
+}
+
+a.wb:hover
+{
+	
+}
+
+div.preview
+{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	height: 392px;
+	background-image: url('../img/layer_28.png');
+	background-repeat: no-repeat;
+}
+
+a.previewlinks
+{
+	display: block;
+	float: left;
+	width: 295px;
+	height: 140px;
+	margin: 0px 1px 0px 0px;
+	padding: 20px 0px 20px 0px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	text-align: center;
+	font-size: 23px;
+	line-height: 50px;
+}
+a.previewlinks:hover
+{
+	
+}
+
+form.welcomeback
+{
+	margin: 10px;
+}
+
+
 
