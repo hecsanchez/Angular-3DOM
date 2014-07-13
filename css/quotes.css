@@ -30,22 +30,17 @@ div.block4
 	box-shadow: 1px 1px 1px rgb(180,180,180);
 }
 
-#right_quote
+#right_quote, #left_quote
 {
-	float: right;
 	min-height: 761px;
+	padding: 0;
+	width: 48%;
 }
 
-#left_quote
-{
-	float: left;
-	min-height: 761px;
-}
-
-h2.block4
+.tile_title_black.large
 {
 	display: block;
-	margin: 0px 0px 10px 0px;
+	margin: 0;
 	padding: 15px 15px 15px 20px;
 	color: white;
 	font-size: 30px;
@@ -61,11 +56,9 @@ p.block4
 	text-align: justify;
 }
 
-div.block4_content
+.quote_tile
 {
-	display: block;
-	margin: 0px;
-	padding: 15px;
+	padding: 25px 15px;
 }
 
 div.formline

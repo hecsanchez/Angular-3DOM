@@ -1,3 +1,8 @@
+.support_cat_links a {
+	display: block;
+	width: 30%;
+}
+
 .support_category {
 	text-align: center;
 	border-top-style: solid; 
@@ -6,6 +11,7 @@
 	margin-right: 5%;
 	min-height: 128px;
 	color: #e32e22;
+	margin-bottom: 1em;
 }
 
 .support_category:hover {
