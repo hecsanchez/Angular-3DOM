@@ -110,7 +110,6 @@ ThreeDOMApp .controller('mainController', function($scope, $route, $rootScope, $
             })
             // Dashboard controller
             .controller('dashboardController', function($scope) {
-                
             })
             // Projects controller
             .controller('projectsController', function($scope) {

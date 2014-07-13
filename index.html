@@ -308,14 +308,15 @@
             </div>
         </header>
 
-        <div class="loading_spinner" ng-show="loading">
-            <img src="img/ajax-loader.gif">
-            <h3>Loading...</h3>
-        </div>
+        
 
         <!-- Content -->
         <div id="page-content">
-            <div ng-view></div>
+            <div class="loading_spinner" ng-show="loading">
+                <img src="img/ajax-loader.gif">
+                <h3>Loading...</h3>
+            </div>
+            <div class="page" ng-view></div>
         </div>
 
         <!-- Login Pop-Up -->
@@ -324,7 +325,7 @@
             <div id="popup">
                 <a class="alert_close pull-right" ng-click="sign_in=false">X</a>
                 <img id="popup_logo" alt="Logo" src="../img/logo_header.png" />
-                <div class="tile_content_popup">
+                <div class="tile_content_popup sign_in">
                     <span id="apps_login">Apps Log<span class="red_text">In</span></span> <br />
                     <span id="threedom_login">Log in to your 3Dom account</span>
                     <form>
