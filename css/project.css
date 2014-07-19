@@ -33,14 +33,17 @@
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 21px;
-	width: 46px;
-	height: 16px;
-	margin-top: 3px;
-
+	padding: .8em 2em .8em 1em;
 }
 
 .projectChoiceLine a{
 	color: #ffffff;
+	display: block;
+	padding: .8em 2em;
+}
+
+.projectChoiceLine a:hover{
+	background-color: #bebebe;
 }
 
 .choice_icon {
@@ -61,13 +64,19 @@
 	height: 25px;
 	width: 25px;
 	padding: 2px 0 0 3px ;
+	margin: -2px 0px 0 -3px;
 }
 
 .screen-title {
+	padding: .5em;
+	color: #373737;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+	border-bottom: 1px solid #dcdbdb;
 }
 
 .screen-choose{
-	background-color: #404040;
 	color: #ffffff;
 }
 .screen-choice .visible-xs{
@@ -81,12 +90,6 @@
 }
 
 .projectPanel {
-	background: -webkit-linear-gradient(-180deg, #e4e4e4 0%, #f6f2f2 49%, #efeeee 100%);
-	background: -moz-linear-gradient(-180deg, #e4e4e4 0%, #f6f2f2 49%, #efeeee 100%);
-	background: -o-linear-gradient(-180deg, #e4e4e4 0%, #f6f2f2 49%, #efeeee 100%);
-	background: -ms-linear-gradient(-180deg, #e4e4e4 0%, #f6f2f2 49%, #efeeee 100%);
-	background: linear-gradient(270deg, #e4e4e4 0%, #f6f2f2 49%, #efeeee 100%);
-	box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.27);
 	color: #373737;
 	font-size: 11px; /* Approximation due to font substitution */
 	font-weight: 700;
@@ -142,8 +145,6 @@
 }
 
 .panelScreen {
-	max-height: 349px;
-	overflow: auto;
 }
 
 .appdata .table-header {
@@ -206,4 +207,36 @@
 }
 .arrow-right {
 	float:right;
+}
+
+.app-content:before {
+	content: "";
+	display: block;
+	padding-top: 41.5%;
+}
+
+.app-content {
+top: -10px;
+position: relative;
+}
+
+.app-content > .fb {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.activeToolbar {
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	background: #edebeb;
+	border: 1px solid #cecdcd;
+	box-shadow: 1px 0px 5px #BBBBBB;
+}
+
+.app-content > .fb > img {
+	padding-left: 0;
 }

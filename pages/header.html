@@ -43,12 +43,20 @@
 				</span>
 			</span>
 		</span>
-		<span class="profile_header">
-			<a ng-click="sign_in=true;">
-				<img id="profile_picture_header" alt="Profile" src="img/dude.png" />
-				<img id="arrow_profile" alt="Arrow" src="img/arrow_bottom_2.png" />
-			</a>
-		</span>
+		<li class="profile_header">
+                                <a class="dropdown-link" data-toggle="dropdown">
+                                    <img id="profile_picture_header" alt="Profile" src="img/dude.png">
+                                    <img id="arrow_profile" alt="Arrow" src="img/arrow_bottom_2.png">
+                                </a>
+                                <ul class="dropdown-menu" id="menu3">
+                                    <li>
+                                    <a ng-click="sign_in=true;" href="">Sign in</a>
+                                    </li>
+                                    <li class="logout">
+                                    <a ng-href="" href="">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </li>
 	</div>
 	
 	<div id="skinny" class="visible-xs visible-sm">

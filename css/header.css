@@ -150,7 +150,7 @@ span.header_icon, a.header, img.header, span.header_icon:before, a.header:before
 #header-dropdown ul {
 	list-style-type: none;
 	width: 20px;
-	margin: 12px 0px 0px 0px;
+	margin: 0;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -203,11 +203,7 @@ span.header_icon, a.header, img.header, span.header_icon:before, a.header:before
 
 
 #menu-icon{
-	margin-top: 7px;
-	border: 1px grey solid;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
+	padding: 18px 0;
 }
 
 .nav-first {
@@ -392,4 +388,14 @@ nav ul li:first-child a{
 }
 .scroll-to-fixed-fixed {
 box-shadow: 0 1px 7px #7E7E7E;
+}
+
+@media screen and ( max-width: 991px ) {
+	#header-dropdown {
+		right: 5em;
+	}
+
+	.profile_header {
+		margin-right: 6em;
+	}
 }

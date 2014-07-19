@@ -1,8 +1,8 @@
-2// Create the app
-var ThreeDOMApp = angular.module('ThreeDOMApp', ['ngRoute', 'ngAnimate']);
+// Create the app
+var ThreeDOMApp = angular.module('ThreeDOMApp', ['ngRoute', 'ngAnimate', 'ui.router', 'ui.bootstrap']);
 
 // Configure the routes
-ThreeDOMApp.config(function($routeProvider) {
+ThreeDOMApp.config(function($routeProvider, $stateProvider) {
 
     $routeProvider  // Projects route
                     .when('/projects', {
@@ -59,12 +59,59 @@ ThreeDOMApp.config(function($routeProvider) {
                                     title: 'Presentations Driver',
                                     templateUrl : 'pages/presentationsdriver.html',
                                     controller  : 'presentationsdriverController'})
+
+                    // Create Project route
+                    .when('/create-project', {
+                                    title: 'Create project',
+                                    templateUrl : 'pages/projectcreation1a.html',
+                                    controller  : 'createprojectsController'})
+
+                    // Create Project route
+                    .when('/create-project-2', {
+                                    title: 'Create project',
+                                    templateUrl : 'pages/projectcreation2.html',
+                                    controller  : 'createprojectsController'})
+
                     // Default route
                     .otherwise({
                                     title: 'Dashboard',
                                     templateUrl : 'pages/dashboard.html',
-                                    controller  : 'dashboardController'})
+                                    controller  : 'dashboardController'});
+                    
+    $stateProvider
+    
+                    // route to show our basic form (/form)
+                    .state('create-project', {
+                        url: '/create-project',
+                        templateUrl: 'pages/project-creation1a.html',
+                        controller: 'createprojectsController'
+                    })
+                    
+                    // nested states 
+                    // each of these sections will have their own view
+                    // url will be nested (/form/profile)
+                    .state('createproject.step2', {
+                        url: '/create-project-2',
+                        templateUrl: 'pages/project-creation2.html'
+                    })
+                    
+                    // url will be /form/interests
+                    .state('createproject.step3', {
+                        url: '/create-project-3',
+                        templateUrl: 'pages/project-creation3.html'
+                    })
 
+                    // url will be /form/interests
+                    .state('createproject.step4', {
+                        url: '/create-project-4',
+                        templateUrl: 'pages/project-creation4.html'
+                    })
+                    
+                    // url will be /form/payment
+                    .state('createproject.step5', {
+                        url: '/create-project-5',
+                        templateUrl: 'pages/project-creation5.html'
+                    });
 });
 
 
@@ -110,6 +157,17 @@ ThreeDOMApp .controller('mainController', function($scope, $route, $rootScope, $
             })
             // Dashboard controller
             .controller('dashboardController', function($scope) {
+            })
+            .controller('createprojectsController', function($scope) {
+    
+                // we will store all of our form data in this object
+                $scope.formData = {};
+                
+                // function to process the form
+                $scope.processForm = function() {
+                    alert('awesome!');
+                };
+                
             })
             // Projects controller
             .controller('projectsController', function($scope) {
@@ -260,3 +318,17 @@ ThreeDOMApp .controller('mainController', function($scope, $route, $rootScope, $
                     changeButtonType(btn, '▶');
                 }, false);
             });
+            var TabsDemoCtrl = function ($scope) {
+              $scope.tabs = [
+                // { title:'Step 1' },
+                // { title:'Step 2' }
+                // { title:'Step 3' },
+                // { title:'Step 4' }
+              ];
+
+              $scope.alertMe = function() {
+                setTimeout(function() {
+                  alert('You\'ve selected the alert tab!');
+                });
+              };
+            };

@@ -1,107 +1,241 @@
-<h3 class="welcome">
-	Create new Project<br>
-	<span class="subtitle">Step <span class="red_ink">2</span></span>
-</h3>
-<div class="">
-	<h4>Choose model</h4>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a sapien sapien. Duis facilisis quam vel urna ultrices, non lacinia velit accumsan. Sed tincidunt in nibh eget lacinia. Quisque</p>
-</div>
-<div>
-	<p>Can't find what you are after?</p>
-	<a href="button">Request model</a>
-</div>
-<div class="wrapper">
-	<div class="pretitle">
-		<div class="tabs">
-			<a class="tab" ng-click="tab=1">Race vehicles</a>
-			<a class="tab" ng-click="tab=2">Vehicles</a>
-			<a class="tab" ng-click="tab=3">Apparel</a>
-			<a class="tab" ng-click="tab=4">Helmets</a>
-			<a class="tab" ng-click="tab=5">Commercial vehicles</a>
-		</div>
-	</div>
-</div>
+ <div id="hombre" class="fadeIn step2">
 
-<div class="container-fluid project_settings" id="details" ng-show="tab==5">
-</div>
-<div class="container-fluid project_settings" id="details" ng-show="tab==4">
-</div>
-<div class="container-fluid project_settings" id="details" ng-show="tab==3">
-</div>
-<div class="container-fluid project_settings" id="details" ng-show="tab==2">
-</div>
-<div class="container-fluid project_settings" id="details" ng-show="tab==1">
-	<div class="tile_title">Select make</div>
-	<div class="col-md-3 tile_content simple_tile">Select make
-		<select id="filter_presentations" id="#" name="#">
-			<option value="#">Option 1</option>
-			<option value="#">Option 2</option>
-			<option value="#">Option 3</option>
-			<option value="#">Option 4</option>
-			<option value="#">Option 5</option>
-			<option value="#">Option 6</option>
-			<option value="#">Option 7</option>
-		</select>
-	</div>
-	<div class="fb">
-		<div>
-			<img src="../img/project-creation2.jpg" alt="">
-			<input class="lpics2check" type="checkbox" />
-		</div>
-		<div>
-			<img src="../img/project-creation2.jpg" alt="">
-			<input class="lpics2check" type="checkbox" />
-		</div>
-		<div>
-			<img src="../img/project-creation2.jpg" alt="">
-			<input class="lpics2check" type="checkbox" />
-		</div>
-		<div>
-			<img src="../img/project-creation2.jpg" alt="">
-			<input class="lpics2check" type="checkbox" />
-		</div>
-		<div>
-			<img src="../img/project-creation2.jpg" alt="">
-			<input class="lpics2check" type="checkbox" />
-		</div>
-		<div>
-			<img src="../img/project-creation2.jpg" alt="">
-			<input class="lpics2check" type="checkbox" />
-		</div>
-		<div>
-			<img src="../img/project-creation2.jpg" alt="">
-			<input class="lpics2check" type="checkbox" />
-		</div>		
-</div>
-<div class="fb">
-		<div>
-			<img src="../img/project-creation2.jpg" alt="">
-			<input class="lpics2check" type="checkbox" />
-		</div>
-		<div>
-			<img src="../img/project-creation2.jpg" alt="">
-			<input class="lpics2check" type="checkbox" />
-		</div>
-		<div>
-			<img src="../img/project-creation2.jpg" alt="">
-			<input class="lpics2check" type="checkbox" />
-		</div>
-		<div>
-			<img src="../img/project-creation2.jpg" alt="">
-			<input class="lpics2check" type="checkbox" />
-		</div>
-		<div>
-			<img src="../img/project-creation2.jpg" alt="">
-			<input class="lpics2check" type="checkbox" />
-		</div>
-		<div>
-			<img src="../img/project-creation2.jpg" alt="">
-			<input class="lpics2check" type="checkbox" />
-		</div>
-		<div>
-			<img src="../img/project-creation2.jpg" alt="">
-			<input class="lpics2check" type="checkbox" />
-		</div>		
-<div>
-	<a href="projectcreation3.html">Next step</a>
-</div>
+            <div id="popup">
+            	
+                <a href="#" class="alert_close pull-right">X</a>
+                <img id="popup_logo" alt="Logo" src="../img/logo_header.png" />
+	            <div class="tile_content_popup">    
+	                <h1 class="welcome">
+						Create new Project<br>
+						<span class="subtitle">Step <span class="red_ink">2</span></span>
+					</h1>
+				<div class="subsection">
+					<h2 class="subsection__title">Choose model</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a sapien sapien. Duis facilisis quam vel urna ultrices, non lacinia velit accumsan. Sed tincidunt in nibh eget lacinia. Quisque</p>
+				</div>
+				<hr />
+				<div class="fb pull-right">
+					<p>Can't find what you are after?</p>
+					<a href="" class="btn">Request model</a>
+				</div>
+				<div class="tabs-step2">
+					<div class="wrapper">
+						<div class="pretitle">
+							<div class="tabs">
+								<a class="tab" ng-click="tab=1">Race vehicles</a>
+								<a class="tab" ng-click="tab=2">Vehicles</a>
+								<a class="tab" ng-click="tab=3">Apparel</a>
+								<a class="tab" ng-click="tab=4">Helmets</a>
+								<a class="tab" ng-click="tab=5">Commercial vehicles</a>
+							</div>
+						</div>
+					</div>
+					<div class="container-fluid project_settings" id="details" ng-show="tab==5">
+					</div>
+					<div class="container-fluid project_settings" id="details" ng-show="tab==4">
+					</div>
+					<div class="container-fluid project_settings" id="details" ng-show="tab==3">
+					</div>
+					<div class="container-fluid project_settings" id="details" ng-show="tab==2">
+					</div>
+					<div class="project_settings" ng-show="tab==1">
+						<div class="tile_title red_ink">Select make</div>
+						<div class="container-fluid" id="details">
+							<div class="col-md-3 simple_tile">Select make
+								<select id="filter_presentations" id="#" name="#">
+									<option value="#">Option 1</option>
+									<option value="#">Option 2</option>
+									<option value="#">Option 3</option>
+									<option value="#">Option 4</option>
+									<option value="#">Option 5</option>
+									<option value="#">Option 6</option>
+									<option value="#">Option 7</option>
+								</select>
+							</div>
+							<div class="fb fb--wrap imageSelection">
+								<div class="imgCheck">
+									<img src="../img/project-creation2.jpg" alt="">
+									<input class="lpics2check" type="checkbox" />
+									<div class="imgCheck-hover">
+										<div class="fb jc-sb">
+											<span>F1</span>
+											<span>E20</span>
+										</div>
+										<div class="imgCheck-hover__desc">
+											Lorem ipsum dolor sit amet,
+										</div>
+									</div>
+								</div>
+								<div class="imgCheck">
+									<img src="../img/project-creation2.jpg" alt="">
+									<input class="lpics2check" type="checkbox" />
+									<div class="imgCheck-hover">
+										<div class="fb jc-sb">
+											<span>F1</span>
+											<span>E20</span>
+										</div>
+										<div class="imgCheck-hover__desc">
+											Lorem ipsum dolor sit amet,
+										</div>
+									</div>
+								</div>
+								<div class="imgCheck">
+									<img src="../img/project-creation2.jpg" alt="">
+									<input class="lpics2check" type="checkbox" />
+									<div class="imgCheck-hover">
+										<div class="fb jc-sb">
+											<span>F1</span>
+											<span>E20</span>
+										</div>
+										<div class="imgCheck-hover__desc">
+											Lorem ipsum dolor sit amet,
+										</div>
+									</div>
+								</div>
+								<div class="imgCheck">
+									<img src="../img/project-creation2.jpg" alt="">
+									<input class="lpics2check" type="checkbox" />
+									<div class="imgCheck-hover">
+										<div class="fb jc-sb">
+											<span>F1</span>
+											<span>E20</span>
+										</div>
+										<div class="imgCheck-hover__desc">
+											Lorem ipsum dolor sit amet,
+										</div>
+									</div>
+								</div>
+								<div class="imgCheck">
+									<img src="../img/project-creation2.jpg" alt="">
+									<input class="lpics2check" type="checkbox" />
+									<div class="imgCheck-hover">
+										<div class="fb jc-sb">
+											<span>F1</span>
+											<span>E20</span>
+										</div>
+										<div class="imgCheck-hover__desc">
+											Lorem ipsum dolor sit amet,
+										</div>
+									</div>
+								</div>
+								<div class="imgCheck">
+									<img src="../img/project-creation2.jpg" alt="">
+									<input class="lpics2check" type="checkbox" />
+									<div class="imgCheck-hover">
+										<div class="fb jc-sb">
+											<span>F1</span>
+											<span>E20</span>
+										</div>
+										<div class="imgCheck-hover__desc">
+											Lorem ipsum dolor sit amet,
+										</div>
+									</div>
+								</div>
+								<div class="imgCheck">
+									<img src="../img/project-creation2.jpg" alt="">
+									<input class="lpics2check" type="checkbox" />
+									<div class="imgCheck-hover">
+										<div class="fb jc-sb">
+											<span>F1</span>
+											<span>E20</span>
+										</div>
+										<div class="imgCheck-hover__desc">
+											Lorem ipsum dolor sit amet,
+										</div>
+									</div>
+								</div>	
+								<div class="imgCheck">
+									<img src="../img/project-creation2.jpg" alt="">
+									<input class="lpics2check" type="checkbox" />
+									<div class="imgCheck-hover">
+										<div class="fb jc-sb">
+											<span>F1</span>
+											<span>E20</span>
+										</div>
+										<div class="imgCheck-hover__desc">
+											Lorem ipsum dolor sit amet,
+										</div>
+									</div>
+								</div>
+								<div class="imgCheck">
+									<img src="../img/project-creation2.jpg" alt="">
+									<input class="lpics2check" type="checkbox" />
+									<div class="imgCheck-hover">
+										<div class="fb jc-sb">
+											<span>F1</span>
+											<span>E20</span>
+										</div>
+										<div class="imgCheck-hover__desc">
+											Lorem ipsum dolor sit amet,
+										</div>
+									</div>
+								</div>
+								<div class="imgCheck">
+									<img src="../img/project-creation2.jpg" alt="">
+									<input class="lpics2check" type="checkbox" />
+									<div class="imgCheck-hover">
+										<div class="fb jc-sb">
+											<span>F1</span>
+											<span>E20</span>
+										</div>
+										<div class="imgCheck-hover__desc">
+											Lorem ipsum dolor sit amet,
+										</div>
+									</div>
+								</div>
+								<div class="imgCheck">
+									<img src="../img/project-creation2.jpg" alt="">
+									<input class="lpics2check" type="checkbox" />
+									<div class="imgCheck-hover">
+										<div class="fb jc-sb">
+											<span>F1</span>
+											<span>E20</span>
+										</div>
+										<div class="imgCheck-hover__desc">
+											Lorem ipsum dolor sit amet,
+										</div>
+									</div>
+								</div>
+								<div class="imgCheck">
+									<img src="../img/project-creation2.jpg" alt="">
+									<input class="lpics2check" type="checkbox" />
+									<div class="imgCheck-hover">
+										<div class="fb jc-sb">
+											<span>F1</span>
+											<span>E20</span>
+										</div>
+										<div class="imgCheck-hover__desc">
+											Lorem ipsum dolor sit amet,
+										</div>
+									</div>
+								</div>
+								<div class="imgCheck">
+									<img src="../img/project-creation2.jpg" alt="">
+									<input class="lpics2check" type="checkbox" />
+									<div class="imgCheck-hover">
+										<div class="fb jc-sb">
+											<span>F1</span>
+											<span>E20</span>
+										</div>
+										<div class="imgCheck-hover__desc">
+											Lorem ipsum dolor sit amet,
+										</div>
+									</div>
+								</div>
+								<div class="imgCheck">
+									<img src="../img/project-creation2.jpg" alt="">
+									<input class="lpics2check" type="checkbox" />
+									<div class="imgCheck-hover">
+										<div class="fb jc-sb">
+											<span>F1</span>
+											<span>E20</span>
+										</div>
+										<div class="imgCheck-hover__desc">
+											Lorem ipsum dolor sit amet,
+										</div>
+									</div>
+								</div>	
+							</div>
+					</div>
+				</div>
+				<a href="" class="btn btn-next">Next step<i class="icon-next pull-right"></i></a>

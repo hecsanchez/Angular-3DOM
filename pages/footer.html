@@ -16,6 +16,30 @@
 	<script>
 	  $('#subheader').scrollToFixed();
 	</script>
+	<script type="text/javascript">
+        var $tabs;
+        $(document).ready(function(){
+            var tabId = 1;
+	    $('#addTab').click(function(){
+		loadData(tabId,"Tab "+tabId);
+		tabId++;
+	    });
+                    
+            $tabs = $( "#tabs").tabs({
+                tabTemplate: "<li><a href='#{href}'>#{label}</a> <span class='ui-icon ui-icon-close' style='float: right;'>Remove Tab</span></li>"
+            }).scrolltab();
+                    
+        });
+                    
+        function loadData(id,title){
+            if($('#tabs-'+id).length <= 0){
+                $tabs.trigger('addTab',[id, title]);
+            }else{
+                var index = $('#tabs a[href="#tabs-'+id+'"]').parent().index();
+                $tabs.trigger('selectTab',[index]);
+            }
+        }
+	</script>
 	<!-- END OF TESTING AREA -->
 	
 </footer>

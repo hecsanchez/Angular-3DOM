@@ -16,9 +16,13 @@
     <script charset="utf-8" src="js/angular.min.js"></script>
     <script charset="utf-8" src="js/angular-route.min.js"></script>
     <script charset="utf-8" src="js/angular-animate.min.js"></script>
+    <script charset="utf-8" src="js/angular-ui-router.min.js"></script>
+    <script charset="utf-8" src="js/ui-bootstrap-tpls-0.11.0.min.js"></script>
     <script charset="utf-8" src="js/ekko-lightbox.min.js"></script>
     <script charset="utf-8" src="js/jquery-scrolltofixed-min.js"></script>
-    <script charset="utf-8" src="js/nprogress.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.9.custom.css"></script>
+    <script type="text/javascript" src="js/jquery.scrolltab.js"></script>
+
 
     <!-- Custom JS -->
     <script charset="utf-8" src="js/main.js"></script>
@@ -41,6 +45,7 @@
     <link rel="stylesheet" type="text/css" href="css/project.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' type="text/css" href="css/nprogress.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
 </head>
 <body>
       <div ng-show="alert" class="alert-zone">
@@ -236,27 +241,139 @@
                 
                 <div id="skinny" class="visible-xs visible-sm">
                     
-                    <span class="profile_header">
-                        <img id="profile_picture_header" alt="Profile" src="img/dude.png" />
-                        <img id="arrow_profile" alt="Arrow" src="img/arrow_bottom_2.png" />
-                    </span>
+                     <li class="profile_header">
+                                <a class="dropdown-link" data-toggle="dropdown">
+                                    <img id="profile_picture_header" alt="Profile" src="img/dude.png" />
+                                    <img id="arrow_profile" alt="Arrow" src="img/arrow_bottom_2.png" />
+                                </a>
+                                <ul class="dropdown-menu" id="menu3">
+                                    <li>
+                                    <a ng-click="sign_in=true;" href="">Sign in</a>
+                                    </li>
+                                    <li class="logout">
+                                    <a  ng-href="" href="">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </li>
                     <span class="header_center">
-                        <span class="header_icon">
-                            <span class="notif_container">
-                                <img id="notification_icon" alt="Message" src="img/bell.png" />
-                                <div class="notif">
-                                    3
-                                </div>
-                            </span>
-                        </span>
-                        <span class="header_icon">
-                            <span class="notif_container">
-                                <img id="message_icon" alt="Message" src="img/mail.png" />
-                                <div class="notif">
-                                    3
-                                </div>
-                            </span>
-                        </span>
+                                <a class="dropdown-link">
+                                    <span class="header_icon">
+                                        <span class="notif_container">
+                                            <img id="notification_icon" alt="Message" src="img/bell.png">
+                                            <div class="notif">
+                                                3
+                                            </div>
+                                        </span>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu square margin-list-rounded with-triangle notifications">
+                                    <li>
+                                        <div class="nav-dropdown-heading">
+                                        Notifications
+                                        </div><!-- /.nav-dropdown-heading -->
+                                        <div class="slimScrollDiv"><div class="nav-dropdown-content scroll-nav-dropdown">
+                                            <ul>
+                                                <li class="unread"><a href="#fakelink">
+                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                                                    <span class="small-caps">17 seconds ago</span>
+                                                </a></li>
+                                                <li class="unread"><a href="#fakelink">
+                                                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat
+                                                    <span class="small-caps">10 minutes ago</span>
+                                                </a></li>
+                                                <li><a href="#fakelink">
+                                                    I think so
+                                                    <span class="small-caps">40 minutes ago</span>
+                                                </a></li>
+                                                <li class="unread"><a href="#fakelink">
+                                                    Yes, I'll be waiting
+                                                    <span class="small-caps">2 hours ago</span>
+                                                </a></li>
+                                                <li class="unread"><a href="#fakelink">
+                                                    Thank you!
+                                                    <span class="small-caps">Yesterday</span>
+                                                </a></li>
+                                                <li class="unread"><a href="#fakelink">
+                                                    No problem! I will never remember that
+                                                    <span class="small-caps">Yesterday</span>
+                                                </a></li>
+                                                <li class="unread"><a href="#fakelink">
+                                                    Tak gepuk ndasmu sisan lho dab!
+                                                    <span class="small-caps">A week ago</span>
+                                                </a></li>
+                                                <li><a href="#fakelink">
+                                                    Sorry bro, aku or atau sing jenenge ngono kui
+                                                    <span class="small-caps">April 15, 2014</span>
+                                                </a></li>
+                                                <li><a href="#fakelink">
+                                                    Will you send me an invitation for your weeding party?
+                                                    <span class="small-caps">April 01, 2014</span>
+                                                </a></li>
+                                            </ul>
+                                        </div></div><!-- /.nav-dropdown-content scroll-nav-dropdown -->
+                                        <button class="btn btn-dashboard btn-square btn-block">See all notifications</button>
+                                    </li>
+                                </ul>
+                        
+                                <a class="dropdown-link">
+                                    <span class="header_icon">
+                                        <span class="notif_container">
+                                            <img id="message_icon" alt="Message" src="img/mail.png">
+                                            <div class="notif">
+                                                3
+                                            </div>
+                                        </span>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu square margin-list-rounded with-triangle messages">
+                                    <li>
+                                        <div class="nav-dropdown-heading">
+                                        Messages
+                                        </div><!-- /.nav-dropdown-heading -->
+                                        <div class="slimScrollDiv"><div class="nav-dropdown-content scroll-nav-dropdown">
+                                            <ul>
+                                                <li class="unread"><a href="#fakelink">
+                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                                                    <span class="small-caps">17 seconds ago</span>
+                                                </a></li>
+                                                <li class="unread"><a href="#fakelink">
+                                                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat
+                                                    <span class="small-caps">10 minutes ago</span>
+                                                </a></li>
+                                                <li><a href="#fakelink">
+                                                    I think so
+                                                    <span class="small-caps">40 minutes ago</span>
+                                                </a></li>
+                                                <li class="unread"><a href="#fakelink">
+                                                    Yes, I'll be waiting
+                                                    <span class="small-caps">2 hours ago</span>
+                                                </a></li>
+                                                <li class="unread"><a href="#fakelink">
+                                                    Thank you!
+                                                    <span class="small-caps">Yesterday</span>
+                                                </a></li>
+                                                <li class="unread"><a href="#fakelink">
+                                                    No problem! I will never remember that
+                                                    <span class="small-caps">Yesterday</span>
+                                                </a></li>
+                                                <li class="unread"><a href="#fakelink">
+                                                    Tak gepuk ndasmu sisan lho dab!
+                                                    <span class="small-caps">A week ago</span>
+                                                </a></li>
+                                                <li><a href="#fakelink">
+                                                    Sorry bro, aku or atau sing jenenge ngono kui
+                                                    <span class="small-caps">April 15, 2014</span>
+                                                </a></li>
+                                                <li><a href="#fakelink">
+                                                    Will you send me an invitation for your weeding party?
+                                                    <span class="small-caps">April 01, 2014</span>
+                                                </a></li>
+                                            </ul>
+                                        </div></div><!-- /.nav-dropdown-content scroll-nav-dropdown -->
+                                        <button class="btn btn-dashboard btn-square btn-block">See all messages</button>
+                                    </li>
+                                </ul>
+                            
                     </span>
                     
                     <img class="headerLogo" alt="Logo" src="img/logo_header.png" />
