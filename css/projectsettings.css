@@ -672,9 +672,15 @@ margin: 7px;
 }
 
 @media screen and (max-width: 991px){
-	#details .tile{
+
+	#details .tile {
 		width: 100%;
 	}
+
+	#details .tile:nth-child(odd) {
+		margin-right: 0;
+	}
+
 }
 
 

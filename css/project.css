@@ -147,6 +147,10 @@
 .panelScreen {
 }
 
+.appdata {
+	border: 1px solid #cdcaca;
+}
+
 .appdata .table-header {
 	background-color: #f3efef;
 	color: #777777; font-size: 18px;
@@ -158,9 +162,15 @@
 .appdata .categories {
 	padding-top: 15px;
 }
+
+.appdata .categories .col-xs-3 {
+padding: 1em;
+text-align: center;
+}
+
 .appdata .categories .selected {
 	color: #5dc9e6;
-	background-color: #ffffff;
+	background-color: #71717a;
 }
 
 
