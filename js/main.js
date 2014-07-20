@@ -105,6 +105,12 @@ ThreeDOMApp.config(function($routeProvider, $stateProvider) {
                         controller  : 'createprojectsController'
                     })
 
+                     .when('/workwithus', {
+                        title: 'Create project',
+                        templateUrl : 'pages/workwithus.html',
+                        controller  : 'workwithusController'
+                    })
+
                     // Default route
                     .otherwise({
                         title: 'Dashboard',
@@ -205,6 +211,8 @@ ThreeDOMApp .controller('mainController', function($scope, $route, $rootScope, $
             })
             // Projects controller
             .controller('projectsController', function($scope) {
+            })
+            .controller('workwithusController', function($scope) {
             })
             .controller('convertController', function($scope) {
                 var dropEl = angular.element('.dd_zone')[0];
