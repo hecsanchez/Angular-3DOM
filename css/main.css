@@ -458,9 +458,22 @@ span.presentation_content
     display: inline-block;
     float: right;
 }
+#media-player {
+	margin-top: 5em;
+}
 #media-video {
-	padding: 0px;
+	padding: 0px 15px;
 	border-radius: 4px 4px 0px 0px;
+	max-width: 522px;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+}
+#media-controls {
+	position: relative;
+	top: 4em;
+	margin-bottom: 4em;
+	z-index: 0;
 }
 #global-video {
 	margin: auto;
@@ -480,6 +493,9 @@ span.presentation_content
 }
 #progress-video-div {
 	text-align: left;
+	background-color: #e3e4e8;
+	border-radius: 5px;
+	padding: 0;
 }
 #total-duration {
 	float: right;
@@ -1214,6 +1230,96 @@ background: url(../img/icon-checked.png) no-repeat;
 .section--request p {
 margin: 8px 0;
 }
+
+img.brand {
+	max-width: 100%;
+	margin-bottom: 1em;
+}
+
+.userDetails {
+	text-align: left;
+	position: relative;
+}
+
+.userDetails ul {
+	list-style: none;
+	padding: 0;
+}
+
+.userCheckbox {
+	width: 120px;
+	background: #757575;
+	position: relative;
+	text-align: center;
+	margin-right: 1em;
+	margin-top: 1em;
+	height: 99px;
+}
+
+.userCheckbox input[type="checkbox"] {
+	display: none;
+}
+
+.userCheckbox input[type="checkbox"] + label span {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	vertical-align: middle;
+	background: url(../img/icon-unchecked-white.png) no-repeat;
+	cursor: pointer;
+}
+
+.userCheckbox input[type="checkbox"]:checked + label span {
+	background: url(../img/icon-checked-white.png) no-repeat;
+}
+
+.userCheckbox label {
+	right: 0;
+	position: absolute;
+	margin: 4px;
+}
+
+.checkboxLabel {
+	background-color: #202025;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	padding: 4px 0;
+}
+
+.userCheckbox img {
+	padding: 1.5em;
+}
+
+#checkboxDriver img{
+	padding: 1em;
+}
+
+#checkboxTeam img{
+	padding: 2em;
+}
+
+.userDetails__item {
+	color: #373737;
+	padding: 0 1em;
+}
+
+.userDetails__item strong {
+	margin-bottom: 1em;
+}
+
+.userDetails__item.fb {
+	width:45%;
+}
+
+.userDetails__item input {
+	position: absolute;
+	left: 12em;
+}
+
 
 @media screen and ( max-width: 991px ) {
 

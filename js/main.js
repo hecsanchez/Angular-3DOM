@@ -6,89 +6,111 @@ ThreeDOMApp.config(function($routeProvider, $stateProvider) {
 
     $routeProvider  // Projects route
                     .when('/projects', {
-                                    title: 'Projects',
-                                    templateUrl : 'pages/projects.html',
-                                    controller  : 'projectsController'})
+                        title: 'Projects',
+                        templateUrl : 'pages/projects.html',
+                        controller  : 'projectsController'
+                    })
                     // Logos route
                     .when('/logos', {
-                                    title: 'Logos',
-                                    templateUrl : 'pages/logos.html',
-                                    controller  : 'logosController'})
+                        title: 'Logos',
+                        templateUrl : 'pages/logos.html',
+                        controller  : 'logosController'
+                    })
                     // Presentations route
                     .when('/presentations', {
-                                    title: 'Presentations',
-                                    templateUrl : 'pages/presentations.html',
-                                    controller  : 'presentationsController'})
+                        title: 'Presentations',
+                        templateUrl : 'pages/presentations.html',
+                        controller  : 'presentationsController'
+                    })
                     // Quotes route
                     .when('/quotes', {
-                                    title: 'Quotes',
-                                    templateUrl : 'pages/quotes.html',
-                                    controller  : 'quotesController'})
+                        title: 'Quotes',
+                        templateUrl : 'pages/quotes.html',
+                        controller  : 'quotesController'
+                    })
                     // Support route
                     .when('/support', {
-                                    title: 'Support',
-                                    templateUrl : 'pages/support.html',
-                                    controller  : 'supportController'})
+                        title: 'Support',
+                        templateUrl : 'pages/support.html',
+                        controller  : 'supportController'
+                    })
 
                     // Convert route
                     .when('/convert', {
-                                    title: 'Convert',
-                                    templateUrl : 'pages/convert.html',
-                                    controller  : 'convertController'})
+                        title: 'Convert',
+                        templateUrl : 'pages/convert.html',
+                        controller  : 'convertController'
+                    })
 
                     // Active project route
                     .when('/projectselected', {
-                                    title: 'Project selected',
-                                    templateUrl : 'pages/projectSelected.html',
-                                    controller  : 'projectSelectedController'})
+                        title: 'Project selected',
+                        templateUrl : 'pages/projectSelected.html',
+                        controller  : 'projectSelectedController'
+                    })
 									
                     // Setting project route
                     .when('/projectsettings', {
-                                    title: 'Project settings',
-                                    templateUrl : 'pages/projectsettings.html',
-                                    controller  : 'projectSettingController'})
+                        title: 'Project settings',
+                        templateUrl : 'pages/projectsettings.html',
+                        controller  : 'projectSettingController'
+                    })
 
 
                     // Hire a designer route
                     .when('/hieradesigner', {
-                                    title: 'Hire a designer',
-                                    templateUrl : 'pages/hieradesigner.html',
-                                    controller  : 'hieradesignerController'})
+                        title: 'Hire a designer',
+                        templateUrl : 'pages/hieradesigner.html',
+                        controller  : 'hieradesignerController'
+                    })
                     // Presentations driver route
                     .when('/presentationsdriver', {
-                                    title: 'Presentations Driver',
-                                    templateUrl : 'pages/presentationsdriver.html',
-                                    controller  : 'presentationsdriverController'})
+                        title: 'Presentations Driver',
+                        templateUrl : 'pages/presentationsdriver.html',
+                        controller  : 'presentationsdriverController'
+                    })
 
                     // Create Project route
                     .when('/create-project', {
-                                    title: 'Create project',
-                                    templateUrl : 'pages/projectcreation1a.html',
-                                    controller  : 'createprojectsController'})
+                        title: 'Create project',
+                        templateUrl : 'pages/projectcreation1a.html',
+                        controller  : 'createprojectsController'
+                    })
 
                     // Create Project route
                     .when('/create-project-2', {
-                                    title: 'Create project',
-                                    templateUrl : 'pages/projectcreation2.html',
-                                    controller  : 'createprojectsController'})
+                        title: 'Create project',
+                        templateUrl : 'pages/projectcreation2.html',
+                        controller  : 'createprojectsController'
+                    })
 
                     // Create Project route
                     .when('/create-project-3', {
-                                    title: 'Create project',
-                                    templateUrl : 'pages/projectcreation3.html',
-                                    controller  : 'createprojectsController'})
+                        title: 'Create project',
+                        templateUrl : 'pages/projectcreation3.html',
+                        controller  : 'createprojectsController'
+                    })
 
                      // Create Project route
                     .when('/create-project-4', {
-                                    title: 'Create project',
-                                    templateUrl : 'pages/projectcreation4.html',
-                                    controller  : 'createprojectsController'})
+                        title: 'Create project',
+                        templateUrl : 'pages/projectcreation4.html',
+                        controller  : 'createprojectsController'
+                    })
+
+                    // Create Project route
+                    .when('/create-project-5', {
+                        title: 'Create project',
+                        templateUrl : 'pages/projectcreation5.html',
+                        controller  : 'createprojectsController'
+                    })
 
                     // Default route
                     .otherwise({
-                                    title: 'Dashboard',
-                                    templateUrl : 'pages/dashboard.html',
-                                    controller  : 'dashboardController'});
+                        title: 'Dashboard',
+                        templateUrl : 'pages/dashboard.html',
+                        controller  : 'dashboardController'
+                    });
                     
     $stateProvider
     
@@ -344,3 +366,4 @@ ThreeDOMApp .controller('mainController', function($scope, $route, $rootScope, $
                 });
               };
             };
+            

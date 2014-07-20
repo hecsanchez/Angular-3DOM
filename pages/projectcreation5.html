@@ -1,61 +1,92 @@
-<h3 class="welcome">
-	Create new Project<br>
-	<span class="subtitle">Step <span class="red_ink">5</span></span>
-</h3>
-<div class="">
-	<h4>Project details</h4>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a sapien sapien. Duis facilisis quam vel urna ultrices, non lacinia velit accumsan. Sed tincidunt in nibh eget lacinia. Quisque</p>
+ <div id="hombre" class="fadeIn step2">
+
+    <div id="popup">
+    	
+        <a href="#" class="alert_close pull-right">X</a>
+        <img id="popup_logo" alt="Logo" src="../img/logo_header.png" />
+        <div class="tile_content_popup">    
+            <h1 class="welcome">
+				Create new Project<br>
+				<span class="subtitle">Step <span class="red_ink">5</span></span>
+			</h1>
+			<div class="subsection">
+				<h2 class="subsection__title">Project details</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a sapien sapien. Duis facilisis quam vel urna ultrices, non lacinia velit accumsan. Sed tincidunt in nibh eget lacinia. Quisque</p>
+			</div>
+			<hr />
+			<div class="userDetails">
+				<h3>User details</h3>
+				<div class="userDetails__item fb jc-sb">
+					<strong>Name:</strong>
+					<span>Adam Grist</span>
+					<input class="ng-hide" ng-show="userDetails__name" type="text" placeholder="Adam Grist">
+					<a ng-click="userDetails__name = !userDetails__name;" class="red_ink" href="">Edit</a>
+				</div>
+				
+				<div class="userDetails__item">
+					<strong>User type:</strong>
+					<div class="fb">
+						<div class="userCheckbox" id="checkboxDriver">
+							<img src="../img/userDriver.png" alt="">
+							<input id="userDriver" class="lpics2check" type="checkbox" />
+							<label for="userDriver"><span></span></label>
+							<div class="checkboxLabel">Driver</div>
+						</div>
+						<div class="userCheckbox" id="checkboxTeam">
+							<img src="img/userTeam.png" alt="">
+							<input id="userTeam" class="lpics2check" type="checkbox" />
+							<label for="userTeam"><span></span></label>
+							<div class="checkboxLabel">Team</div>
+						</div>
+						<div class="userCheckbox" id="checkboxDesigner">
+							<img src="img/userDesigner.png" alt="">
+							<input id="userDesigner" class="lpics2check" type="checkbox" />
+							<label for="userDesigner"><span></span></label>
+							<div class="checkboxLabel">Designer</div>
+						</div>
+						<div class="userCheckbox" id="checkboxWrapper">
+							<img src="img/userWrapper.png" alt="">
+							<input id="userWrapper" class="lpics2check" type="checkbox" />
+							<label for="userWrapper"><span></span></label>
+							<div class="checkboxLabel">Wrapper</div>
+						</div>
+						<div class="userCheckbox" id="checkboxMarketing">
+							<img src="img/userMarketing.png" alt="">
+							<input id="userMarketing" class="lpics2check" type="checkbox" />
+							<label for="userMarketing"><span></span></label>
+							<div class="checkboxLabel">Marketing</div>
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div class="userDetails__item fb jc-sb">
+					<strong>Team Name:</strong>
+					<span>Carlin</span>
+					<input class="ng-hide" ng-show="userDetails__team" type="text" placeholder="Carlin">
+					<a ng-click="userDetails__team = !userDetails__team;" class="red_ink" href="">Edit</a>
+				</div>
+				<div class="userDetails__item fb jc-sb">
+					<strong>Driver Number:</strong>
+					<span>12</span>
+					<input class="ng-hide" ng-show="userDetails__driverNumber" type="text" placeholder="12">
+					<a ng-click="userDetails__driverNumber = !userDetails__driverNumber;" class="red_ink" href="">Edit</a>
+				</div>
+				<div class="userDetails__item fb jc-sb">
+					<strong>Driver Nationality:</strong>
+						<select id="filter_presentations" id="#" name="#">
+							<option selected disabled>Select</option>
+							<option value="#">Option 1</option>
+							<option value="#">Option 2</option>
+							<option value="#">Option 3</option>
+							<option value="#">Option 4</option>
+							<option value="#">Option 5</option>
+							<option value="#">Option 6</option>
+							<option value="#">Option 7</option>
+						</select>
+					</div>
+			</div>
+			<hr />
+			<a href="" class="btn btn-next">Next step<i class="icon-next pull-right"></i></a>
+		</div>
+	</div>
 </div>
-<h5>User datails</h5>
-<ul>
-	<li>Name:</li>
-	<li>Adam Grist</li>
-	<li><a href="">Edit</a></li>
-</ul>
-<h6>User type:</h6>
-<div class="fb">
-	<div>
-		<img src="../img/project-creation-5.1" alt="">
-		<input class="lpics2check" type="checkbox" />
-	</div>
-	<div>
-		<img src="../img/project-creation-5.2" alt="">
-		<input class="lpics2check" type="checkbox">
-	</div>
-	<div>
-		<img src="../img/project-creation-5.3" alt="">
-		<input class="lpics2check" type="checkbox">
-	</div>
-	<div>
-		<img src="../img/project-creation-5.4" alt="">
-		<input class="lpics2check" type="checkbox">
-	</div>
-	<div>
-		<img src="../img/project-creation-5.5" alt="">
-		<input class="lpics2check" type="checkbox">
-	</div>
-</div>
-<ul class="fb">
-	<li>Team name:</li>
-	<li>Carlin</li>
-	<li><a href="">Edit</a></li>
-</ul>
-<ul class="fb">
-	<li>Driver Number:</li>
-	<li>12</li>
-	<li><a href="">Edit</a></li>
-</ul>
-<ul class="fb">
-	<li>Driver Nationality:</li>
-	<li><div class="col-md-3 tile_content simple_tile">Select
-		<select id="filter_presentations" id="#" name="#">
-			<option value="#">Option 1</option>
-			<option value="#">Option 2</option>
-			<option value="#">Option 3</option>
-			<option value="#">Option 4</option>
-			<option value="#">Option 5</option>
-			<option value="#">Option 6</option>
-			<option value="#">Option 7</option>
-		</select>
-	</div></li>
-</ul>
