@@ -170,6 +170,7 @@ ThreeDOMApp .controller('mainController', function($scope, $route, $rootScope, $
                 $scope.isActive = function(route) {
                     return route === $location.path();
                 };
+    
                 $scope.sign_in = false;
                 $scope.newProject = false;
                 $scope.alert = true;
@@ -194,6 +195,14 @@ ThreeDOMApp .controller('mainController', function($scope, $route, $rootScope, $
                         }
                     }
                 }
+                $scope.class = "off";
+
+                $scope.changeClass = function(){
+                    if ($scope.class === "off")
+                        $scope.class = "on";
+                     else
+                        $scope.class = "off";
+                };
             })
             // Dashboard controller
             .controller('dashboardController', function($scope) {
@@ -211,6 +220,7 @@ ThreeDOMApp .controller('mainController', function($scope, $route, $rootScope, $
             })
             // Projects controller
             .controller('projectsController', function($scope) {
+
             })
             .controller('workwithusController', function($scope) {
             })

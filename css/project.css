@@ -7,6 +7,11 @@
 	margin: 6px 55px 0 0;
 }
 
+.toolbarHeading {
+	background-color: #404040;
+	color: #fff;
+}
+
 .projectHeadLine {
 	color: #373737;
 }
@@ -69,7 +74,7 @@
 
 .screen-title {
 	padding: .5em;
-	color: #373737;
+	color: #fff;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 15px;
@@ -103,14 +108,10 @@
 }
 
 .projectPanel .left {
-	padding: 10px 0 0 0;
 	min-height: 60px;
 	border-right: 1px rgba(64, 64, 64, 0.2) solid;
 }
-.projectPanel .right {
-	padding: 10px 0 0 0;
-	min-height: 60px;
-}
+
 
 .projectPanel .left-text {
 	min-height: 15px;
@@ -249,4 +250,134 @@ position: relative;
 
 .app-content > .fb > img {
 	padding-left: 0;
+}
+
+.icon-viewLeft {
+	display: block;
+	width: 40px;
+	height: 31px;
+	background: url(../img/panel_left.png) no-repeat;
+}
+
+.icon-panelFront {
+	display: block;
+	width: 39px;
+	height: 40px;
+	background: url(../img/panel_front.png) no-repeat;
+}
+
+.icon-panelRight {
+	display: block;
+	width: 40px;
+	height: 31px;
+	background: url(../img/panel_right.png) no-repeat;
+}
+
+.icon-panelBack {
+	display: block;
+	width: 39px;
+	height: 39px;
+	background: url(../img/panel_back.png) no-repeat;
+}
+
+.icon-panelTop {
+	display: block;
+	width: 31px;
+	height: 40px;
+	background: url(../img/panel_top.png) no-repeat;
+}
+
+.icon-panelAuto {
+	display: block;
+	width: 37px;
+	height: 37px;
+	background: url(../img/panel_auto.png) no-repeat;
+}
+
+.icon-panelFree {
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: url(../img/panel_free.png) no-repeat;
+}
+
+
+.singleView:hover .icon-viewLeft, .singleView.selected .icon-viewLeft{
+	background: url(../img/panel_left-red.png) no-repeat;
+}
+
+.singleView:hover .icon-panelFront, .singleView.selected .icon-panelFront {
+	background: url(../img/panel_front-red.png) no-repeat;
+}
+
+.singleView:hover .icon-panelRight, .singleView.selected .icon-panelRight {
+	background: url(../img/panel_right-red.png) no-repeat;
+}
+
+.singleView:hover .icon-panelBack, .singleView.selected .icon-panelBack{
+	background: url(../img/panel_back-red.png) no-repeat;
+}
+
+.singleView:hover .icon-panelTop, .singleView.selected .icon-panelTop{
+	background: url(../img/panel_top-red.png) no-repeat;
+}
+
+.singleView:hover .icon-panelAuto, .singleView.selected .icon-panelAuto{
+	background: url(../img/panel_auto-red.png) no-repeat;
+}
+
+.singleView:hover .icon-panelFree, .singleView.selected .icon-panelFree{
+	background: url(../img/panel_free-red.png) no-repeat;
+}
+
+.singleView {
+	position: relative;
+	height: 90px;
+	padding: 20px 0;
+	border-bottom: 1px solid #d1cece;
+}
+
+.singleView span {
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	left: 0;
+}
+
+.singleView:first-child {
+	margin-left: -1px;
+}
+
+.singleView i {
+	margin: auto;
+}
+
+.singleView:hover{
+	background-color: #E3E0E0;
+}
+
+.onOffToggle {
+	border-radius: 50%;
+	border: 2px solid #404040;
+	width: 32px;
+	height: 32px;
+	display: block;
+	margin: auto;
+}
+
+.onOffToggle__container {
+	background: #868585;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	padding: 6px 0;
+	color: #FFF;
+	font-weight: 500;
+	font-size: 9px;
+	border: 2px solid #EEECEC;
+	text-transform: uppercase;
+}
+
+.switch.on {
+	background-color: #e40b0b;
 }

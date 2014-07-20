@@ -1451,6 +1451,11 @@ img.brand {
 	top: 20%;
 }
 
+.arrow-right, .arrow-left {
+	z-index: 9999;
+	position: relative;
+}
+
 @media screen and ( max-width: 991px ) {
 
 	.wrapper {
