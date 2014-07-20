@@ -896,7 +896,7 @@ form.welcomeback
 	margin: 4em auto;
 }
 
-.subsection__title{
+.subsection__title {
 	font-size: 27px;
 	font-weight: bold;
 	color: #373737;
@@ -906,13 +906,22 @@ hr{
 	border-bottom: 1px solid #d9d9d9;
 }
 
-.btn-plus{
+.btn-plus {
 	color: #fff;
 	font-size: 19px;
 	background-color: #52b266;
 	border-radius: 0;
 	font-weight: 300;
 	padding: 10px 30px 8px 10px;
+}
+
+.btn-square {
+	background: #e22c21;
+	border-radius: 0;
+	color: #fff;
+	margin: 0 1em;
+	width: 207px;
+	text-align: left;
 }
 
 .icon-plus{
@@ -952,7 +961,8 @@ hr{
 	width: 12px;
 	height: 22px;
 	margin: 2px;
-	background: url('../img/icon-next.png');
+	background: url('../img/icon-next.png') no-repeat;
+	background-size: contain;
 }
 
 .icon-search{
@@ -961,7 +971,7 @@ hr{
 	width: 27px;
 	height: 27px;
 	margin: 5px;
-	background: url('../img/icon-search.png');
+	background: url('../img/icon-search.png') no-repeat;
 }
 
 .icon-plus-red{
@@ -970,7 +980,7 @@ hr{
 	width: 32px;
 	height: 32px;
 	margin: 35px 0 15px;
-	background: url('../img/icon-plus-red.png');
+	background: url('../img/icon-plus-red.png') no-repeat;
 }
 
 .icon-invite{
@@ -979,7 +989,7 @@ hr{
 	width: 25px;
 	height: 24px;
 	margin: 5px;
-	background: url('../img/icon-user.png');
+	background: url('../img/icon-user.png') no-repeat;
 }
 
 .singleUser {
@@ -1184,6 +1194,25 @@ background: url(../img/icon-checked.png) no-repeat;
 .imageSelection{
 	width: 90%;
 	margin: auto;
+}
+
+.section--request {
+	position: relative;
+	z-index: 9;
+}
+
+.section--request .btn-square i{
+	width: 8px;
+	height: 15px;
+}
+
+.tabs-step2 {
+	position: relative;
+	top: 2em;
+}
+
+.section--request p {
+margin: 8px 0;
 }
 
 @media screen and ( max-width: 991px ) {

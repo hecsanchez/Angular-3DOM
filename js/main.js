@@ -72,6 +72,18 @@ ThreeDOMApp.config(function($routeProvider, $stateProvider) {
                                     templateUrl : 'pages/projectcreation2.html',
                                     controller  : 'createprojectsController'})
 
+                    // Create Project route
+                    .when('/create-project-3', {
+                                    title: 'Create project',
+                                    templateUrl : 'pages/projectcreation3.html',
+                                    controller  : 'createprojectsController'})
+
+                     // Create Project route
+                    .when('/create-project-4', {
+                                    title: 'Create project',
+                                    templateUrl : 'pages/projectcreation4.html',
+                                    controller  : 'createprojectsController'})
+
                     // Default route
                     .otherwise({
                                     title: 'Dashboard',
