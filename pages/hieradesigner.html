@@ -63,7 +63,7 @@
                 </select>
             </div>
         </div>
-        <div ng-show="myDropDown=='option2'" class="tile_content designersDropdown">
+        <div ng-show="myDropDown=='option2'" class="tile_content designersDropdown fb">
             <div class="col-md-6">
                 <h3>Browse designers <span class="red_ink">(4)</span></h3>
                 <div class="fb jc-sb fb--wrap">
@@ -72,7 +72,7 @@
                             <img src="img/profile_large.png"  alt="profil Image">
                         </div>
                         <div class="tile_content" id="profilData">
-                            <h3>Andrea Pirlo</h3>
+                            <h4>Andrea Pirlo</h4>
                             <div class="text_dashborad_profil">
                                 <span>Location: </span>
                                 <span>Turin</span>
@@ -82,18 +82,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="" id="profil">
+                    <div class="" id="profil" ng-class="{ redbg : socratesPortfolio }">
                         <div class="" id="profilImage">
                             <img src="img/profile_large.png"  alt="profil Image">
                         </div>
                         <div class="tile_content" id="profilData">
-                            <h3>Socrates</h3>
+                            <h4>Socrates</h4>
                             <div class="text_dashborad_profil">
                                 <span>Location: </span>
                                 <span>Brazil</span>
                             </div>
                             <div class="dashboardButton">
-                                <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                                <a ng-click="socratesPortfolio = !socratesPortfolio;">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
                             </div>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                             <img src="img/profile_large.png"  alt="profil Image">
                         </div>
                         <div class="tile_content" id="profilData">
-                            <h3>Andrea Pirlo</h3>
+                            <h4>Andrea Pirlo</h4>
                             <div class="text_dashborad_profil">
                                 <span>Location: </span>
                                 <span>Turin</span>
@@ -117,7 +117,7 @@
                             <img src="img/profile_large.png"  alt="profil Image">
                         </div>
                         <div class="tile_content" id="profilData">
-                            <h3>Socrates</h3>
+                            <h4>Socrates</h4>
                             <div class="text_dashborad_profil">
                                 <span>Location: </span>
                                 <span>Brazil</span>
@@ -128,6 +128,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6" ng-show="socratesPortfolio">
+                <h3>Portfolio</h3>
             </div>
         </div>
     </div>
