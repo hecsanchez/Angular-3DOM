@@ -38,9 +38,13 @@
     </div>
 
     <div class="tile col-md-12">
-        <div class="tile_title_black">
+        <div class="tile_title_black" ng-class="{ hidden : myDropDown=='option2' }">
             <span class="red">1</span>/3. What do you need a designer for?
         </div>
+        <div class="tile_title_black hidden" ng-class="{ visible : myDropDown=='option2' }">
+            <span class="red">2</span>/3. Look at the designers
+        </div>
+
         <div class="tile_content">
             <h4>Why is this important to know?</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a sapien sapien. Duis facilisis quam vel urna ultrices, non lacinia velit accumsan. Sed tincidunt in nibh eget lacinia. Quisque tincidunt metus lectus, in auctor elit auctor a. Aenean at dolor auctor, accumsan nibh ac, luctus ante. In a purus rhoncus massa malesuada hendrerit vitae ac leo. </p>    
@@ -59,65 +63,69 @@
                 </select>
             </div>
         </div>
-        <div ng-show="myDropDown=='option2'">
-            <h4>Browse designers (4)</h4>
-            <div class="" id="profil">
-                <div class="" id="profilImage">
-                    <img src="img/profile_large.png"  alt="profil Image">
-                </div>
-                <div class="tile_content" id="profilData">
-                    <h3>Andrea Pirlo</h3>
-                    <div class="text_dashborad_profil">
-                        <span>Location: </span>
-                        <span>Turin</span>
+        <div ng-show="myDropDown=='option2'" class="tile_content designersDropdown">
+            <div class="col-md-6">
+                <h3>Browse designers <span class="red_ink">(4)</span></h3>
+                <div class="fb jc-sb fb--wrap">
+                    <div class="" id="profil">
+                        <div class="" id="profilImage">
+                            <img src="img/profile_large.png"  alt="profil Image">
+                        </div>
+                        <div class="tile_content" id="profilData">
+                            <h3>Andrea Pirlo</h3>
+                            <div class="text_dashborad_profil">
+                                <span>Location: </span>
+                                <span>Turin</span>
+                            </div>
+                            <div class="dashboardButton">
+                                <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="dashboardButton">
-                        <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                    <div class="" id="profil">
+                        <div class="" id="profilImage">
+                            <img src="img/profile_large.png"  alt="profil Image">
+                        </div>
+                        <div class="tile_content" id="profilData">
+                            <h3>Socrates</h3>
+                            <div class="text_dashborad_profil">
+                                <span>Location: </span>
+                                <span>Brazil</span>
+                            </div>
+                            <div class="dashboardButton">
+                                <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="" id="profil">
-                <div class="" id="profilImage">
-                    <img src=""  alt="profil Image">
-                </div>
-                <div class="tile_content" id="profilData">
-                    <h3>Socrates</h3>
-                    <div class="text_dashborad_profil">
-                        <span>Location: </span>
-                        <span>Brazil</span>
+                    <div class="" id="profil">
+                        <div class="" id="profilImage">
+                            <img src="img/profile_large.png"  alt="profil Image">
+                        </div>
+                        <div class="tile_content" id="profilData">
+                            <h3>Andrea Pirlo</h3>
+                            <div class="text_dashborad_profil">
+                                <span>Location: </span>
+                                <span>Turin</span>
+                            </div>
+                            <div class="dashboardButton">
+                                <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="dashboardButton">
-                        <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="" id="profil">
-                <div class="" id="profilImage">
-                    <img src="img/profile_large.png"  alt="profil Image">
-                </div>
-                <div class="tile_content" id="profilData">
-                    <h3>Andrea Pirlo</h3>
-                    <div class="text_dashborad_profil">
-                        <span>Location: </span>
-                        <span>Turin</span>
-                    </div>
-                    <div class="dashboardButton">
-                        <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="" id="profil">
-                <div class="" id="profilImage">
-                    <img src=""  alt="profil Image">
-                </div>
-                <div class="tile_content" id="profilData">
-                    <h3>Socrates</h3>
-                    <div class="text_dashborad_profil">
-                        <span>Location: </span>
-                        <span>Brazil</span>
-                    </div>
-                    <div class="dashboardButton">
-                        <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                    <div class="" id="profil">
+                        <div class="" id="profilImage">
+                            <img src="img/profile_large.png"  alt="profil Image">
+                        </div>
+                        <div class="tile_content" id="profilData">
+                            <h3>Socrates</h3>
+                            <div class="text_dashborad_profil">
+                                <span>Location: </span>
+                                <span>Brazil</span>
+                            </div>
+                            <div class="dashboardButton">
+                                <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

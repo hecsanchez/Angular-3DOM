@@ -1320,6 +1320,32 @@ img.brand {
 	left: 12em;
 }
 
+.designersDropdown #profil {
+	width: 48%;
+	position: relative;
+	border: 1px solid #D6D6D6;
+	margin-top: 3em;
+}
+
+.designersDropdown #profilImage {
+	top: -9%;
+	right: 7%;
+}
+
+.designersDropdown #profilImage img {
+	width: 166px;
+	height: 166px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	border: 5px solid #E42E22;
+}
+
+.tile_title_black.hidden.visible {
+	display: block !important;
+	visibility: visible !important;
+}
+
 
 @media screen and ( max-width: 991px ) {
 
