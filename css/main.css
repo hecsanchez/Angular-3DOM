@@ -442,6 +442,7 @@ span.presentation_content
 }
 .no_bullet_list {
     list-style: none;
+    padding: 0px;
 }
 .hire_button {
     background-color:  #d91515;
