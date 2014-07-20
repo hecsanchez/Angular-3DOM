@@ -253,7 +253,8 @@ ThreeDOMApp .controller('mainController', function($scope, $route, $rootScope, $
                     e = e || event;
                     e.preventDefault();
                 console.log("DragEnter event");
-                }, false);
+                }, false)
+                
             })
             // Presentations driver controller
             .controller('presentationsdriverController', function($scope, $document) {
