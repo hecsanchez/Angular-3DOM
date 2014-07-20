@@ -1371,6 +1371,10 @@ img.brand {
 	top: 19%;
 }
 
+.designersDropdown .dashboardButton #ok_logos {
+	top: 7px;
+}
+
 .redbg, .redbg .tile_content {
 	background-color: #E42E22;
 }
@@ -1381,8 +1385,67 @@ img.brand {
 
 .redbg .dashboardButton a {
 	background-color: #373737;
+	box-shadow: none;
 }
 
+.portfolio h3 {
+	margin-left: 0;
+}
+
+.portfolio p {
+	font-size: 16px;
+}
+
+#popup.darkPopup {
+	max-width: 815px;
+	border: 1px solid #38383a
+}
+
+.tile_content_popup.portfolioImg {
+	background-color: #211F25;
+	padding-top: 4em;
+}
+
+.darkPopup .alert_close {
+	font-size: 17px;
+	font-weight: 300;
+	margin-right: 1em;
+}
+
+.darkPopup .alert_close:hover {
+	color: #fff;
+}
+
+.tile.designerSteps {
+	margin-top: 12px;
+}
+.designerSteps h3 {
+	margin-left: 0;
+}
+
+.designersDropdown.chosen #profil{
+	width: 100%;
+}
+
+.designersDropdown.chosen #profilImage {
+	right: auto;
+	left: 7%;
+}
+
+.designersDropdown.chosen #profilData {
+	margin-bottom: 1em;
+	margin-top: 9em;
+	box-shadow: none;
+}
+
+.designersDropdown.chosen .dashboardButton {
+	width: 100%;
+}
+
+.designersDropdown.chosen .dashboardButton a img {
+	left: 78%;
+	top: 20%;
+}
 
 @media screen and ( max-width: 991px ) {
 

@@ -37,7 +37,7 @@
         </div>
     </div>
 
-    <div class="tile col-md-12">
+    <div class="tile col-md-12 designerSteps" ng-class="{ hidden : designerStep3 }">
         <div class="tile_title_black" ng-class="{ hidden : myDropDown=='option2' }">
             <span class="red">1</span>/3. What do you need a designer for?
         </div>
@@ -46,8 +46,14 @@
         </div>
 
         <div class="tile_content">
-            <h4>Why is this important to know?</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a sapien sapien. Duis facilisis quam vel urna ultrices, non lacinia velit accumsan. Sed tincidunt in nibh eget lacinia. Quisque tincidunt metus lectus, in auctor elit auctor a. Aenean at dolor auctor, accumsan nibh ac, luctus ante. In a purus rhoncus massa malesuada hendrerit vitae ac leo. </p>    
+            <div ng-class="{ hidden : myDropDown=='option2' }">
+                <h3>Why is this important to know?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a sapien sapien. Duis facilisis quam vel urna ultrices, non lacinia velit accumsan. Sed tincidunt in nibh </p>   
+            </div> 
+            <div class="hidden" ng-class="{ visible : myDropDown=='option2' }">
+                <h3>View designers and galleries</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a sapien sapien. Duis facilisis quam vel urna ultrices, non lacinia velit accumsan. Sed tincidunt in nibh </p>   
+            </div> 
             <hr/>
             
             <div class="fb">
@@ -63,76 +69,251 @@
                 </select>
             </div>
         </div>
-        <div ng-show="myDropDown=='option2'" class="tile_content designersDropdown fb">
-            <div class="col-md-6">
-                <h3>Browse designers <span class="red_ink">(4)</span></h3>
-                <div class="fb jc-sb fb--wrap">
-                    <div class="" id="profil">
-                        <div class="" id="profilImage">
-                            <img src="img/profile_large.png"  alt="profil Image">
-                        </div>
-                        <div class="tile_content" id="profilData">
-                            <h4>Andrea Pirlo</h4>
-                            <div class="text_dashborad_profil">
-                                <span>Location: </span>
-                                <span>Turin</span>
+        <div ng-show="myDropDown=='option2'" class="tile_content designersDropdown">
+            <div class="fb">
+                <div class="col-md-6">
+                    <h3>Browse designers <span class="red_ink">(4)</span></h3>
+                    <div class="fb jc-sb fb--wrap">
+                        <div class="" id="profil">
+                            <div class="" id="profilImage">
+                                <img src="img/profile_large.png"  alt="profil Image">
                             </div>
-                            <div class="dashboardButton">
-                                <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="" id="profil" ng-class="{ redbg : socratesPortfolio }">
-                        <div class="" id="profilImage">
-                            <img src="img/profile_large.png"  alt="profil Image">
-                        </div>
-                        <div class="tile_content" id="profilData">
-                            <h4>Socrates</h4>
-                            <div class="text_dashborad_profil">
-                                <span>Location: </span>
-                                <span>Brazil</span>
-                            </div>
-                            <div class="dashboardButton">
-                                <a ng-click="socratesPortfolio = !socratesPortfolio;">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                            <div class="tile_content" id="profilData">
+                                <h4>Andrea Pirlo</h4>
+                                <div class="text_dashborad_profil">
+                                    <span>Location: </span>
+                                    <span>Turin</span>
+                                </div>
+                                <div class="dashboardButton">
+                                    <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="" id="profil">
-                        <div class="" id="profilImage">
-                            <img src="img/profile_large.png"  alt="profil Image">
-                        </div>
-                        <div class="tile_content" id="profilData">
-                            <h4>Andrea Pirlo</h4>
-                            <div class="text_dashborad_profil">
-                                <span>Location: </span>
-                                <span>Turin</span>
+                        <div class="" id="profil" ng-class="{ redbg : socratesPortfolio }">
+                            <div class="" id="profilImage">
+                                <img src="img/profile_large.png"  alt="profil Image">
                             </div>
-                            <div class="dashboardButton">
-                                <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                            <div class="tile_content" id="profilData">
+                                <h4>Socrates</h4>
+                                <div class="text_dashborad_profil">
+                                    <span>Location: </span>
+                                    <span>Brazil</span>
+                                </div>
+                                <div class="dashboardButton">
+                                    <a ng-class="{ hidden : socratesPortfolio }" ng-click="socratesPortfolio = !socratesPortfolio;">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                                    <a class="hidden" ng-class="{ visible : socratesPortfolio }">Select designer<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="" id="profil">
-                        <div class="" id="profilImage">
-                            <img src="img/profile_large.png"  alt="profil Image">
-                        </div>
-                        <div class="tile_content" id="profilData">
-                            <h4>Socrates</h4>
-                            <div class="text_dashborad_profil">
-                                <span>Location: </span>
-                                <span>Brazil</span>
+                        <div class="" id="profil">
+                            <div class="" id="profilImage">
+                                <img src="img/profile_large.png"  alt="profil Image">
                             </div>
-                            <div class="dashboardButton">
-                                <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                            <div class="tile_content" id="profilData">
+                                <h4>Andrea Pirlo</h4>
+                                <div class="text_dashborad_profil">
+                                    <span>Location: </span>
+                                    <span>Turin</span>
+                                </div>
+                                <div class="dashboardButton">
+                                    <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="" id="profil">
+                            <div class="" id="profilImage">
+                                <img src="img/profile_large.png"  alt="profil Image">
+                            </div>
+                            <div class="tile_content" id="profilData">
+                                <h4>Socrates</h4>
+                                <div class="text_dashborad_profil">
+                                    <span>Location: </span>
+                                    <span>Brazil</span>
+                                </div>
+                                <div class="dashboardButton">
+                                    <a href="">View gallery of work<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 portfolio" ng-show="socratesPortfolio">
+                    <h3>Portfolio</h3>
+                    <p>Click on an image to view larger image</p>
+                    <div class="fb fb--wrap jc-sb">
+                        <a ng-click="portfolioImg1 = !portfolioImg1;">
+                            <img src="../img/portfolio1.png">
+                        </a>
+                        <img src="../img/portfolio2.png">
+                        <img src="../img/portfolio3.png">
+                        <img src="../img/portfolio4.png">
+                    </div>
+                    <hr />
+                        <div class="dashboardButton">
+                            <a href=""><img id="ok_logos" src="img/circle_ok.png" alt="OK">Select designer<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                        </div>
+                    <hr />
+                </div>
             </div>
-            <div class="col-md-6" ng-show="socratesPortfolio">
-                <h3>Portfolio</h3>
+            <a href="" ng-click="designerStep3 = !designerStep3;"> 
+                     <div class="assign_logos">
+                       <img class="menu-icon" id="save" src="img/saved_files_white.png" alt="">
+                        Save & Next
+                        <img id="right_arrow_logos" src="img/arrow_right_white.png" alt=">">
+                    </div>
+                 </a>
+            </div>                
+        </div>
+    
+    <div class="tile col-md-12 designerSteps animate-hide ng-hide" ng-show="designerStep3">
+        <div class="tile_title_black">
+            <span class="red">3</span>/3. Configure request
+        </div>
+       
+        <div ng-class="{ hidden: designerSuccess }">
+            <div class="tile_content">
+                <div>
+                    <h3>Configure your designer requirements</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a sapien sapien. Duis facilisis quam vel urna ultrices, non lacinia velit accumsan. Sed tincidunt in nibh </p>   
+                </div> 
+               
+                <hr/>
+                
+                <div class="fb">
+                    <p>Select item to design for</p>
+                    <select id="filter_presentations" id="#" name="#" ng-model="myDropDown">
+                        <option value="option1">Option 1</option>
+                        <option value="option2" selected>Option 2</option>
+                        <option value="option3">Option 3</option>
+                        <option value="option4">Option 4</option>
+                        <option value="option5">Option 5</option>
+                        <option value="option6">Option 6</option>
+                        <option value="option7">Option 7</option>
+                    </select>
+                </div>
+            </div>
+            <div class="tile_content designersDropdown chosen">
+                <div class="fb">
+                    <div class="col-md-6">
+                        <h3>Chosen designer</h3>                   
+                            <div class="redbg fb row" id="profil">
+                                <div class="col-md-6">
+                                    <div class="" id="profilImage">
+                                        <img src="img/profile_large.png"  alt="profil Image">
+                                    </div>
+                                    <div class="tile_content" id="profilData">
+                                        <h4>Socrates</h4>
+                                        <div class="text_dashborad_profil">
+                                            <span>Location: </span>
+                                            <span>Brazil</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dashboardButton">
+                                        <a>Change designer<img src="img/dashboard/ARROW_RIGHT_WHITE.png" alt=">"></a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    <div class="col-md-6">
+                        <div class="tile col-md-12" id="">
+                            <h2 class="tile_title_black large">Create your quote</h2>
+                            <div class="quote_tile">
+                                <p class="simple">
+                                    A quote will be sent to your inbox within 24 hours along with a confirmation email.
+                                </p>
+                                <hr>
+                                <form method="post" class="ng-pristine ng-valid">
+                                    
+                                    <div class="formline">
+                                        <label class="form4" for="service">Designer chosen</label>
+                                        <select class="form4" name="service">
+                                            <option value="Socrates" selected>Socrates</option>
+                                            <option value="youyou2">Youyou 2</option>
+                                            <option value="youyou3">Youyou 3</option>
+                                            <option value="youyou4">Youyou 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="formline">
+                                        <label class="form4" for="modeltype">Design Type</label>
+                                        <select class="form4" name="modeltype">
+                                            <option disabled>Select</option>
+                                            <option value="youyou2">Youyou 2</option>
+                                            <option value="youyou3">Youyou 3</option>
+                                            <option value="youyou4">Youyou 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="formline">
+                                        <label class="form4" for="modelsubtype">Type Model</label>
+                                        <select class="form4" name="modelsubtype">
+                                            <option disabled>Select</option>
+                                            <option value="youyou2">Youyou 2</option>
+                                            <option value="youyou3">Youyou 3</option>
+                                            <option value="youyou4">Youyou 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="formline">
+                                        <label class="form4" for="postcode">Maximum budget</label>
+                                         <select class="form4" name="modelsubtype">
+                                            <option disabled>Select</option>
+                                            <option value="youyou2">Youyou 2</option>
+                                            <option value="youyou3">Youyou 3</option>
+                                            <option value="youyou4">Youyou 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="formlinesmall">
+                                        <label class="form4" for="date1">Preferred date(s)</label>
+                                    </div>
+                                    <div class="formline">
+                                        <input id="seconddate" class="form4 date" type="date" name="date2" value="">
+                                        <input class="form4 date" type="date" name="date1" value="">
+                                    </div>
+                                    
+                                    <label class="form4" for="information">Additionnal information :</label>
+                                    <textarea class="form4" name="information" value=""></textarea>
+                                    <label class="form4" for="files">Files :</label>
+                                    <textarea class="form4" name="files" value=""></textarea>
+                                    
+                                    <input type="submit" id="submit_quote" name="subQuote" value="Submit">
+                                    
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a ng-click="designerSuccess = !designerSuccess;"> 
+                     <div class="assign_logos">
+                       <img class="menu-icon" id="save" src="img/saved_files_white.png" alt="">
+                        Save & Next
+                        <img id="right_arrow_logos" src="img/arrow_right_white.png" alt=">">
+                    </div>
+                 </a>
+            </div>                
+        </div>
+        <div class="animate-hide" ng-show="designerSuccess">
+            <div class="tile_content">
+                <h3>Submission successful</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a sapien sapien. Duis facilisis quam vel urna ultrices, non lacinia velit accumsan. Sed tincidunt in nibh eget lacinia. Quisque tincidunt metus lectus, in auctor elit auctor a. Aenean at dolor auctor, accumsan nibh ac, luctus ante. In a purus rhoncus massa malesuada hendrerit vitae ac leo. </p>
+                <hr />
+                <center>
+                    <h2>What next?</h2>
+                    <h3>Now you have completed the steps, here’s a few options</h3>
+                    <a class="hire_button" href="#"><img class="pull-left" src="img/list.png"/><span class="text_content">View my dashboard</span><span class="carret">></span></a>
+                    <a class="hire_button" href="#"><img class="pull-left" src="img/polaroid.png"/><span class="text_content">View my projects</span><span class="carret">></span></a>
+                </center>
             </div>
         </div>
     </div>
+</div>
+<div id="hombre" class="animate-hide" ng-show="portfolioImg1" style="">
+    <div id="popup" class="darkPopup">
+        <a class="alert_close pull-right red_ink" ng-click="portfolioImg1=false">Close [x]</a>
+        <div class="tile_content_popup portfolioImg">
+            <img src="img/portfolio1-large.png">
+        </div>
     </div>
 </div>
