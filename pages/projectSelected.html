@@ -35,7 +35,7 @@
 				<div class="app-button">APPS</div>
 				<div class="">
 					<a href="#">
-						<img src="img/project_presentation.png"/> Présentation
+						<img src="img/project_presentation.png"/> Presentation
 					</a>
 				</div>
 				
@@ -192,7 +192,7 @@
 
 										<div class="row">
 											<div class="projectTitle">
-												VIEWS
+												<span>VIEWS</span>
 											</div>
 										</div>
 										<div class="row fb fb--wrap">
@@ -247,25 +247,25 @@
 										</div>
 										<div class="row">
 											<div class="projectTitle">
-												SETTINGS
+												<span>SETTINGS</span>
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-xs-6 left">
+											<div class="col-xs-6 left singleSetting">
 												<div class="onOffToggle">
-													<a href="" ng-click="changeClass()">
-													  <div class="onOffToggle__container" ng-class="class">
-													    {{class}}
+													<a href="" ng-click="bloomSwitch()">
+													  <div class="onOffToggle__container" ng-class="bloomclass">
+													    {{bloomclass}}
 													  </div>
 													</a>
 												</div>
 												<span>BLOOM</span>
 											</div>
-											<div class="col-xs-6 right">
+											<div class="col-xs-6 right singleSetting">
 												<div class="onOffToggle">
-													<a href="" ng-click="changeClass()">
-													  <div class="onOffToggle__container" ng-class="class">
-													    {{class}}
+													<a href="" ng-click="vignettingSwitch()">
+													  <div class="onOffToggle__container" ng-class="vignettingclass">
+													    {{vignettingclass}}
 													  </div>
 													</a>
 												</div>
@@ -273,26 +273,22 @@
 											</div>
 										</div>
 										<div class="row">
-											<div class="col-xs-6 left">
+											<div class="col-xs-6 left singleSetting">
 												<div class="onOffToggle">
-													<a href="" ng-class="{'dof': !isActive, 'dof on': isActive}"
-												       ng-init="isActive = false"
-												       ng-click="isActive = !isActive">
-													  <div class="onOffToggle__container">
-													    {{class}}
+													<a href="" ng-click="dofSwitch()">
+													  <div class="onOffToggle__container" ng-class="dofclass">
+													    {{dofclass}}
 													  </div>
 													</a>
 												</div>
 												<span>DEPTH OF FIELD</span>
 											</div>
 
-											<div class="col-xs-6 right">
+											<div class="col-xs-6 right singleSetting">
 												<div class="onOffToggle">
-													<a href="" ng-class="{'dsv': !isActive, 'dsv on': isActive}"
-												       ng-init="isActive = false"
-												       ng-click="isActive = !isActive">
-													  <div class="onOffToggle__container">
-													    {{class}}
+													<a href="" ng-click="dsvSwitch()">
+													  <div class="onOffToggle__container" ng-class="dsvclass">
+													    {{dsvclass}}
 													  </div>
 													</a>
 												</div>
@@ -311,75 +307,6 @@
 								<div class="row toolbarHeading">
 									<div class="screen-title arrow-left"><img src="img/left_arrow.png" onclick="prevScreen();"/></div>
 									<div class="screen-title arrow-right"><img src="img/right_arrow.png" onclick="nextScreen();"/></div>
-									<div class="col-md-12 screen-title center">Active decals</div>
-									
-								</div>
-								<div class="row projectPanel panelScreen">
-									<div class="col-md-12 innerPanel">
-										<div class="row">
-											<div class="col-xs-6"><img src="img/panel_logo_1.png" width="80"></div>
-											<div class="col-xs-6">OFFICIAL 3M VINYL PRODUCTS</div>
-										</div>
-
-										<div class="row">
-											<div class="col-md-12">
-												<p>NIKE_02</p>
-												<p><strong>£145.000</strong></p>
-												<p>DECALS VALUE</p>
-												<p><strong>£145.000</strong></p>
-												<p>DECAL POSITION<br/>
-													BONNET</p>
-
-											</div>
-										</div>
-
-										<div class="row">
-											<div class="col-xs-6 left"><img src="img/panel_logo_2.png"></div>
-											<div class="col-xs-6 right"><img src="img/panel_logo_3.png"></div>
-										</div>
-
-										<div class="row">
-											<div class="col-xs-6 left-text"></div>
-											<div class="col-xs-6 right-text"></div>
-										</div>
-
-										<div class="row">
-											<div class="col-xs-6 left"><img src="img/panel_logo_2.png"></div>
-											<div class="col-xs-6 right"><img src="img/panel_logo_3.png"></div>
-										</div>
-
-										<div class="row">
-											<div class="col-xs-6 left-text"></div>
-											<div class="col-xs-6 right-text"></div>
-										</div>
-
-										<div class="row">
-											<div class="col-xs-6 left"><img src="img/panel_logo_2.png"></div>
-											<div class="col-xs-6 right"><img src="img/panel_logo_3.png"></div>
-										</div>
-
-										<div class="row">
-											<div class="col-xs-6 left-text"></div>
-											<div class="col-xs-6 right-text"></div>
-										</div>
-
-										<br/>
-										<div class="row">
-											<div class="col-md-12">
-												<p>CHOOSE WHAT LOGO YOU WOULD LIKE TO USE WHEN A DECAL IS ACTIVE IN THE APP</p>
-											</div>
-										</div>
-
-									</div>
-								</div>
-							</div>
-
-							<!-- camera shoots -->
-
-							<div class="col-md-12 screen-choose" id="screenpanel-2" style="display:none;">
-								<div class="row toolbarHeading">
-									<div class="screen-title arrow-left"><img src="img/left_arrow.png" onclick="prevScreen();"/></div>
-									<div class="screen-title arrow-right"><img src="img/right_arrow.png" onclick="nextScreen();"/></div>
 									<div class="col-md-12 screen-title center" >Camera Shots</div>
 
 								</div>
@@ -390,47 +317,83 @@
 									<div class="col-md-12 innerPanel">
 
 									
-										<div class="row">
-											<img src="img/camera-shots-1.png" alt="">
-											
+										<div class="row shotSetting">
+											<a href="">
+												<img src="img/camera-shots-1.png" alt="">
+												<span>SCREENSHOT</span>
+											</a>
 										</div>
-										
-										<div class="row">
-											<div class="projectTitle">
-												Screenshots
+
+										<div class="row shotSetting">
+											<a href="">
+												<img src="img/camera-shots-2.png">
+												<img src="img/camera-shots-2.png">
+												<img src="img/camera-shots-2.png">
+												<span>SCREENSHOT COLLECTION</span>
+											</a>
+										</div>
+
+										<div class="row shotSetting">
+											<a href="">
+												<img src="img/camera-shots-3.png" alt="">
+												<span>CINEMA CUT</span>
+											</a>
+										</div>
+
+										<div class="row shotSetting">
+											<a href="">
+												<img src="img/camera-shots-4.png" alt="">
+												<span>CREATE PRESENTATION IMAGES</span>
+											</a>
+										</div>
+
+									</div>
+								</div>
+								
+							</div>
+
+							<!-- camera shoots -->
+
+							<div class="col-md-12 screen-choose" id="screenpanel-2" style="display:none;">
+								<div class="row toolbarHeading">
+									<div class="screen-title arrow-left"><img src="img/left_arrow.png" onclick="prevScreen();"/></div>
+									<div class="screen-title arrow-right"><img src="img/right_arrow.png" onclick="nextScreen();"/></div>
+									<div class="col-md-12 screen-title center">Active decals</div>
+								</div>
+								<div class="row projectPanel panelScreen">
+									<div class="col-md-12 innerPanel activeDecals">
+										<div class="mainActive fb">
+											<div class="mainActive_img">
+												<img src="img/panel_logo_1.png" width="80">
+											</div>
+											<span class="">OFFICIAL 3M VINYL PRODUCTS</span>
+										</div>
+
+										<div class="">
+											<div class="">
+												<p>NIKE_02</p>
+												<p><strong>£145.000</strong></p>
+												<p>DECALS VALUE</p>
+												<p><strong>£145.000</strong></p>
+												<p>DECAL POSITION<br/>
+													BONNET</p>
+
 											</div>
 										</div>
 
-										<div class="row">
-											<div class="col-xs-4 left"><img src="img/camera-shots-2.png"></div>
-											<div class="col-xs-4 left"><img src="img/camera-shots-2.png"></div>
-											<div class="col-xs-4 left"><img src="img/camera-shots-2.png"></div>
-										</div>
-										<div class="row">
-											<div class="projectTitle">
-												Screenshot colection
-											</div>
+										<div class="row fb fb--wrap">
+											<div class="activeDecals__img"><img src="img/panel_logo_2.png"></div>
+											<div class="activeDecals__img"><img src="img/panel_logo_3.png"></div>
+											<div class="activeDecals__img"><img src="img/panel_logo_2.png"></div>
+											<div class="activeDecals__img"><img src="img/panel_logo_3.png"></div>
+											<div class="activeDecals__img"><img src="img/panel_logo_2.png"></div>
+											<div class="activeDecals__img"><img src="img/panel_logo_3.png"></div>
 										</div>
 
+										<br/>
 										<div class="row">
-											<img src="img/camera-shots-3.png" alt="">
-											
-										</div>
-										
-										<div class="row">
-											<div class="projectTitle">
-												Cinema cut
-											</div>
-										</div>
-
-										<div class="row">
-											<img src="img/camera-shots-4.png" alt="">
-											
-										</div>
-										
-										<div class="row">
-											<div class="projectTitle">
-												Create presentation images
+											<div class="col-md-12">
+												<p>CHOOSE WHAT LOGO YOU WOULD LIKE TO USE WHEN A DECAL IS ACTIVE IN THE APP</p>
 											</div>
 										</div>
 
@@ -446,95 +409,128 @@
 								<div class="row toolbarHeading">
 									<div class="screen-title arrow-left"><img src="img/left_arrow.png" onclick="prevScreen();"/></div>
 									<div class="screen-title arrow-right"><img src="img/right_arrow.png" onclick="nextScreen();"/></div>
-									<div class="col-md-12 screen-title center"> Decals</div>
+									<div class="col-md-12 screen-title center"> DECALS</div>
 								</div>
 
 								<div class="row projectPanel panelScreen">
 									<div class="col-md-12 innerPanel">
-										<div class="row">
-											<div class="col-xs-6"><a href="">Add +</a></div>
-											<div class="col-xs-6"><a href="">Add Text +</a></div>
+										<div class="row fb">
+											<a class="btn btn--grey" ng-click="tab=1" ng-class="{'active':tab === 1}">
+												ADD +
+											</a>
+											<a class="active btn btn--grey" ng-click="tab=2" ng-class="{'active':tab === 2}">
+												ADD TEXT +
+											</a>
 										</div>
-										<div class="row">
-											<div class="col-xs-6"><img src="img/panel_logo_1.png" width="80"></div>
-											<div class="col-xs-6">OFFICIAL 3M VINYL PRODUCTS</div>
-										</div>
-										<div class="row"><div class="">Add decal +</div></div>
-
-										<div class="row">
-											<div class="col-xs-6 left"><img src="img/panel_logo_2.png"></div>
-											<div class="col-xs-6 right"><img src="img/panel_logo_3.png"></div>
-										</div>
-
-										<div class="row">
-											<div class="col-xs-6 left-text"></div>
-											<div class="col-xs-6 right-text"></div>
-										</div>
-
-										<div class="row">
-											<div class="col-xs-6 left"><img src="img/panel_logo_2.png"></div>
-											<div class="col-xs-6 right"><img src="img/panel_logo_3.png"></div>
-										</div>
-
-										<div class="row">
-											<div class="col-xs-6 left-text"></div>
-											<div class="col-xs-6 right-text"></div>
-										</div>
-
-										<div class="row">
-											<div class="col-xs-6 left"><img src="img/panel_logo_2.png"></div>
-											<div class="col-xs-6 right"><img src="img/panel_logo_3.png"></div>
-										</div>
-
-										<div class="row">
-											<div class="col-xs-6 left-text"></div>
-											<div class="col-xs-6 right-text"></div>
-										</div>
-
-										<br/>
-										<div class="row">
-											<div class="col-md-12">
-												<p>CHOOSE WHAT LOGO YOU WOULD LIKE TO USE WHEN A DECAL IS ACTIVE IN THE APP</p>
+										<div class="animate-hide ng-hide" ng-show="tab==1">
+											<div class="row">
+												<div class="col-xs-6"><img src="img/panel_logo_1.png" width="80"></div>
+												<div class="col-xs-6">OFFICIAL 3M VINYL PRODUCTS</div>
 											</div>
+											<div class="row">
+												<a class="btn btn--darkGrey">
+													<span>ADD DECAL</span> 
+													<i class="icon-plus"></i>
+												</a>
+											</div>
+
+											<div class="row">
+												<div class="col-xs-6 left"><img src="img/panel_logo_2.png"></div>
+												<div class="col-xs-6 right"><img src="img/panel_logo_3.png"></div>
+											</div>
+
+											<div class="row">
+												<div class="col-xs-6 left-text"></div>
+												<div class="col-xs-6 right-text"></div>
+											</div>
+
+											<div class="row">
+												<div class="col-xs-6 left"><img src="img/panel_logo_2.png"></div>
+												<div class="col-xs-6 right"><img src="img/panel_logo_3.png"></div>
+											</div>
+
+											<div class="row">
+												<div class="col-xs-6 left-text"></div>
+												<div class="col-xs-6 right-text"></div>
+											</div>
+
+											<div class="row">
+												<div class="col-xs-6 left"><img src="img/panel_logo_2.png"></div>
+												<div class="col-xs-6 right"><img src="img/panel_logo_3.png"></div>
+											</div>
+
+											<div class="row">
+												<div class="col-xs-6 left-text"></div>
+												<div class="col-xs-6 right-text"></div>
+											</div>
+
+											<br/>
+											<div class="row">
+												<div class="col-md-12">
+													<p>CHOOSE WHAT LOGO YOU WOULD LIKE TO USE WHEN A DECAL IS ACTIVE IN THE APP</p>
+												</div>
+											</div>
+										</div>
+										<div class="" ng-show="tab==2">
+											<div class="row projectPanel panelScreen">
+												<div class="col-md-12 innerPanel">
+													<div class="row">
+														<div class="col-xs-6"><img src="img/panel_logo_1.png" width="80"></div>
+														<div class="col-xs-6">OFFICIAL 3M VINYL PRODUCTS</div>
+													</div>
+													<form>
+														<label>Type wording below</label>
+														<textarea name="textarea" rows="1" cols="10"></textarea>
+														<input type="submit" value="Add decal +">
+													</form>
+												</div>
+											</div>
+
 										</div>
 
 									</div>
 								</div>
 							</div>
 
-
-							<!-- decals text-->
-
-
+							<!-- design blank-->
 
 							<div class="col-md-12 screen-choose" id="screenpanel-4" style="display:none;">
 								<div class="row toolbarHeading">
 									<div class="screen-title arrow-left"><img src="img/left_arrow.png" onclick="prevScreen();"/></div>
 									<div class="screen-title arrow-right"><img src="img/right_arrow.png" onclick="nextScreen();"/></div>
-									<div class="col-md-12 screen-title center"> Decals</div>
+									<div class="col-md-12 screen-title center"> Designs</div>
 								</div>
 
-								<div class="row projectPanel panelScreen">
+								<div class="row projectPanel panelScreen designs">
 									<div class="col-md-12 innerPanel">
 										<div class="row">
-											<div class="col-xs-6"><a href="">Add +</a></div>
-											<div class="col-xs-6"><a href="">Add Text +</a></div>
+											<div class="designsHeader">
+												<h4>You do not have any designs yet</h4>
+												<hr />
+												<h5>Convert your own designs</h5>
+											</div>
+											<a href="">
+												<div class="assign_logos designsButton">
+													<span>CONVERT</span> <i class="icon-plus pull-right"></i>
+												</div>
+											</a>
+											<h4>OR</h4>
 										</div>
 										<div class="row">
-											<div class="col-xs-6"><img src="img/panel_logo_1.png" width="80"></div>
-											<div class="col-xs-6">OFFICIAL 3M VINYL PRODUCTS</div>
+											<h5>FIND A DESIGNER</h5>
+											<a href="">
+												<div class="assign_logos designsButton">
+													<span>FIND</span> <i class="icon-plus pull-right"></i>
+												</div>
+											</a>
 										</div>
-										<form>
-											<label>Type wording below</label>
-											<textarea name="textarea" rows="1" cols="10"></textarea>
-											<input type="submit" value="Add decal +">
-										</form>
 									</div>
 								</div>
 							</div>
 
 
-							<!-- design blank-->
+							<!-- designs -->
+
 
 							<div class="col-md-12 screen-choose" id="screenpanel-5" style="display:none;">
 								<div class="row toolbarHeading">
@@ -546,57 +542,17 @@
 								<div class="row projectPanel panelScreen">
 									<div class="col-md-12 innerPanel">
 										<div class="row">
-											<div class="">You do not have any designs yet</div>
-										
+											<div class="projectTitle">
+												<span>CHOOSE A DESIGN TO APPLY</span>
+											</div>
 										</div>
-										<div class="">
-											<div>Convert your own designs</div>
-											<a href="">Convert + </a>
-										</div>
-										<div class="">OR</div>
-										<div class="">
-											<div>Find a designer</div>
-											<a href="">Find + </a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-
-							<!-- designs -->
-
-
-							<div class="col-md-12 screen-choose" id="screenpanel-6" style="display:none;">
-								<div class="row toolbarHeading">
-									<div class="screen-title arrow-left"><img src="img/left_arrow.png" onclick="prevScreen();"/></div>
-									<div class="screen-title arrow-right"><img src="img/right_arrow.png" onclick="nextScreen();"/></div>
-									<div class="col-md-12 screen-title center"> Designs</div>
-								</div>
-
-								<div class="row projectPanel panelScreen">
-									<div class="col-md-12 innerPanel">
-										<div class="row">
-											<div class="">Choose a design to apply</div>
-										</div>
-										<div>
-											<div class="col-xs-6 left"><img src="img/logo_header.png"></div>
-											<div class="col-xs-6 right"><img src="img/logo_header.png"></div>
-										</div>
-										<div>
-											<div class="col-xs-6 left"><img src="img/logo_header.png"></div>
-											<div class="col-xs-6 right"><img src="img/logo_header.png"></div>
-										</div>
-										<div>
-											<div class="col-xs-6 left"><img src="img/logo_header.png"></div>
-											<div class="col-xs-6 right"><img src="img/logo_header.png"></div>
-										</div>
-										<div>
-											<div class="col-xs-6 left"><img src="img/logo_header.png"></div>
-											<div class="col-xs-6 right"><img src="img/logo_header.png"></div>
-										</div>
-										<div>
-											<div class="col-xs-6 left"><img src="img/logo_header.png"></div>
-											<div class="col-xs-6 right"><img src="img/logo_header.png"></div>
+										<div class="row fb fb--wrap">
+											<div class="activeDecals__img"><img src="img/panel_logo_2.png"></div>
+											<div class="activeDecals__img"><img src="img/panel_logo_3.png"></div>
+											<div class="activeDecals__img"><img src="img/panel_logo_2.png"></div>
+											<div class="activeDecals__img"><img src="img/panel_logo_3.png"></div>
+											<div class="activeDecals__img"><img src="img/panel_logo_2.png"></div>
+											<div class="activeDecals__img"><img src="img/panel_logo_3.png"></div>
 										</div>
 									</div>
 								</div>
@@ -607,7 +563,7 @@
 
 							<!-- materials -->
 
-							<div class="col-md-12 screen-choose" id="screenpanel-7" style="display:none;">
+							<div class="col-md-12 screen-choose" id="screenpanel-6" style="display:none;">
 								<div class="row toolbarHeading">
 									<div class="screen-title arrow-left"><img src="img/left_arrow.png" onclick="prevScreen();"/></div>
 									<div class="screen-title arrow-right"><img src="img/right_arrow.png" onclick="nextScreen();"/></div>
@@ -616,36 +572,42 @@
 
 								<div class="row projectPanel panelScreen">
 									<div class="col-md-12 innerPanel">
-										<div class="row">
-											<div class="col-xs-6"><a href="">Edit body</a></div>
-											<div class="col-xs-6"><a href="">Edit panels</a></div>
+										<div class="row fb">
+											<a class="btn btn--grey" ng-click="tab=1" ng-class="{'active':tab === 1}">
+												EDIT BODY
+											</a>
+											<a class="active btn btn--grey" ng-click="tab=2" ng-class="{'active':tab === 2}">
+												EDIT PANELS
+											</a>
 										</div>
-										<div class="row">
-											<div class="col-xs-6"><img src="img/panel_logo_1.png" width="80"></div>
-											<div class="col-xs-6">OFFICIAL 3M VINYL PRODUCTS</div>
+										<div class="animate-hide" ng-show="tab==1">
+											<div class="row">
+												<div class="col-xs-6"><img src="img/panel_logo_1.png" width="80"></div>
+												<div class="col-xs-6">OFFICIAL 3M VINYL PRODUCTS</div>
+											</div>
+											<div class="">Select materials</div>
+											<div class="row">
+												<div class="col-xs-4 left"><img src="img/materials-1.png"></div>
+												<div class="col-xs-4 left"><img src="img/materials-2.png"></div>
+												<div class="col-xs-4 left"><img src="img/materials-3.png"></div>
+											</div>
+											<div class="row">
+												<div class="col-xs-4 left-text">CARBON</div>
+												<div class="col-xs-4 left-text">CHROME</div>
+												<div class="col-xs-4 right-text">GLOSS</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-4 left"><img src="img/materials-4.png"></div>
+												<div class="col-xs-4 left"><img src="img/materials-5.png"></div>
+											</div>
+											<div class="row">
+												<div class="col-xs-4 left-text">MATTE</div>
+												<div class="col-xs-4 left-text">METALLIC</div>
+											</div>
+											<div class="">Select colour</div>
+											<textarea rows="1" cols="20"></textarea>
+											<a href="">Reset panel</a>
 										</div>
-										<div class="">Select materials</div>
-										<div class="row">
-											<div class="col-xs-4 left"><img src="img/materials-1.png"></div>
-											<div class="col-xs-4 left"><img src="img/materials-2.png"></div>
-											<div class="col-xs-4 left"><img src="img/materials-3.png"></div>
-										</div>
-										<div class="row">
-											<div class="col-xs-4 left-text">CARBON</div>
-											<div class="col-xs-4 left-text">CHROME</div>
-											<div class="col-xs-4 right-text">GLOSS</div>
-										</div>
-										<div class="row">
-											<div class="col-xs-4 left"><img src="img/materials-4.png"></div>
-											<div class="col-xs-4 left"><img src="img/materials-5.png"></div>
-										</div>
-										<div class="row">
-											<div class="col-xs-4 left-text">MATTE</div>
-											<div class="col-xs-4 left-text">METALLIC</div>
-										</div>
-										<div class="">Select colour</div>
-										<textarea rows="1" cols="20"></textarea>
-										<a href="">Reset panel</a>
 									</div>
 								</div>
 							</div>
@@ -654,7 +616,7 @@
 							<!-- quotes-->
 
 
-							<div class="col-md-12 screen-choose" id="screenpanel-8" style="display:none;">
+							<div class="col-md-12 screen-choose" id="screenpanel-7" style="display:none;">
 								<div class="row toolbarHeading">
 									<div class="screen-title arrow-left"><img src="img/left_arrow.png" onclick="prevScreen();"/></div>
 									<div class="screen-title arrow-right"><img src="img/right_arrow.png" onclick="nextScreen();"/></div>
@@ -662,9 +624,13 @@
 								</div>
 								<div class="row projectPanel panelScreen">
 									<div class="col-md-12 innerPanel">
-										<div class="row">
-											<div class="col-xs-6"><a href="">Full wrap</a></div>
-											<div class="col-xs-6"><a href="">Self app logos</a></div>
+										<div class="row fb">
+											<a class="btn btn--grey" ng-click="tab=1" ng-class="{'active':tab === 1}">
+												FULL WRAP
+											</a>
+											<a class="active btn btn--grey" ng-click="tab=2" ng-class="{'active':tab === 2}">
+												SELF APP LOGOS
+											</a>
 										</div>
 										<div class="row">
 											<div class="col-xs-6"><img src="img/panel_logo_1.png" width="80"></div>
@@ -754,7 +720,7 @@
 
 							<!--scenes -->
 
-							<div class="col-md-12 screen-choose" id="screenpanel-9" style="display:none;">
+							<div class="col-md-12 screen-choose" id="screenpanel-8" style="display:none;">
 								<div class="row toolbarHeading">
 									<div class="screen-title arrow-left"><img src="img/left_arrow.png" onclick="prevScreen();"/></div>
 									<div class="screen-title arrow-right"><img src="img/right_arrow.png" onclick="nextScreen();"/></div>
@@ -762,7 +728,9 @@
 								</div>
 								<div class="row projectPanel panelScreen">
 									<div class="col-md-12 innerPanel">
-										<div class="row"><div class="">Scenes</div></div>
+										<div class="projectTitle">
+												<span>SCENES</span>
+											</div>
 										<div class="row">
 											<div class="col-xs-6 left">
 												<img src="img/scenes.jpg">
@@ -781,7 +749,9 @@
 										</div>
 										
 										<div class="row">
-											<div class="">Backplates</div>
+											<div class="projectTitle">
+												<span>BACKPLAGES</span>
+											</div>
 										</div>
 										<div class="row">
 											<div class="col-xs-6 left">
@@ -802,37 +772,44 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							
 
 
 							<!-- Sponsors values -->
 
-							<div class="col-md-12 screen-choose" id="screenpanel-10" style="display:none;">
+							<div class="col-md-12 screen-choose" id="screenpanel-9" style="display:none;">
 								<div class="row toolbarHeading">
 									<div class="screen-title arrow-left"><img src="img/left_arrow.png" onclick="prevScreen();"/></div>
 									<div class="screen-title arrow-right"><img src="img/right_arrow.png" onclick="nextScreen();"/></div>
 									<div class="col-md-12 screen-title center"> Sponsors Values</div>
 								</div>
 
-								<div class="row projectPanel panelScreen">
+								<div class="row projectPanel panelScreen sponsorValues">
 									<div class="col-md-12 innerPanel">
-										<div class="row">
-											<div class="col-xs-6"><a href="">Overall</a></div>
-											<div class="col-xs-6"><a href="">Individual</a></div>
+										<div class="row fb">
+											<a class="btn btn--grey" ng-click="tab=1" ng-class="{'active':tab === 1}">
+												OVERALL
+											</a>
+											<a class="active btn btn--grey" ng-click="tab=2" ng-class="{'active':tab === 2}">
+												INDIVIDUAL
+											</a>
 										</div>
-										<div class="row">
-											<p> Etiam euismod, turpis at dignissim pharetra, velit risus placerat massa, ac ultrices lorem sem id augue. Morbi eu pretium lorem, eu rhoncus</p>
+										<div class="animate-hide ng-hide" ng-show="tab==1">
+											<div class="row">
+												<p> Etiam euismod, turpis at dignissim pharetra, velit risus placerat massa, ac ultrices lorem sem id augue. Morbi eu pretium lorem, eu rhoncus</p>
+											</div>
+											<hr />
+											<div class="row sponsorValue__price">
+												<span>£145.00</span>
+											</div>
+											<form class="sponsorValue__form">
+												<textarea rows="1" cols="20"></textarea>
+												<button type="submit" class="btn btn--darkGrey">
+													<span>SUBMIT VALUE</span> 
+													<i class="icon-plus"></i>
+												</button>
+											</form>
 										</div>
-										<div class="row">
-											<div class="">£145.00</div>
-										</div>
-										<div class="row">
-											<div class="">Bonnet</div>
-										</div>
-										<form>
-											<textarea rows="1" cols="20"></textarea>
-											<input type="submit" value="Submit value +">
-										</form>
 									</div>
 								</div>
 							</div>
@@ -840,25 +817,29 @@
 
 							<!--Wheels mods -->
 
-							<div class="col-md-12 screen-choose" id="screenpanel-11" style="display:none;">
+							<div class="col-md-12 screen-choose" id="screenpanel-10" style="display:none;">
 								<div class="row toolbarHeading">
 									<div class="screen-title arrow-left"><img src="img/left_arrow.png" onclick="prevScreen();"/></div>
 									<div class="screen-title arrow-right"><img src="img/right_arrow.png" onclick="nextScreen();"/></div>
 									<div class="col-md-12 screen-title center"> Wheels</div>
 								</div>
 
-								<div class="row projectPanel panelScreen">
+								<div class="row projectPanel panelScreen wheels">
 									<div class="col-md-12 innerPanel">
-										<div class="row">
-											<div class="col-xs-6"><a href="">Wheels</a></div>
-											<div class="col-xs-6"><a href="">Mods</a></div>
+										<div class="row fb">
+											<a class="btn btn--grey" ng-click="tab=1" ng-class="{'active':tab === 1}">
+												WHEELS
+											</a>
+											<a class="active btn btn--grey" ng-click="tab=2" ng-class="{'active':tab === 2}">
+												MODS
+											</a>
 										</div>
 										<div class="row">
 											<div class="col-xs-6"><img src="img/wheels.jpg"></div>
 											<div class="col-xs-6">Official OZ racing products</div>
 										</div>
 										<div class="row">
-											<label>Size</label
+											<label>Size</label>
 											<select id="filter_presentations" name="size">
 								                <option value="#">Option 1</option>
 								                <option value="#">Option 2</option>
@@ -870,30 +851,30 @@
 								            </select>
 										</div>
 										<div>
-											<label>Select colour</label>
+											<label class="block">SELECT COLOUR</label>
 											<textarea rows="10" cols="20"></textarea>
 										</div>
-										<div class="row">
-											<div class="">Tire brand</div>
-											<div class=""><img src="img/wheels-1.jpg" alt=""></div>
+										<div class="fb toolbarInner">
+											<span class="">TIRE BRAND</span>
+											<div class="col-xs-7"><img src="img/wheels-1.jpg" alt=""></div>
 										</div>
-										<div class="">Tire type</div>
-										<div class="row">
-											<div class="col-xs-4 left"><img src="img/wheels-2.jpg" alt=""></div>
-											<div class="col-xs-4 left"><img src="img/wheels-2.jpg" alt=""></div>
-											<div class="col-xs-4 left"><img src="img/wheels-2.jpg" alt=""></div>
+										<div class="toolbarInner">
+											<div class="block">TIRE TYPE</div>
+											<div class="fb fb--wrap jc-sb">
+												<div class="tireType"><img src="img/wheels-2.jpg" alt=""></div>
+												<div class="tireType"><img src="img/wheels-2.jpg" alt=""></div>
+												<div class="tireType"><img src="img/wheels-2.jpg" alt=""></div>
+												<div class="tireType"><img src="img/wheels-2.jpg" alt=""></div>
+												<div class="tireType"><img src="" alt=""></div>
+												<div class="tireType"><img src="" alt=""></div>
+											</div>
 										</div>
-										<div class="row">
-											<div class="col-xs-4 left"><img src="img/wheels-2.jpg" alt=""></div>
-											<div class="col-xs-4 left"><img src="" alt=""></div>
-											<div class="col-xs-4 left"><img src="" alt=""></div>
-										</div>
-										<div class="row">
-											<div class="">Brake brand</div>
-											<div class=""><img src="img/wheels-3.jpg" alt=""></div>
+										<div class="fb toolbarInner">
+											<span class="">BRAKE BRAND</span>
+											<div class="col-xs-7"><img src="img/wheels-3.jpg" alt=""></div>
 										</div>
 										<div>
-											<label>Brake colour</label>
+											<label class="block">BRAKE COLOUR</label>
 											<textarea rows="10" cols="20"></textarea>
 										</div>
 									</div>
@@ -902,7 +883,7 @@
 
 							<!-- -->
 
-
+						</div>
 
 
 							</div>
@@ -921,51 +902,176 @@
 							</div>
 						</div>
 						<div class="row categories">
-							<div class="col-xs-3 selected">Vinyl List</div>
-							<div class="col-xs-3">Sponsor List</div>
-							<div class="col-xs-3">Sponsors Value List</div>
-							<div class="col-xs-3">Part List</div>
-						</div>
+							<div class="tabs">
+			
+			<a class="tab active" ng-click="tab=1" ng-class="{'active':tab === 1}">
+				Vinyl List
+			</a>
+			<a class="tab" ng-click="tab=2" ng-class="{'active':tab === 2}">
+				Sponsor List
+			</a>
+			<a class="tab" ng-click="tab=3" ng-class="{'active':tab === 3}">
+				Sponsors Value List
+			</a>
+			<a class="tab" ng-click="tab=4" ng-class="{'active':tab === 4}">
+				Part List
+			</a>
+		</div>
+
 					</div>
 				</div>
-				<div class="row content">
-					<div class="col-md-12 appdata-table">
-						<div class="row table-header">
-							<div class="col-xs-2">Product</div>
-							<div class="col-xs-5">Colour ID</div>
-							<div class="col-xs-5">Measurement</div>
+				<div class="content">
+					<div class="container-fluid project_settings" id="details" ng-show="tab==1">
+						<div class="col-md-12 appdata-table">
+							<div class="row table-header">
+								<div class="col-xs-2">Product</div>
+								<div class="col-xs-5">Colour ID</div>
+								<div class="col-xs-5">Measurement</div>
+							</div>
+							<div class="row appdata-row even">
+								<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
+								<div class="col-xs-5">Pantone</div>
+								<div class="col-xs-5">3.2m squared</div>
+							</div>
+							
+							<div class="row appdata-row">
+								<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
+								<div class="col-xs-5">Pantone</div>
+								<div class="col-xs-5">3.2m squared</div>
+							</div>
+							
+							<div class="row appdata-row even">
+								<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
+								<div class="col-xs-5">Pantone</div>
+								<div class="col-xs-5">3.2m squared</div>
+							</div>
+							
+							<div class="row appdata-row">
+								<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
+								<div class="col-xs-5">Pantone</div>
+								<div class="col-xs-5">3.2m squared</div>
+							</div>
+							
+							<div class="row appdata-row even">
+								<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
+								<div class="col-xs-5">Pantone</div>
+								<div class="col-xs-5">3.2m squared</div>
+							</div>
+							
 						</div>
-						<div class="row appdata-row even">
-							<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
-							<div class="col-xs-5">Pantone</div>
-							<div class="col-xs-5">3.2m squared</div>
+					</div>
+					<div class="container-fluid project_settings" id="details" ng-show="tab==2">
+						<div class="col-md-12 appdata-table">
+							<div class="row table-header">
+								<div class="col-xs-2">Sponsor</div>
+								<div class="col-xs-5">No. Decals</div>
+								<div class="col-xs-5">Total Value</div>
+							</div>
+							<div class="row appdata-row even">
+								<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
+								<div class="col-xs-5">Pantone</div>
+								<div class="col-xs-5">3.2m squared</div>
+							</div>
+							
+							<div class="row appdata-row">
+								<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
+								<div class="col-xs-5">Pantone</div>
+								<div class="col-xs-5">3.2m squared</div>
+							</div>
+							
+							<div class="row appdata-row even">
+								<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
+								<div class="col-xs-5">Pantone</div>
+								<div class="col-xs-5">3.2m squared</div>
+							</div>
+							
+							<div class="row appdata-row">
+								<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
+								<div class="col-xs-5">Pantone</div>
+								<div class="col-xs-5">3.2m squared</div>
+							</div>
+							
+							<div class="row appdata-row even">
+								<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
+								<div class="col-xs-5">Pantone</div>
+								<div class="col-xs-5">3.2m squared</div>
+							</div>
+							
 						</div>
-						
-						<div class="row appdata-row">
-							<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
-							<div class="col-xs-5">Pantone</div>
-							<div class="col-xs-5">3.2m squared</div>
+					</div>
+					<div class="container-fluid project_settings" id="details" ng-show="tab==3">
+						<div class="col-md-12 appdata-table">
+							<div class="row table-header">
+								<div class="col-xs-12">Overall Value £325.000</div>
+							</div>
+							<div class="row appdata-row even">
+								<div class="col-xs-6"> Part</div>
+								<div class="col-xs-6">Square metre</div>
+								
+							</div>
+							
+							<div class="row appdata-row">
+								<div class="col-xs-6">Bonnet</div>
+							
+								<div class="col-xs-6">2.5m</div>
+							</div>
+							
+							<div class="row appdata-row even">
+								<div class="col-xs-6">Bonnet</div>
+							
+								<div class="col-xs-6">2.5m</div>
+							</div>
+							
+							<div class="row appdata-row">
+								<div class="col-xs-6">Bonnet</div>
+							
+								<div class="col-xs-6">2.5m</div>
+							</div>
+							
+							<div class="row appdata-row even">
+								<div class="col-xs-6">Bonnet</div>
+							
+								<div class="col-xs-6">2.5m</div>
+							</div>
+							
 						</div>
-						
-						<div class="row appdata-row even">
-							<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
-							<div class="col-xs-5">Pantone</div>
-							<div class="col-xs-5">3.2m squared</div>
+					</div>
+					<div class="container-fluid project_settings" id="details" ng-show="tab==4">
+						<div class="col-md-12 appdata-table">
+							<div class="row table-header">
+								<div class="col-xs-12">Overall Value £325.000</div>
+							</div>
+							<div class="row appdata-row even">
+								<div class="col-xs-6"> Part</div>
+								<div class="col-xs-6">Value</div>
+							</div>
+							
+							<div class="row appdata-row">
+								<div class="col-xs-6">Bonnet</div>
+							
+								<div class="col-xs-6">2.5m</div>
+							</div>
+							
+							<div class="row appdata-row even">
+								<div class="col-xs-6">Bonnet</div>
+							
+								<div class="col-xs-6">2.5m</div>
+							</div>
+							
+							<div class="row appdata-row">
+								<div class="col-xs-6">Bonnet</div>
+							
+								<div class="col-xs-6">2.5m</div>
+							</div>
+							
+							<div class="row appdata-row even">
+								<div class="col-xs-6">Bonnet</div>
+							
+								<div class="col-xs-6">2.5m</div>
+							</div>
+							
 						</div>
-						
-						<div class="row appdata-row">
-							<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
-							<div class="col-xs-5">Pantone</div>
-							<div class="col-xs-5">3.2m squared</div>
-						</div>
-						
-						<div class="row appdata-row even">
-							<div class="col-xs-2"><img src="img/appdata-color.png"> 1080</div>
-							<div class="col-xs-5">Pantone</div>
-							<div class="col-xs-5">3.2m squared</div>
-						</div>
-						
-			</div>
+					</div>
 		</div>
 	</div>
 
@@ -996,11 +1102,11 @@
 	var screenCount = 12;
 
 	function nextScreen(){
-		changeScreen((screenSelected + 11) % screenCount);
+		changeScreen((screenSelected + screenCount - 11) % screenCount);
 	};
 
 	function prevScreen(){
-		changeScreen((screenSelected + screenCount - 11) % screenCount);	
+		changeScreen((screenSelected + 11) % screenCount);	
 	};
 
 	function changeScreen(newScreen){

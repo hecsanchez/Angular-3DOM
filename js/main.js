@@ -195,13 +195,33 @@ ThreeDOMApp .controller('mainController', function($scope, $route, $rootScope, $
                         }
                     }
                 }
-                $scope.class = "off";
-
-                $scope.changeClass = function(){
-                    if ($scope.class === "off")
-                        $scope.class = "on";
+                $scope.bloomclass = "off";
+                $scope.bloomSwitch = function(){
+                    if ($scope.bloomclass === "off")
+                        $scope.bloomclass = "on";
                      else
-                        $scope.class = "off";
+                        $scope.bloomclass = "off";
+                };
+                $scope.vignettingclass = "off";
+                $scope.vignettingSwitch = function(){
+                    if ($scope.vignettingclass === "off")
+                        $scope.vignettingclass = "on";
+                     else
+                        $scope.vignettingclass = "off";
+                };
+                $scope.dofclass = "off";
+                $scope.dofSwitch = function(){
+                    if ($scope.dofclass === "off")
+                        $scope.dofclass = "on";
+                     else
+                        $scope.dofclass = "off";
+                };
+                $scope.dsvclass = "off";
+                $scope.dsvSwitch = function(){
+                    if ($scope.dsvclass === "off")
+                        $scope.dsvclass = "on";
+                     else
+                        $scope.dsvclass = "off";
                 };
             })
             // Dashboard controller
